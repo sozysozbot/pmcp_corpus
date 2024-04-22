@@ -1,13 +1,11 @@
-function get_matches() {
-    const string = "cecnutit";
-
-    return CORPUS.filter(item => item.pmcp.includes(string)).map(item => {
+function get_matches(regex_str) {
+    return CORPUS.filter(item => item.pmcp.includes(regex_str)).map(item => {
         const matched_portions = [];
         /* 
         g - global 
         i - case insensitive
         d - get the indices */
-        const myRe = /cecnutit/gid;
+        const myRe = new RegExp(regex_str, "gid");
         let myArray;
         while ((myArray = myRe.exec(item.pmcp)) !== null) {
             matched_portions.push({
@@ -21,7 +19,17 @@ function get_matches() {
 }
 
 function display_result() {
-    const items = get_matches()
+    const search_string = document.getElementById("search-bar").value;
+
+    if (search_string === "") {
+        return "東島通商語コーパス検索システム「ビシェ」へようこそ";
+    }
+
+    const items = get_matches(search_string);
+
+    const search_count = items.map(item => item.matched_portions.length).reduce((a, b) => a + b, 0);
+    document.getElementById("search-count").textContent = search_count + " 個見つかりました。"
+
     /*
     Each item is of the following form:
     {"item":{"source":"プロパガンダかるた","pmcp":"icco cecnutit lata pi lata cecnutit icco","direct_ja":"","ja":"国が人を守り、人が国を守る","en":""},"matched_portions":[{"match":"cecnutit","beginIndex":5,"endIndex":13},{"match":"cecnutit","beginIndex":27,"endIndex":35}]}

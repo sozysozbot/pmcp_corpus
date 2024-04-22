@@ -74,6 +74,10 @@ header {
   margin: 20px;
 }
 
+#search-count {
+  margin: 20px;
+}
+
 table.keyboard {
   background-color: #535353;
   border-spacing: 5px;
