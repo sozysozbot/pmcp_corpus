@@ -1,4 +1,5 @@
 <html>
+
 <head>
   <title>東島通商語コーパス検索</title>
   <link rel="stylesheet" href="style.css">
@@ -7,9 +8,14 @@
   <script src="./search.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
-  <header>
-    <img src="logo.png" alt="Logo" id="logo">
+  <header class="logo">
+    <div style="display: flex; justify-content: center;
+    align-items: flex-start;"><div
+        style="display: inline-block; font-size: 30px; transform: translate(5px) rotate(-135deg);">🔍</div><div class="display: inline-block; font-family: 'syt2ten1'; font-size: 50px;
+      letter-spacing: 2px">ixe</div>
+    </div>
   </header>
   <main>
     <section id="search-section">
@@ -17,9 +23,30 @@
     </section>
     <section id="keyboard-section">
       <table class="keyboard" style="font-family: 'xedixel';">
-        <tr><td>p</td><td>b</td><td>m</td><td>c</td><td>x</td><td>z</td></tr>
-        <tr><td>t</td><td>d</td><td>n</td><td>l</td><td>k</td><td>a</td></tr>
-        <tr><td>e</td><td>i</td><td>u</td><td>o</td><td>j</td><td>w</td></tr>
+        <tr>
+          <td>p</td>
+          <td>b</td>
+          <td>m</td>
+          <td>c</td>
+          <td>x</td>
+          <td>z</td>
+        </tr>
+        <tr>
+          <td>t</td>
+          <td>d</td>
+          <td>n</td>
+          <td>l</td>
+          <td>k</td>
+          <td>a</td>
+        </tr>
+        <tr>
+          <td>e</td>
+          <td>i</td>
+          <td>u</td>
+          <td>o</td>
+          <td>j</td>
+          <td>w</td>
+        </tr>
       </table>
     </section>
     <section id="results-section">
@@ -27,4 +54,5 @@
     </section>
   </main>
 </body>
+
 </html>
