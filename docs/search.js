@@ -37,6 +37,8 @@ function display_result() {
       </div>
     */
 
+    document.getElementById("results-section").innerHTML = "";
+
     for (const item of items) {
         const { pmcp, ja } = item.item;
         const { matched_portions } = item;
@@ -44,8 +46,9 @@ function display_result() {
         let result = pmcp;
         const div = document.createElement("div");
         div.className = "searched-item";
-        
+
         const corpusText = document.createElement("div");
+        corpusText.style.fontFamily = "rounded";
         corpusText.className = "corpus-text";
         for (const { match, beginIndex, endIndex } of matched_portions) {
             const beforeMatch = document.createTextNode(result.slice(0, beginIndex));
@@ -53,18 +56,19 @@ function display_result() {
             matchedPortion.className = "matched-portion";
             matchedPortion.textContent = match;
             const afterMatch = document.createTextNode(result.slice(endIndex));
-            
+
             corpusText.appendChild(beforeMatch);
             corpusText.appendChild(matchedPortion);
             corpusText.appendChild(afterMatch);
+            corpusText.appendChild(document.createElement("hr"));
         }
         div.appendChild(corpusText);
-        
+
         const translationJa = document.createElement("div");
         translationJa.className = "translation-ja";
         translationJa.textContent = ja;
         div.appendChild(translationJa);
-        
+
         document.getElementById("results-section").appendChild(div);
     }
 }
