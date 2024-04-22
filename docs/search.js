@@ -22,13 +22,18 @@ function display_result() {
     const search_string = document.getElementById("search-bar").value;
 
     if (search_string === "") {
-        return "東島通商語コーパス検索システム「ビシェ」へようこそ";
+        document.getElementById("search-count").style.visibility = "hidden";
+        document.getElementById("results-section").textContent = "東島通商語コーパス検索システム「ビシェ」へようこそ。";
+        return;
     }
+
+    document.getElementById("search-count").style.visibility = "visible";
+
 
     const items = get_matches(search_string);
 
     const search_count = items.map(item => item.matched_portions.length).reduce((a, b) => a + b, 0);
-    document.getElementById("search-count").textContent = search_count + " 個見つかりました。"
+    document.getElementById("search-count").textContent = search_count === 0 ? "見つかりませんでした。" : search_count + " 個見つかりました。"
 
     /*
     Each item is of the following form:
