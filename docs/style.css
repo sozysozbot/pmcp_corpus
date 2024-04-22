@@ -170,3 +170,14 @@ table.keyboard td:active {
 .toggle_button:has(input[type=checkbox]:checked) ~ div.balloon {
   display: block;
 }
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#search-bar {
+  flex-grow: 1;
+  margin-right: 10px;
+}
