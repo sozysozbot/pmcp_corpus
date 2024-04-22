@@ -163,14 +163,6 @@ table.keyboard td:active {
   margin: auto;
 }
 
-.toggle_button:has(input[type=checkbox]) ~ div.balloon {
-  display: none;
-}
-
-.toggle_button:has(input[type=checkbox]:checked) ~ div.balloon {
-  display: block;
-}
-
 .search-container {
   display: flex;
   justify-content: space-between;

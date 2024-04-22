@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -7,6 +8,18 @@
   <script src="./linkMap.js"></script>
   <script src="./search.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById("toggle_keyboard_balloon").addEventListener('change', (event) => {
+        console.log(event.target);
+        if (event.target.checked) {
+          document.getElementById("keyboard_balloon").style.display = "block";
+        } else {
+          document.getElementById("keyboard_balloon").style.display = "none";
+        }
+      })
+    })
+  </script>
 </head>
 
 <body>
@@ -20,13 +33,13 @@
       <div class="search-container">
         <input type="text" id="search-bar" placeholder="検索" accesskey="f" autocapitalize="none" autocomplete="off">
         <div class="toggle_button">
-          㗊
-          <input id="toggle" class="toggle_input" type='checkbox' />
-          <label for="toggle" class="toggle_label" />
+          㗊㗊㗊
+          <input id="toggle_keyboard_balloon" class="toggle_input" type='checkbox' checked="false" />
+          <label for="toggle_keyboard_balloon" class="toggle_label" />
         </div>
       </div>
-    </section>
-    <div class="balloon" style="position: absolute; right: 20px;">
+    </section> 
+    <div class="balloon" id="keyboard_balloon" style="position: absolute; right: 20px; display: none;">
       <table class="keyboard" style="font-family: 'xedixel';">
         <tr>
           <td>p</td>
