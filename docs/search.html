@@ -12,16 +12,19 @@
 <body>
   <header class="logo">
     <div style="display: flex; justify-content: center;
-    align-items: flex-start;"><div
-        style="display: inline-block; font-size: 30px; transform: translate(5px) rotate(-135deg);">🔍</div><div class="display: inline-block; font-family: 'syt2ten1'; font-size: 50px;
-      letter-spacing: 2px">ixe</div>
+    align-items: flex-start;">
+      <div style="display: inline-block; font-size: 30px; transform: translate(5px) rotate(-135deg);">🔍</div>
+      <div style="display: inline-block; font-family: 'syt2ten1'; font-size: 50px; letter-spacing: 2px">ixe</div>
     </div>
-  </header>
-  <main>
     <section id="search-section">
-      <input type="text" id="search-bar" placeholder="検索">
+      <input type="text" id="search-bar" placeholder="検索" accesskey="f" autocapitalize="none" autocomplete="off">
     </section>
-    <section id="keyboard-section">
+    <div class="toggle_button">
+      㗊
+      <input id="toggle" class="toggle_input" type='checkbox' />
+      <label for="toggle" class="toggle_label" />
+    </div>
+    <div class="balloon" style="position: absolute; right: 20px;">
       <table class="keyboard" style="font-family: 'xedixel';">
         <tr>
           <td>p</td>
@@ -48,9 +51,65 @@
           <td>w</td>
         </tr>
       </table>
-    </section>
+    </div>
+  </header>
+  <main>
     <section id="results-section">
-      <!-- Search results will be displayed here -->
+      <div class="searched-item">
+        <div class="corpus-text">NEQVE PORRO QVISQVAM EST <strong class="matched-portion">QVI</strong> DOLOREM IPSVM
+          QVIA DOLOR SIT AMET CONSECTETVR ADIPISCI VELIT</div>
+        <div class="translation-ja">そしてさらに、悲しみそれ自身を、悲しみであるという理由で愛したり追い求めたり得たがったりする者は存在しない。</div>
+      </div>
+      <div class="searched-item">
+        <div class="corpus-text">NEQVE PORRO QVISQVAM EST <strong class="matched-portion">QVI</strong> DOLOREM IPSVM
+          QVIA DOLOR SIT AMET CONSECTETVR ADIPISCI VELIT</div>
+        <div class="translation-ja">そしてさらに、悲しみそれ自身を、悲しみであるという理由で愛したり追い求めたり得たがったりする者は存在しない。</div>
+      </div>
+      <div class="searched-item">
+        <div class="corpus-text">NEQVE PORRO QVISQVAM EST <strong class="matched-portion">QVI</strong> DOLOREM IPSVM
+          QVIA DOLOR SIT AMET CONSECTETVR ADIPISCI VELIT</div>
+        <div class="translation-ja">そしてさらに、悲しみそれ自身を、悲しみであるという理由で愛したり追い求めたり得たがったりする者は存在しない。</div>
+      </div>
+      <div class="searched-item">
+        <div class="corpus-text">NEQVE PORRO QVISQVAM EST <strong class="matched-portion">QVI</strong> DOLOREM IPSVM
+          QVIA DOLOR SIT AMET CONSECTETVR ADIPISCI VELIT</div>
+        <div class="translation-ja">そしてさらに、悲しみそれ自身を、悲しみであるという理由で愛したり追い求めたり得たがったりする者は存在しない。</div>
+      </div>
+      <div class="searched-item">
+        <div class="corpus-text">NEQVE PORRO QVISQVAM EST <strong class="matched-portion">QVI</strong> DOLOREM IPSVM
+          QVIA DOLOR SIT AMET CONSECTETVR ADIPISCI VELIT</div>
+        <div class="translation-ja">そしてさらに、悲しみそれ自身を、悲しみであるという理由で愛したり追い求めたり得たがったりする者は存在しない。</div>
+      </div>
+      <div class="searched-item">
+        <div class="corpus-text">NEQVE PORRO QVISQVAM EST <strong class="matched-portion">QVI</strong> DOLOREM IPSVM
+          QVIA DOLOR SIT AMET CONSECTETVR ADIPISCI VELIT</div>
+        <div class="translation-ja">そしてさらに、悲しみそれ自身を、悲しみであるという理由で愛したり追い求めたり得たがったりする者は存在しない。</div>
+      </div>
+      <div class="searched-item">
+        <div class="corpus-text">NEQVE PORRO QVISQVAM EST <strong class="matched-portion">QVI</strong> DOLOREM IPSVM
+          QVIA DOLOR SIT AMET CONSECTETVR ADIPISCI VELIT</div>
+        <div class="translation-ja">そしてさらに、悲しみそれ自身を、悲しみであるという理由で愛したり追い求めたり得たがったりする者は存在しない。</div>
+      </div>
+      <div class="searched-item">
+        <div class="corpus-text">NEQVE PORRO QVISQVAM EST <strong class="matched-portion">QVI</strong> DOLOREM IPSVM
+          QVIA DOLOR SIT AMET CONSECTETVR ADIPISCI VELIT</div>
+        <div class="translation-ja">そしてさらに、悲しみそれ自身を、悲しみであるという理由で愛したり追い求めたり得たがったりする者は存在しない。</div>
+      </div>
+      <div class="searched-item">
+        <div class="corpus-text">NEQVE PORRO QVISQVAM EST <strong class="matched-portion">QVI</strong> DOLOREM IPSVM
+          QVIA DOLOR SIT AMET CONSECTETVR ADIPISCI VELIT</div>
+        <div class="translation-ja">そしてさらに、悲しみそれ自身を、悲しみであるという理由で愛したり追い求めたり得たがったりする者は存在しない。</div>
+      </div>
+      <div class="searched-item">
+        <div class="corpus-text">NEQVE PORRO QVISQVAM EST <strong class="matched-portion">QVI</strong> DOLOREM IPSVM
+          QVIA DOLOR SIT AMET CONSECTETVR ADIPISCI VELIT</div>
+        <div class="translation-ja">そしてさらに、悲しみそれ自身を、悲しみであるという理由で愛したり追い求めたり得たがったりする者は存在しない。</div>
+      </div>
+      <div class="searched-item">
+        <div class="corpus-text">NEQVE PORRO QVISQVAM EST <strong class="matched-portion">QVI</strong> DOLOREM IPSVM
+          QVIA DOLOR SIT AMET CONSECTETVR ADIPISCI VELIT</div>
+        <div class="translation-ja">そしてさらに、悲しみそれ自身を、悲しみであるという理由で愛したり追い求めたり得たがったりする者は存在しない。</div>
+      </div>
     </section>
   </main>
 </body>
