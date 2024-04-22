@@ -1,4 +1,5 @@
-const corpus = [
+/* AUTOMATICALLY GENERATED. DO NOT EDIT MANUALLY */
+const CORPUS = [
   {
     "source": "典拠",
     "pmcp": "東島通商語",

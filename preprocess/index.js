@@ -20,5 +20,7 @@ const linkMap = links.reduce((acc, { source, links }) => {
   return acc;
 }, {});
 
-fs.writeFileSync('../docs/corpus.js', `const corpus = ${JSON.stringify(corpus, null, 2)};`);
-fs.writeFileSync('../docs/linkMap.js', `const linkMap = ${JSON.stringify(linkMap, null, 2)};`);
+fs.writeFileSync('../docs/corpus.js', `/* AUTOMATICALLY GENERATED. DO NOT EDIT MANUALLY */
+const CORPUS = ${JSON.stringify(corpus, null, 2)};`);
+fs.writeFileSync('../docs/linkMap.js', `/* AUTOMATICALLY GENERATED. DO NOT EDIT MANUALLY */
+const HYPERLINKS = ${JSON.stringify(linkMap, null, 2)};`);

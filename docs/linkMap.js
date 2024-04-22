@@ -1,4 +1,5 @@
-const linkMap = {
+/* AUTOMATICALLY GENERATED. DO NOT EDIT MANUALLY */
+const HYPERLINKS = {
   "PMCFショーケース": [
     "https://docs.google.com/document/d/1IvZJSZ86LUWoqPXB3e5Jzw2FN2eRXIycbnVcR1YCS6A/edit",
     "https://www.youtube.com/watch?v=RWUayszPnis"
