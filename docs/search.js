@@ -82,6 +82,27 @@ function display_result() {
         translationJa.textContent = ja;
         div.appendChild(translationJa);
 
+        div.appendChild(document.createElement("hr"));
+
+        const details = document.createElement("details");
+        const summary = document.createElement("summary");
+        const source_signifier = item.item.source;
+        summary.textContent = `出典: ${source_signifier}`;
+        details.appendChild(summary);
+        const ul = document.createElement("ul");
+        details.appendChild(ul);
+        const links = HYPERLINKS[source_signifier] ?? [];
+        for (const url of links) {
+            const a = document.createElement("a");
+            a.href = url;
+            a.textContent = url;
+            const li = document.createElement("li");
+            li.appendChild(a);
+            ul.appendChild(li);
+        }
+
+        div.appendChild(details);
+
         document.getElementById("results-section").appendChild(div);
     }
 }
