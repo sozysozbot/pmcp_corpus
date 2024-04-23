@@ -18,7 +18,7 @@ function get_matches(regex_str) {
     });
 }
 
-function display_result() {
+async function display_result() {
     const search_string = document.getElementById("search-bar").value;
 
     if (search_string === "") {
@@ -104,6 +104,7 @@ function display_result() {
         div.appendChild(details);
 
         document.getElementById("results-section").appendChild(div);
+        await new Promise(resolve => setTimeout(resolve, 0));
     }
 }
 
