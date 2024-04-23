@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 @font-face {
   font-family: 'acil_lujot';
   src: url("https://yasusho.github.io/qafopwa_pmcp_font/acil_lujot/acil_lujot.woff");
@@ -181,4 +183,22 @@ table.keyboard td:active {
 .problematic_brace {
   font-family: Arial, Helvetica, sans-serif;
   color: red;
+}
+
+.translation-ja-direct {
+  font-size: 90%;
+  color: #444;
+
+}
+.translation-ja-direct::before {
+  content: "直訳: ";
+}
+
+.translation-en {
+  font-size: 90%;
+  color: #444;
+}
+
+.translation-en::before {
+  content: "English: ";
 }

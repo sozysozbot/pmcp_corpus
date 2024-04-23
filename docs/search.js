@@ -68,7 +68,7 @@ try{
         if (signal.aborted) {
             throw new Error("cancelled");
         }
-        const { pmcp, ja } = item.item;
+        const { pmcp, ja, direct_ja, en } = item.item;
         const { matched_portions } = item;
 
         let result = pmcp;
@@ -107,6 +107,20 @@ try{
         translationJa.className = "translation-ja";
         translationJa.textContent = ja;
         div.appendChild(translationJa);
+
+        if (direct_ja !== "") {
+            const translationJaDirect = document.createElement("div");
+            translationJaDirect.className = "translation-ja-direct";
+            translationJaDirect.textContent = direct_ja;
+            div.appendChild(translationJaDirect);
+        }
+
+        if (en !== "") {
+            const translationEn = document.createElement("div");
+            translationEn.className = "translation-en";
+            translationEn.textContent = en;
+            div.appendChild(translationEn);
+        }
 
         div.appendChild(document.createElement("hr"));
 
