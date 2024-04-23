@@ -24,3 +24,26 @@ fs.writeFileSync('../docs/corpus.js', `/* AUTOMATICALLY GENERATED. DO NOT EDIT M
 const CORPUS = ${JSON.stringify(corpus, null, 2)};`);
 fs.writeFileSync('../docs/linkMap.js', `/* AUTOMATICALLY GENERATED. DO NOT EDIT MANUALLY */
 const HYPERLINKS = ${JSON.stringify(linkMap, null, 2)};`);
+
+
+// trigram
+const [_, ...corpus_] = corpus;
+const source_text = corpus_
+  .map(item => item.pmcp)
+  .join("        ")
+  .replaceAll(/\{[\s\S]*?\}/g, " ")
+  .toLowerCase();
+
+// Make a table of trigrams
+const trigrams = {};
+for (let i = 0; i < source_text.length - 2; i++) {
+  const trigram = source_text.slice(i, i + 3);
+  if (trigram in trigrams) {
+    trigrams[trigram]++;
+  } else {
+    trigrams[trigram] = 1;
+  }
+}
+
+fs.writeFileSync('../docs/trigrams.js', `/* AUTOMATICALLY GENERATED. DO NOT EDIT MANUALLY */
+const TRIGRAMS = ${JSON.stringify(trigrams, null, 2)};`);
