@@ -7,6 +7,7 @@
   <script src="./corpus.js"></script>
   <script src="./linkMap.js"></script>
   <script src="./search.js"></script>
+  <script src="./keyboard.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>
 
@@ -52,28 +53,28 @@
     <div class="balloon" id="keyboard_balloon" style="position: absolute; right: 20px; display: none;">
       <table class="keyboard" style="font-family: 'xedixel';">
         <tr>
-          <td onclick="alert('未実装')">p</td>
-          <td onclick="alert('未実装')">b</td>
-          <td onclick="alert('未実装')">m</td>
-          <td onclick="alert('未実装')">c</td>
-          <td onclick="alert('未実装')">x</td>
-          <td onclick="alert('未実装')">z</td>
+          <td onclick="insertAtCursor(document.getElementById('search-bar'), 'p')">p</td>
+          <td onclick="insertAtCursor(document.getElementById('search-bar'), 'b')">b</td>
+          <td onclick="insertAtCursor(document.getElementById('search-bar'), 'm')">m</td>
+          <td onclick="insertAtCursor(document.getElementById('search-bar'), 'c')">c</td>
+          <td onclick="insertAtCursor(document.getElementById('search-bar'), 'x')">x</td>
+          <td onclick="insertAtCursor(document.getElementById('search-bar'), 'z')">z</td>
         </tr>
         <tr>
-          <td onclick="alert('未実装')">t</td>
-          <td onclick="alert('未実装')">d</td>
-          <td onclick="alert('未実装')">n</td>
-          <td onclick="alert('未実装')">l</td>
-          <td onclick="alert('未実装')">k</td>
-          <td onclick="alert('未実装')">a</td>
+          <td onclick="insertAtCursor(document.getElementById('search-bar'), 't')">t</td>
+          <td onclick="insertAtCursor(document.getElementById('search-bar'), 'd')">d</td>
+          <td onclick="insertAtCursor(document.getElementById('search-bar'), 'n')">n</td>
+          <td onclick="insertAtCursor(document.getElementById('search-bar'), 'l')">l</td>
+          <td onclick="insertAtCursor(document.getElementById('search-bar'), 'k')">k</td>
+          <td onclick="insertAtCursor(document.getElementById('search-bar'), 'a')">a</td>
         </tr>
         <tr>
-          <td onclick="alert('未実装')">e</td>
-          <td onclick="alert('未実装')">i</td>
-          <td onclick="alert('未実装')">u</td>
-          <td onclick="alert('未実装')">o</td>
-          <td onclick="alert('未実装')">j</td>
-          <td onclick="alert('未実装')">w</td>
+          <td onclick="insertAtCursor(document.getElementById('search-bar'), 'e')">e</td>
+          <td onclick="insertAtCursor(document.getElementById('search-bar'), 'i')">i</td>
+          <td onclick="insertAtCursor(document.getElementById('search-bar'), 'u')">u</td>
+          <td onclick="insertAtCursor(document.getElementById('search-bar'), 'o')">o</td>
+          <td onclick="insertAtCursor(document.getElementById('search-bar'), 'j')">j</td>
+          <td onclick="insertAtCursor(document.getElementById('search-bar'), 'w')">w</td>
         </tr>
       </table>
     </div>
