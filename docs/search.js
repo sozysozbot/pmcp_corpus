@@ -1,5 +1,5 @@
 function get_matches(regex_str) {
-    return CORPUS.filter(item => item.pmcp.includes(regex_str)).map(item => {
+    return CORPUS.filter(item => item.pmcp.match(new RegExp(regex_str, "gi"))).map(item => {
         const matched_portions = [];
         /* 
         g - global 
