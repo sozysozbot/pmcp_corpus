@@ -177,3 +177,8 @@ table.keyboard td:active {
   flex-grow: 1;
   margin-right: 10px;
 }
+
+.problematic_brace {
+  font-family: Arial, Helvetica, sans-serif;
+  color: red;
+}

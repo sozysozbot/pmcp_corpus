@@ -79,15 +79,26 @@ try{
         corpusText.style.fontFamily = "rounded";
         corpusText.className = "corpus-text";
         for (const { match, beginIndex, endIndex } of matched_portions) {
+            // Basically, we want to highlight the matched portion
+            // However, in addition, we also have the constraint that anything between an `{` and a `}` should be given a special font
+
+            const internal_div = document.createElement("div");
+
             const beforeMatch = document.createTextNode(result.slice(0, beginIndex));
             const matchedPortion = document.createElement("strong");
             matchedPortion.className = "matched-portion";
             matchedPortion.textContent = match;
             const afterMatch = document.createTextNode(result.slice(endIndex));
 
-            corpusText.appendChild(beforeMatch);
-            corpusText.appendChild(matchedPortion);
-            corpusText.appendChild(afterMatch);
+            internal_div.appendChild(beforeMatch);
+            internal_div.appendChild(matchedPortion);
+            internal_div.appendChild(afterMatch);
+
+            // To account for the {} part, I'll brutally edit the resulting innerHTML:
+
+            internal_div.innerHTML = handle_brace(internal_div.innerHTML);
+
+            corpusText.appendChild(internal_div);
             corpusText.appendChild(document.createElement("hr"));
         }
         div.appendChild(corpusText);
@@ -130,3 +141,7 @@ try{
 }
 }
 
+function handle_brace(str) {
+    // This is a brutal hack that can potentially destroy the DOM structure, but who cares?
+    return str.replaceAll(/(\{[\s\S]*\})/g, "<span class='problematic_brace'>$1</span>");
+}
