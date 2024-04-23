@@ -11,4 +11,7 @@ function insertAtCursor(inputElement, textToInsert) {
 
   // Move the cursor after the inserted text
   inputElement.setSelectionRange(start + textToInsert.length, start + textToInsert.length);
+
+  // Since the `oninput` event is not triggered, I have to manually run it
+  display_result();
 }
