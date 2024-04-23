@@ -7786,7 +7786,7 @@ const CORPUS = [
   },
   {
     "source": "我々の遊戯",
-    "pmcp": "p letit 7leti kinunzaleti bapala pi b letit 2leti pi m letit 1leti pi b molkait jo kaleti xot. jo kaleti nole, p letit tude下2leti kin jo b (letit kije 2leti kin jo b). ka e jo 下1(ka e 6下7) cucnit xeplata leti atakecit leti 2leti kin. m letit tude 5(ke e 6下1) jo b.",
+    "pmcp": "p letit 7leti kinunzaleti bapala pi b letit 2leti pi m letit 1leti pi b molkait jo kaleti xot. jo kaleti nole, p letit tude下2leti kin jo b (letit kije 2leti kin jo b). ka e jo 下1(ka e 6下7) cucnit xeplata leti atakecit leti 2leti kin. m letit tude 5(ka e 6下1) jo b.",
     "direct_ja": "",
     "ja": "甲が7、乙が2、丙が1の公開札を持っていて、乙がこの季節の勝者となった場合、甲は乙に(6-7)=-1に親の加点2を掛けた-2点を支払い（＝乙から2点をもらい）、丙は乙に(6-1)=5点を支払う。",
     "en": ""
@@ -8360,7 +8360,7 @@ const CORPUS = [
   },
   {
     "source": "我々の遊戯",
-    "pmcp": "keco, 筆(6leti) mol pi cene kaceit 筆(6leti) o cene kaceit 兵(1) at 弓(2) at 車(3) o cene kaceit 無(0) at 車(3) at車(3) o et.",
+    "pmcp": "keco, 筆(6leti) mol pi cene kaceit 筆(6leti) o cene kaceit 兵(1) at 弓(2) at 車(3) o cene kaceit 無(0) at 車(3) at 車(3) o et.",
     "direct_ja": "",
     "ja": "例えば、【筆】(6)が出ていれば、【筆】(6)を出すか、例えば、【兵】(1)と【弓】(2)と【車】(3)や、【無】(0)と【車】(3)と【車】(3)のような札を出すことができる。",
     "en": ""

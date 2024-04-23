@@ -1110,7 +1110,7 @@ PMCF ポスター	INUCA.KETACUKA		イヌサ・ケタスカ
 我々の遊戯	molkaleti lata e xeplata pi cucnit xeplata leti atakecit leti kin jo ka.		軸人の場合、これに親の加点を掛け算する。			
 我々の遊戯	- kinpit leti lacila		- 点数計算例			
 我々の遊戯	ka e p at b at m belpicit pi p e xeplata pi xeplata leti atakecit leti paujun e makleti nole leti lacila.		甲、乙、丙でゲームを行っていて、甲が親、親の加点が2である場合の計算例を示す。			
-我々の遊戯	p letit 7leti kinunzaleti bapala pi b letit 2leti pi m letit 1leti pi b molkait jo kaleti xot. jo kaleti nole, p letit tude下2leti kin jo b (letit kije 2leti kin jo b). ka e jo 下1(ka e 6下7) cucnit xeplata leti atakecit leti 2leti kin. m letit tude 5(ke e 6下1) jo b.		甲が7、乙が2、丙が1の公開札を持っていて、乙がこの季節の勝者となった場合、甲は乙に(6-7)=-1に親の加点2を掛けた-2点を支払い（＝乙から2点をもらい）、丙は乙に(6-1)=5点を支払う。			
+我々の遊戯	p letit 7leti kinunzaleti bapala pi b letit 2leti pi m letit 1leti pi b molkait jo kaleti xot. jo kaleti nole, p letit tude下2leti kin jo b (letit kije 2leti kin jo b). ka e jo 下1(ka e 6下7) cucnit xeplata leti atakecit leti 2leti kin. m letit tude 5(ka e 6下1) jo b.		甲が7、乙が2、丙が1の公開札を持っていて、乙がこの季節の勝者となった場合、甲は乙に(6-7)=-1に親の加点2を掛けた-2点を支払い（＝乙から2点をもらい）、丙は乙に(6-1)=5点を支払う。			
 我々の遊戯	終季 taxot		終季（終季：タショッ）			
 我々の遊戯	jo kaleti belpic aucleti lata letit 5leti bapala jo pac. xelit lauzait lucucleti kopzo leti cela jo 6leti bapala leti julo pi mak-mak iceit 1leti bapala pi nipit 1leti bapala.		このゲームでは、初期手札5枚から札を1枚引いて捨てることを繰り返し、6枚で上がり形を作ることを目指す⁷。			
 我々の遊戯	pac it leti cul		準備			
@@ -1192,7 +1192,7 @@ PMCF ポスター	INUCA.KETACUKA		イヌサ・ケタスカ
 我々の遊戯	pac it leti cul		準備			
 我々の遊戯	aucleti lata letit 6leti kopzo pi kinunzait 2leti bapala pi tectelit xeplata. jo kaleti belpic kinunzait leti bapala leti alailen e "lime"		各プレーヤーに6枚ずつ配り、山札から2枚を公開札として配置する。その後、親を決定する。                                このゲームでは最初に置かれた公開札をそれぞれ道と呼ぶ。			
 我々の遊戯	lata kaceit bapala (cet) jo lime. jo kaleti nole, kaceit leti bapala leti tek deliju e panleti jo belpic leti polto mol bapala leti kin.		プレーヤーは場の道に対し、合計値が接続する場の札の数と同じになるように出す。			
-我々の遊戯	keco, 筆(6leti) mol pi cene kaceit 筆(6leti) o cene kaceit 兵(1) at 弓(2) at 車(3) o cene kaceit 無(0) at 車(3) at車(3) o et.		例えば、【筆】(6)が出ていれば、【筆】(6)を出すか、例えば、【兵】(1)と【弓】(2)と【車】(3)や、【無】(0)と【車】(3)と【車】(3)のような札を出すことができる。			
+我々の遊戯	keco, 筆(6leti) mol pi cene kaceit 筆(6leti) o cene kaceit 兵(1) at 弓(2) at 車(3) o cene kaceit 無(0) at 車(3) at 車(3) o et.		例えば、【筆】(6)が出ていれば、【筆】(6)を出すか、例えば、【兵】(1)と【弓】(2)と【車】(3)や、【無】(0)と【車】(3)と【車】(3)のような札を出すことができる。			
 我々の遊戯	jo atakecit leti, cene panit makleti lime. keco, 兵(1leti) leti lime at 兵(1leti) leti lime mol pi cene kaceit 弓(2) leti kopzo.		また、二つの道を統合することもできる。例えば、【兵】(1)の道と、【兵】(1)の道があれば、【弓】(2)を出すことができる。			
 我々の遊戯	nip cene amolit o celene nip amolit pi deliju iceit jo lukxe pi delu atakecit lime.		札が出せない、もしくは出したくない場合は、山札から引いて道を増やす。			
 我々の遊戯	mak-mak it ka pi amolit aucleti bapala leti lata molkait.		以上を繰り返し、全て札を出し切ったプレーヤーが勝利する。			
