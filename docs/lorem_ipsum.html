@@ -1,4 +1,4 @@
-<script src="./trigram.js"></script>
+<script src="./trigrams.js"></script>
 <script>
 
 // From {"a": 2, "b": 3}, choose "a" with 2/5 probability and "b" with 3/5 probability
@@ -16,17 +16,18 @@ function choose_random(obj, keys) {
 }
 
 function gen() {
-  let result = choose_random(obj);
+  let result = choose_random(TRIGRAMS);
   for (let i = 0; i < 1000; i++) {
     let two = result.slice(-2);
 
     // Find all the keys that start with the last two characters of the result
-    const keys = Object.keys(obj);
+    const keys = Object.keys(TRIGRAMS);
     const candidates = keys.filter(key => key.startsWith(two));
-    let next = choose_random(obj, candidates);
-    console.log(next);
+    let next = choose_random(TRIGRAMS, candidates);
+    // console.log(next);
     result += next[2];
   }
+  return result;
 }
 
 document.write(gen());
