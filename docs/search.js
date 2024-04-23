@@ -18,7 +18,18 @@ function get_matches(regex_str) {
     });
 }
 
+let controller = null;
+
 async function display_result() {
+    // If there's an ongoing task, cancel it
+     if (controller) {
+        controller.abort();
+    }
+
+    // Create a new controller for the new task
+    controller = new AbortController();
+    const signal = controller.signal;
+
     const search_string = document.getElementById("search-bar").value;
 
     if (search_string === "") {
@@ -29,7 +40,7 @@ async function display_result() {
 
     document.getElementById("search-count").style.visibility = "visible";
 
-
+try{
     const items = get_matches(search_string);
 
     const search_count = items.map(item => item.matched_portions.length).reduce((a, b) => a + b, 0);
@@ -53,6 +64,10 @@ async function display_result() {
     document.getElementById("results-section").innerHTML = "";
 
     for (const item of items) {
+        // Check if the task has been cancelled
+        if (signal.aborted) {
+            throw new Error("cancelled");
+        }
         const { pmcp, ja } = item.item;
         const { matched_portions } = item;
 
@@ -106,5 +121,12 @@ async function display_result() {
         document.getElementById("results-section").appendChild(div);
         await new Promise(resolve => setTimeout(resolve, 0));
     }
+} catch(err) {
+    if (err.name === 'AbortError') {
+        // Do nothing
+    } else {
+        throw err;
+    }
+}
 }
 
