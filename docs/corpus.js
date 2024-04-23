@@ -7296,9 +7296,9 @@ const CORPUS = [
   },
   {
     "source": "我々の遊戯",
-    "pmcp": "一枚の札の色。黒と赤の2種類がある。",
+    "pmcp": "ka e bapala leti dec. delneleti at ludecleti mol.",
     "direct_ja": "",
-    "ja": "ka e bapala leti dec. delneleti at ludecleti mol.",
+    "ja": "一枚の札の色。黒と赤の2種類がある。",
     "en": ""
   },
   {
@@ -8073,7 +8073,7 @@ const CORPUS = [
   },
   {
     "source": "我々の遊戯",
-    "pmcp": "jo kaleti belpic lata bil値が「2」「4」「6」「8」「10」「12」の時、「2」「4」「6」「8」の駒が始まりの場所である。ateit kinunzait leti bapala at kopzo pi lauzait cunetleti dat pi amolit kin pi elmeit.",
+    "pmcp": "jo kaleti belpic lata bilateit kinunzait leti bapala at kopzo pi lauzait cunetleti dat pi amolit kin pi elmeit.",
     "direct_ja": "",
     "ja": "このゲームでは、共通の公開札と手札を組み合わせてより強い役を作り、点数を賭けた後に勝負する⁸。",
     "en": ""
