@@ -159,5 +159,5 @@ try{
 
 function handle_brace(str) {
     // This is a brutal hack that can potentially destroy the DOM structure, but who cares?
-    return str.replaceAll(/(\{[\s\S]*\})/g, "<span class='problematic_brace'>$1</span>");
+    return str.replaceAll(/(\{[\s\S]*?\})/g, "<span class='problematic_brace'>$1</span>");
 }
