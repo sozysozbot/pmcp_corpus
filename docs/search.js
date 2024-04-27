@@ -78,7 +78,9 @@ try{
         div.className = "searched-item";
 
         const corpusText = document.createElement("div");
-        corpusText.style.fontFamily = "rounded";
+        if (!location.href.includes("search_")) {
+            corpusText.style.fontFamily = "rounded";
+        }
         corpusText.className = "corpus-text";
         for (const { match, beginIndex, endIndex } of matched_portions) {
             // Basically, we want to highlight the matched portion
