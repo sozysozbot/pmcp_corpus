@@ -101,6 +101,9 @@ const HYPERLINKS = {
     "https://docs.google.com/document/d/1kuVKX8Hb13o2nLRk9wtARFzvvMThSG2NG-9mJravPX0/edit",
     "https://github.com/yasusho/lanerme_traditional_games/blob/cdfd0d02e634d57d207d3f5bf94c321f359aef60/%E3%82%B2%E3%83%A0%E3%83%9E2023/%E6%88%91%E3%80%85%E3%81%AE%E9%81%8A%E6%88%AF.pdf"
   ],
+  "2023年5月ゲムマ収録漏れ資料": [
+    "https://docs.google.com/document/d/1Izia_aEB_UPlU0iy5pSY5yLOnnVuDFxk6BfEKRAgWr0/edit"
+  ],
   "筆兵無傾AdC広報処コメント": [
     "https://docs.google.com/document/d/18MZKAB2-2_0_p5npWBpjplr-tzXIiMjEz0WvNqd0t4w/edit",
     "https://ail-mo-leti-cep.github.io/blog/advent-calendar-20231201/"
@@ -119,5 +122,8 @@ const HYPERLINKS = {
   ],
   "製造業者紹介チラシ": [
     "https://github.com/yasusho/lanerme_traditional_games/blob/master/%E3%82%B2%E3%83%A0%E3%83%9E2023%E7%A7%8B/%E8%A3%BD%E9%80%A0%E6%A5%AD%E8%80%85%E7%B4%B9%E4%BB%8B%E3%83%81%E3%83%A9%E3%82%B7.pdf"
+  ],
+  "異世界に転生したけど日本語が通じなかった": [
+    "https://kakuyomu.jp/works/1177354054883808252"
   ]
 };

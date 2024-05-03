@@ -1175,9 +1175,9 @@ PMCF ポスター	INUCA.KETACUKA		イヌサ・ケタスカ
 我々の遊戯	pac it leti cul		準備			
 我々の遊戯	aucleti lata letit panleti kin leti kopzo pi tectelit xeplata.		プレーヤー全員に均等に札を配る。親を決定する。			
 我々の遊戯	bapala leti zelena at dat		札の強さと役			
-我々の遊戯	zelena                                - papelleti		札の強さ…通常通り。			
-我々の遊戯	dat                                - panleti, 2leti mena, 3leti o xep mena, laiju leti kin (3leti o xep), laiju leti kin leti mena		札の役…一枚・2枚セット・3枚以上のセット・連番（三枚以上）・連番のセットを用いることができる。			
-我々の遊戯	dec                                - jo kaleti belpic xenkanit bapala leti dec.		札の色…このゲームでは、札の色を無視する。			
+我々の遊戯	zelena - papelleti		札の強さ…通常通り。			
+我々の遊戯	dat - panleti, 2leti mena, 3leti o xep mena, laiju leti kin (3leti o xep), laiju leti kin leti mena		札の役…一枚・2枚セット・3枚以上のセット・連番（三枚以上）・連番のセットを用いることができる。			
+我々の遊戯	dec - jo kaleti belpic xenkanit bapala leti dec.		札の色…このゲームでは、札の色を無視する。			
 我々の遊戯	bapala leti xon anpe		札の特殊効果			
 我々の遊戯	将                                kinpit kaceit leti 将 pi delu it launza leti panleti. lukupit kinpit leti kin leti zelena pi nipit kaleti auc. jo et, jo nipit leti bapela jo kopzo atakecit kinpit leti kin leti bapela.		将…将を出した枚数分好きな強さの札を宣言し、その強さの全てをゲームから除外する。あるいは、将を出した枚数分捨て札の中から手札に加える。			
 我々の遊戯	jo laiju leti mena		- 連番のセットについて			
@@ -1320,6 +1320,9 @@ PMCF ポスター	INUCA.KETACUKA		イヌサ・ケタスカ
 我々の遊戯	ail mo leti cep kanteit ka pi		アイル共和国文化省 著			
 我々の遊戯	nippon cetkaik leti lata cet waxecit ka jo nippon lukup		日本机戦連盟 訳			
 我々の遊戯	papcil mol pi nippon lata delu xelit tecnok pi ail lata lukupit jo mo leti cep		問題があれば、日本の人は右（に記された連絡先）を見るべし。アイルの人は文化省に伝えよう			
+2023年5月ゲムマ収録漏れ資料	jo polapobo leti 1leti tencumital lauzait		ポラポボ１刑務所にて製作			
+2023年5月ゲムマ収録漏れ資料	MALUCTINO		粘着テープ			
+2023年5月ゲムマ収録漏れ資料	BEPAME		虫眼鏡			
 筆兵無傾AdC広報処コメント	JO NIPPON MOL AUC, CALA! MI E AIL MO LETI CEP LETI ECKIJACIL LETI POLTO LETI LILATA LETI JEGIN GATU XADOCAMMA.		日本の皆様、こんにちは。私はアイル共和国文化省広報処の事務長、イェーギン・ガートゥ・シャードザンマーである。			
 筆兵無傾AdC広報処コメント	JO KALETI NOLE MI ICEIT NIPPON CETKAIK LETI LATACET LETI PULEC PI KANTEIT TUDE LUKUP JO "筆兵無傾 {🚩advent kalendar}". 		今私は日本机戦連盟から依頼を受けて「筆兵無傾 Advent Calendar」に言葉を書く。			
 筆兵無傾AdC広報処コメント	MI JO LATACET CENOCIT KA E XELIT TUDE MI CETLETI UNDE LETI KULANUCTA CET LETI ALWE. 		私は連盟からこれが私たちの世界を取材する記事のイベントであると聞いている。			
@@ -1380,3 +1383,6 @@ discord会話	ICECLETI LATA LUC E KIN JO 1000000 LETI.		死者数は百万人に
 製造業者紹介チラシ	KIN LETI MENA		『数の友』【値之友】			
 製造業者紹介チラシ	TAUPO DIXEC LETI KECTENE		タウポ自然科学大学			
 製造業者紹介チラシ	SIKSIJU-BELPIC		『琥珀ゲームズ』【蜜石遊術】			
+異世界に転生したけど日本語が通じなかった	CI E JECLENE LATA JUN?		それはユエスレオネ人か？			
+異世界に転生したけど日本語が通じなかった	nepdale ticodel, LATA CET NIP KILE		思ったより少ないですな			
+異世界に転生したけど日本語が通じなかった	KALETI bujul NIP PANKALETI JO KILELETI		この飛行機は来るにはよくない		bujul < vyjul「飛行機」	

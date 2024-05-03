@@ -8241,21 +8241,21 @@ const CORPUS = [
   },
   {
     "source": "我々の遊戯",
-    "pmcp": "zelena                                - papelleti",
+    "pmcp": "zelena - papelleti",
     "direct_ja": "",
     "ja": "札の強さ…通常通り。",
     "en": ""
   },
   {
     "source": "我々の遊戯",
-    "pmcp": "dat                                - panleti, 2leti mena, 3leti o xep mena, laiju leti kin (3leti o xep), laiju leti kin leti mena",
+    "pmcp": "dat - panleti, 2leti mena, 3leti o xep mena, laiju leti kin (3leti o xep), laiju leti kin leti mena",
     "direct_ja": "",
     "ja": "札の役…一枚・2枚セット・3枚以上のセット・連番（三枚以上）・連番のセットを用いることができる。",
     "en": ""
   },
   {
     "source": "我々の遊戯",
-    "pmcp": "dec                                - jo kaleti belpic xenkanit bapala leti dec.",
+    "pmcp": "dec - jo kaleti belpic xenkanit bapala leti dec.",
     "direct_ja": "",
     "ja": "札の色…このゲームでは、札の色を無視する。",
     "en": ""
@@ -9255,6 +9255,27 @@ const CORPUS = [
     "en": ""
   },
   {
+    "source": "2023年5月ゲムマ収録漏れ資料",
+    "pmcp": "jo polapobo leti 1leti tencumital lauzait",
+    "direct_ja": "",
+    "ja": "ポラポボ１刑務所にて製作",
+    "en": ""
+  },
+  {
+    "source": "2023年5月ゲムマ収録漏れ資料",
+    "pmcp": "maluctino",
+    "direct_ja": "",
+    "ja": "粘着テープ",
+    "en": ""
+  },
+  {
+    "source": "2023年5月ゲムマ収録漏れ資料",
+    "pmcp": "bepame",
+    "direct_ja": "",
+    "ja": "虫眼鏡",
+    "en": ""
+  },
+  {
     "source": "筆兵無傾AdC広報処コメント",
     "pmcp": "jo nippon mol auc, cala! mi e ail mo leti cep leti eckijacil leti polto leti lilata leti jegin gatu xadocamma.",
     "direct_ja": "",
@@ -9672,6 +9693,27 @@ const CORPUS = [
     "pmcp": "siksiju-belpic",
     "direct_ja": "",
     "ja": "『琥珀ゲームズ』【蜜石遊術】",
+    "en": ""
+  },
+  {
+    "source": "異世界に転生したけど日本語が通じなかった",
+    "pmcp": "ci e jeclene lata jun?",
+    "direct_ja": "",
+    "ja": "それはユエスレオネ人か？",
+    "en": ""
+  },
+  {
+    "source": "異世界に転生したけど日本語が通じなかった",
+    "pmcp": "nepdale ticodel, lata cet nip kile",
+    "direct_ja": "",
+    "ja": "思ったより少ないですな",
+    "en": ""
+  },
+  {
+    "source": "異世界に転生したけど日本語が通じなかった",
+    "pmcp": "kaleti bujul nip pankaleti jo kileleti",
+    "direct_ja": "",
+    "ja": "この飛行機は来るにはよくない",
     "en": ""
   }
 ];
