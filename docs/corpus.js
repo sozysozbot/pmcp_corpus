@@ -2251,7 +2251,7 @@ const CORPUS = [
     "source": "アイル統一机戦書記譜例",
     "pmcp": "ni leti elme cemokoit jo nu pi e kile jo no. jo kaleti nole xiju e oleti.",
     "direct_ja": "",
-    "ja": "NIの兵をNUを経由してNOに移動して入水しょうとしたが失敗した。",
+    "ja": "NIの兵をNUを経由してNOに移動して入水しようとしたが失敗した。",
     "en": ""
   },
   {
@@ -9277,7 +9277,7 @@ const CORPUS = [
   },
   {
     "source": "筆兵無傾AdC広報処コメント",
-    "pmcp": "jo nippon mol auc, cala! mi e ail mo leti cep leti eckijacil leti polto leti lilata leti jegin gatu xadocamma.",
+    "pmcp": "jo nippon mol auc, cala! mi e ail mo leti cep leti eckijacil leti polto leti lilata leti jegin gatu xadosamma.",
     "direct_ja": "",
     "ja": "日本の皆様、こんにちは。私はアイル共和国文化省広報処の事務長、イェーギン・ガートゥ・シャードザンマーである。",
     "en": ""
@@ -9714,6 +9714,90 @@ const CORPUS = [
     "pmcp": "kaleti bujul nip pankaleti jo kileleti",
     "direct_ja": "",
     "ja": "この飛行機は来るにはよくない",
+    "en": ""
+  },
+  {
+    "source": "ゲムマ2024春広報処コメント",
+    "pmcp": "jo nippon mol auc, cala! mi e ail mo leti cep leti eckijacil leti polto leti lilata leti jegin gatu xadosamma.",
+    "direct_ja": "",
+    "ja": "日本の皆様、こんにちは。私はアイル共和国文化省広報処の事務長、イェーギン・ガートゥ・シャードザンマーです。",
+    "en": ""
+  },
+  {
+    "source": "ゲムマ2024春広報処コメント",
+    "pmcp": "mi tuwacait kaleti atime leti \"gemu maketo\" e lucuc pi nupankaleti molipleti julo cila. \"gemu maketo\" e jo nippon belpic leti alwe.",
+    "direct_ja": "",
+    "ja": "「ゲームマーケット」が無事に終わったこと、心よりお祝いを申し上げます。ゲームマーケットは日本の遊戯の祭典です。",
+    "en": ""
+  },
+  {
+    "source": "ゲムマ2024春広報処コメント",
+    "pmcp": " \"belpic, ka e lata leti liju tude jo lata leti cul, pi lata leti tude jo tataleti cul, pi lata at lata leti palbicleti cul.\"",
+    "direct_ja": "",
+    "ja": "「遊戯は人から人へと伝えられ、人々に楽しみを与え、人と人と繋ぐものである。」",
+    "en": ""
+  },
+  {
+    "source": "ゲムマ2024春広報処コメント",
+    "pmcp": "lukupit ka xale, belpic letit xep-xep metic. it kaleti alwe leti julo e pankaleti julo cila.",
+    "direct_ja": "",
+    "ja": "こう言われているように遊戯は無限の可能性を秘めたものであり、その遊戯の祭典が開かれるのは誠に素晴らしいことであります。",
+    "en": ""
+  },
+  {
+    "source": "ゲムマ2024春広報処コメント",
+    "pmcp": "jo kaleti \"gemu maketo\", nippon cetkaik leti latacet mak mol pi cuit kije mi cetleti belpic at kulante.",
+    "direct_ja": "",
+    "ja": "今回の「ゲームマーケット」では日本机戦連盟が再び参加して、我々の遊戯や本を販売していました。",
+    "en": ""
+  },
+  {
+    "source": "ゲムマ2024春広報処コメント",
+    "pmcp": " jo kaleti nole, ci boncenait kile ka jo dutucunleti. ka e ail mo leti cep kanteit tude leti \"nippon belpic\" at lekton lauzait leti \"筆兵無傾\" at xemoni lauzait leti \"耳声手片\".",
+    "direct_ja": "",
+    "ja": "今回、彼らが新たに輸入したのは、アイル文化省が書いた「日本の遊戯」とレクトン社が作った「筆兵無傾」とシェモニが作った「耳声手片」です。",
+    "en": ""
+  },
+  {
+    "source": "ゲムマ2024春広報処コメント",
+    "pmcp": ".jo \"筆兵無傾\" pijume mol pi ka e \"icco\". lata celene amolit zo jo icco pi nip nuwotit ka no bilkanit cekolata.",
+    "direct_ja": "",
+    "ja": "「筆兵無傾」では人々は駒を「国」となる船の上に置き、国を壊すことなく裏切者を見つけることを目指します。",
+    "en": ""
+  },
+  {
+    "source": "ゲムマ2024春広報処コメント",
+    "pmcp": "jo \"耳声手片\", lata cenocit lukupit ail julo leti jutata pi letit kije zo.",
+    "direct_ja": "",
+    "ja": "「耳声手片」では人々はアイルについて話す声を聞いて、対応する札を取ります。",
+    "en": ""
+  },
+  {
+    "source": "ゲムマ2024春広報処コメント",
+    "pmcp": "jo jucnukleti, mi cenocit lata cet cuit tude jo aucleti \"耳声手片\" pi cuit tude jo cetleti \"筆兵無傾\" at cetleti \"nippon belpic\" leti julo.",
+    "direct_ja": "",
+    "ja": "驚くべきことにかるたは完売し、「筆兵無傾」と「日本の遊戯」の売れ行きも好調であったということです。",
+    "en": ""
+  },
+  {
+    "source": "ゲムマ2024春広報処コメント",
+    "pmcp": "nippon lata cet xelit ail at mi cetleti unde pi mi cet xaceit jo ka.",
+    "direct_ja": "",
+    "ja": "日本の人々がアイル共和国および我々の世界を楽しんでくださっていることに感謝申し上げます。",
+    "en": ""
+  },
+  {
+    "source": "ゲムマ2024春広報処コメント",
+    "pmcp": " mi cenotit nippon cetkaik leti latacet cuit kije ka cet jo \"bucu\" pi lukupit ka. nip cene e tude jo \"gemu maketo\" leti lata delu cuit tude jo ci, metica.",
+    "direct_ja": "",
+    "ja": "「BOOTH」においてもこれらは販売される予定のため、今回の「ゲームマーケット」に来られなかった方はぜひそちらで買われることをおすすめします。",
+    "en": ""
+  },
+  {
+    "source": "ゲムマ2024春広報処コメント",
+    "pmcp": "jo lucucleti, mi mak xep xaceit jo nippon cetkaik  leti latacet at nippon lata cet at \"gemu maketo\" leti lata cet.",
+    "direct_ja": "",
+    "ja": "最後に、日本机戦連盟、日本の人々ならびにゲームマーケットの方々に今一度多大なる感謝を述べて、終わりの言葉といたします。",
     "en": ""
   }
 ];

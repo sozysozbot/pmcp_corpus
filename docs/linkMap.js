@@ -125,5 +125,8 @@ const HYPERLINKS = {
   ],
   "異世界に転生したけど日本語が通じなかった": [
     "https://kakuyomu.jp/works/1177354054883808252"
+  ],
+  "ゲムマ2024春広報処コメント": [
+    "https://ail-mo-leti-cep.github.io/blog/game-market-2024-spring/"
   ]
 };
