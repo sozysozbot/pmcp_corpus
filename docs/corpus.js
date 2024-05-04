@@ -898,7 +898,7 @@ const CORPUS = [
   },
   {
     "source": "東島通商語入門",
-    "pmcp": "nipleti, panleti, makleti, kaleti, dukaleti, jupleti, nokaleti, xantaleti, xenleti, lekkaleti, pentileti",
+    "pmcp": "nipleti, panleti, makleti (kaleti), dukaleti, jupleti, nokaleti, xantaleti, xenleti, lekkaleti, pentileti",
     "direct_ja": "",
     "ja": "0, 1, 2, 3, 4, 5, 6, 7, 8, 9",
     "en": ""
