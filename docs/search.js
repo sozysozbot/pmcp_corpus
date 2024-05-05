@@ -1,8 +1,6 @@
 "use strict";
 function get_matches(regex_str) {
-    // タイトル行を削る
-    const [_, ...corpus] = CORPUS;
-    return corpus.filter(item => item.pmcp.match(new RegExp(regex_str, "gi"))).map(item => {
+    return CORPUS.filter(item => item.pmcp.match(new RegExp(regex_str, "gi"))).map(item => {
         const matched_portions = [];
         /*
         g - global
