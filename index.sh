@@ -10,7 +10,13 @@ wget --output-file="./preprocess/logs2.csv" "https://docs.google.com/spreadsheet
 
 
 ############################################
-# 2. PREPROCESS
+# 2. PREPROCESS & GENERATE TYPESCRIPT
 ############################################
 cd preprocess
 node index.js
+
+############################################
+# 3. TRANSPILE TYPESCRIPT
+############################################
+cd ..
+tsc
