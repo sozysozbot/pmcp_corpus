@@ -15,15 +15,35 @@ const links = fs.readFileSync('links.tsv', 'utf8').split(/\r\n|\n/).map(line => 
   return { source, links };
 });
 
+const sources = [];
+
 const linkMap = links.reduce((acc, { source, links }) => {
+  sources.push(source);
   acc[source] = links;
   return acc;
 }, {});
 
-fs.writeFileSync('../docs/corpus.js', `/* AUTOMATICALLY GENERATED. DO NOT EDIT MANUALLY */
-const CORPUS = ${JSON.stringify(corpus, null, 2)};`);
-fs.writeFileSync('../docs/linkMap.js', `/* AUTOMATICALLY GENERATED. DO NOT EDIT MANUALLY */
-const HYPERLINKS = ${JSON.stringify(linkMap, null, 2)};`);
+fs.writeFileSync('../ts-src/corpus.ts', `/* AUTOMATICALLY GENERATED. DO NOT EDIT MANUALLY */
+type CorpusElem = {
+  source: string;
+  pmcp: string;
+  direct_ja: string;
+  ja: string;
+  en: string;
+};
+const CORPUS: CorpusElem[] = ${JSON.stringify(corpus.slice(1), null, 2)};`);
+fs.writeFileSync('../ts-src/linkMap.ts', `/* AUTOMATICALLY GENERATED. DO NOT EDIT MANUALLY */
+type Source = ${sources.map(s => JSON.stringify(s)).join(" | ")};
+
+const is_valid_source = (source: string): source is Source => {
+  return ${JSON.stringify(sources)}.includes(source);
+}
+
+type Hyperlinks = {
+  [key in Source]: string[]
+};
+
+const HYPERLINKS: Hyperlinks = ${JSON.stringify(linkMap, null, 2)};`);
 
 
 // trigram
@@ -45,5 +65,5 @@ for (let i = 0; i < source_text.length - 2; i++) {
   }
 }
 
-fs.writeFileSync('../docs/trigrams.js', `/* AUTOMATICALLY GENERATED. DO NOT EDIT MANUALLY */
+fs.writeFileSync('../ts-src/trigrams.ts', `/* AUTOMATICALLY GENERATED. DO NOT EDIT MANUALLY */
 const TRIGRAMS = ${JSON.stringify(trigrams, null, 2)};`);

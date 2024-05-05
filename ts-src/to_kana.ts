@@ -1,5 +1,18 @@
-"use strict";
-const KANA_TABLE = {
+type Onset = "p" | "b" | "m" | "k" | "l" | "n" | "c" | "x" | "z" | "t" | "d" | "j" | "w" | "h" | "g" | "s" | "";
+type VowelOrEmpty = "a" | "i" | "u" | "e" | "o" | "";
+
+type KanaTable = {
+    [key in Onset]: {
+        "a": string;
+        "i": string;
+        "u": string;
+        "e": string;
+        "o": string;
+        "": string | null
+    }
+};
+
+const KANA_TABLE: KanaTable = {
     'p': { 'a': 'パ', 'i': 'ピ', 'u': 'プ', 'e': 'ペ', 'o': 'ポ', '': 'ㇷ゚' },
     'b': { 'a': 'バ', 'i': 'ビ', 'u': 'ブ', 'e': 'ベ', 'o': 'ボ', '': null },
     'm': { 'a': 'マ', 'i': 'ミ', 'u': 'ム', 'e': 'メ', 'o': 'モ', '': null },
@@ -18,21 +31,26 @@ const KANA_TABLE = {
     'g': { 'a': 'ガ', 'i': 'ギ', 'u': 'グ', 'e': 'ゲ', 'o': 'ゴ', '': null },
     's': { 'a': 'ザ', 'i': 'ズィ', 'u': 'ズ', 'e': 'ゼ', 'o': 'ゾ', '': null },
 };
-function is_valid_onset(onset) {
+
+function is_valid_onset(onset: string): onset is Onset {
     return [..."pbmklncxztdjwhgs", ""].includes(onset);
 }
-function is_vowel(v) {
+
+function is_vowel(v: string): v is "a" | "i" | "u" | "e" | "o" {
     return ["a", "i", "u", "e", "o"].includes(v);
 }
-function is_vowel_or_empty(v) {
+
+function is_vowel_or_empty(v: string): v is VowelOrEmpty {
     return ["a", "i", "u", "e", "o", ""].includes(v);
 }
-function to_kana(str) {
+
+function to_kana(str: string) {
     const whole_word = str;
     const MONOSYLLABLE = /^([pbmklncxztdjwhgs]?)([aeiou])([ptkcln](?![aeiou])|)/;
     let ans = "";
+
     while (str != "") {
-        const [syll, onset, vowel, coda] = str.match(MONOSYLLABLE) ?? (() => { throw new Error(`In word "${whole_word}"\nCannot read off a syllable from the beginning of the substring "${str}"`); })();
+        const [syll, onset, vowel, coda] = str.match(MONOSYLLABLE) ?? (() => { throw new Error(`In word "${whole_word}"\nCannot read off a syllable from the beginning of the substring "${str}"`) })();
         if (!is_valid_onset(onset)) {
             throw new Error(`In word "${whole_word}"\nInvalid onset "${onset}" in syllable "${syll}"`);
         }
@@ -49,7 +67,8 @@ function to_kana(str) {
     }
     return ans;
 }
-function kana_words(form) {
+
+function kana_words(form: string) {
     const normalized = form.toLowerCase();
     const spacing = '·';
     console.log(spacing);
