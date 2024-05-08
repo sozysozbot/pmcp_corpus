@@ -39,13 +39,30 @@ async function display_result() {
     if (search_string === "") {
         document.getElementById("search-count")!.style.visibility = "hidden";
         document.getElementById("results-section")!.textContent = "東島通商語コーパス検索システム「ビシェ」へようこそ。";
+        document.getElementById("search-bar")!.style.backgroundColor = "#ffffff";
         return;
     }
 
     document.getElementById("search-count")!.style.visibility = "visible";
 
     try {
-        const items = get_matches(search_string);
+        let items: {
+            item: CorpusElem;
+            matched_portions: {
+                match: string;
+                beginIndex: number;
+                endIndex: number;
+            }[];
+        }[];
+        try {
+            items = get_matches(search_string);
+        } catch (e) {
+            // RegExp compilation failed
+            document.getElementById("search-count")!.textContent = "正規表現の構文エラーです。";
+            document.getElementById("search-bar")!.style.backgroundColor = "#ffaaaa";
+            return;
+        }
+        document.getElementById("search-bar")!.style.backgroundColor = "#ffffff";
 
         const search_count = items.map(item => item.matched_portions.length).reduce((a, b) => a + b, 0);
         document.getElementById("search-count")!.textContent = search_count === 0 ? "見つかりませんでした。" : search_count + " 個見つかりました。"
