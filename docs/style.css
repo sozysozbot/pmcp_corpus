@@ -116,6 +116,7 @@ table.keyboard td:active {
 .matched-portion {
   font-weight: normal;
   background-color: #F8C9AB;
+  padding: 0 1.5px;
 }
 
 .toggle_input {
