@@ -191,6 +191,7 @@ async function display_result() {
                 const a = document.createElement("a");
                 a.href = url;
                 a.textContent = url;
+                a.target = "_blank";
                 const li = document.createElement("li");
                 li.appendChild(a);
                 ul.appendChild(li);
