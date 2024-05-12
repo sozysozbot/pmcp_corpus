@@ -125,7 +125,10 @@ async function display_result() {
 
                 const beforeMatch = document.createTextNode(result.slice(0, beginIndex));
                 const matchedPortion = document.createElement("strong");
-                matchedPortion.className = "matched-portion";
+                matchedPortion.classList.add("matched-portion");
+                if (beginIndex === endIndex) {
+                    matchedPortion.classList.add("zero-width");
+                }
                 matchedPortion.textContent = match;
                 const afterMatch = document.createTextNode(result.slice(endIndex));
 

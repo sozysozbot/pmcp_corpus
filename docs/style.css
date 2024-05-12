@@ -116,6 +116,9 @@ table.keyboard td:active {
 .matched-portion {
   font-weight: normal;
   background-color: #F8C9AB;
+}
+
+.zero-width {
   padding: 0 1.5px;
 }
 
