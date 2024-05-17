@@ -161,13 +161,18 @@ function getCorpusTextElement(pmcp_text, matched_portions) {
         internal_div.appendChild(matchedPortion);
         internal_div.appendChild(afterMatch);
         // To account for the {} part, I'll brutally edit the resulting innerHTML:
-        internal_div.innerHTML = handle_brace(internal_div.innerHTML);
+        // To add text tooltip to `PI`, I'll brutally edit the resulting innerHTML:
+        internal_div.innerHTML = handle_pi(handle_brace(internal_div.innerHTML));
         corpusText.appendChild(internal_div);
         corpusText.appendChild(document.createElement("hr"));
     }
     return corpusText;
 }
-function handle_brace(str) {
+function handle_brace(innerHTML) {
     // This is a brutal hack that can potentially destroy the DOM structure, but who cares?
-    return str.replaceAll(/(\{[\s\S]*?\})/g, "<span class='problematic_brace'>$1</span>");
+    return innerHTML.replaceAll(/(\{[\s\S]*?\})/g, "<span class='problematic_brace'>$1</span>");
+}
+function handle_pi(innerHTML) {
+    // This is a brutal hack that can potentially destroy the DOM structure, which will surely bite me in the future
+    return innerHTML.replaceAll(/\bpi\b/g, `<span class="hover-text"><span class="main-text">pi</span><span class="tooltip-text bottom-tooltip-text"><span class="tooltip-headword">PI</span><span class="tooltip-pronunciation" lang="ja">［ピ］</span><br><span class="tooltip-word-description" lang="ja"><span class="tooltip-part-of-speech">文接続詞</span>～して、～したが、～すると</span></span></span>`);
 }
