@@ -96,14 +96,11 @@ async function display_result() {
             if (signal.aborted) {
                 throw new Error("cancelled");
             }
-            const { pmcp, ja, direct_ja, en } = item.item;
+            const { pmcp: pmcp_text, ja, direct_ja, en } = item.item;
             const { matched_portions } = item;
-
-            let result = pmcp;
-
             const kana = (() => {
                 try {
-                    return kana_words(result);
+                    return kana_words(pmcp_text);
                 } catch (e) {
                     return "";
                 }
@@ -111,39 +108,7 @@ async function display_result() {
 
             const div = document.createElement("div");
             div.className = "searched-item";
-
-            const corpusText = document.createElement("div");
-            if (!location.href.includes("search_")) {
-                corpusText.style.fontFamily = "rounded";
-            }
-            corpusText.className = "corpus-text";
-            for (const { match, beginIndex, endIndex } of matched_portions) {
-                // Basically, we want to highlight the matched portion
-                // However, in addition, we also have the constraint that anything between an `{` and a `}` should be given a special font
-
-                const internal_div = document.createElement("div");
-
-                const beforeMatch = document.createTextNode(result.slice(0, beginIndex));
-                const matchedPortion = document.createElement("strong");
-                matchedPortion.classList.add("matched-portion");
-                if (beginIndex === endIndex) {
-                    matchedPortion.classList.add("zero-width");
-                }
-                matchedPortion.textContent = match;
-                const afterMatch = document.createTextNode(result.slice(endIndex));
-
-                internal_div.appendChild(beforeMatch);
-                internal_div.appendChild(matchedPortion);
-                internal_div.appendChild(afterMatch);
-
-                // To account for the {} part, I'll brutally edit the resulting innerHTML:
-
-                internal_div.innerHTML = handle_brace(internal_div.innerHTML);
-
-                corpusText.appendChild(internal_div);
-                corpusText.appendChild(document.createElement("hr"));
-            }
-            div.appendChild(corpusText);
+            div.appendChild(getCorpusTextElement(pmcp_text, matched_portions));
 
             if (kana != "") {
                 const transliteration = document.createElement("div");
@@ -213,6 +178,54 @@ async function display_result() {
             throw e;
         }
     }
+}
+
+/**
+ * The basic functionality is to highlight the matched portion.
+ * That is, we want
+ * 
+ *  <div class="corpus-text">icco <strong class="matched-portion">cecnutit</strong> lata pi lata cecnutit icco</div>
+ * 
+ * However, the tricky thing is that
+ * - anything between an `{` and a `}` should be given a special font
+ * - we also want to add tooltips to each word
+ * 
+ * which makes the whole thing so much trickier.
+ */
+function getCorpusTextElement(pmcp_text: string, matched_portions: {
+    match: string;
+    beginIndex: number;
+    endIndex: number;
+}[]): HTMLDivElement {
+    const corpusText = document.createElement("div");
+    if (!location.href.includes("search_")) {
+        corpusText.style.fontFamily = "rounded";
+    }
+    corpusText.className = "corpus-text";
+    for (const { match, beginIndex, endIndex } of matched_portions) {
+        const internal_div = document.createElement("div");
+
+        const beforeMatch = document.createTextNode(pmcp_text.slice(0, beginIndex));
+        const matchedPortion = document.createElement("strong");
+        matchedPortion.classList.add("matched-portion");
+        if (beginIndex === endIndex) {
+            matchedPortion.classList.add("zero-width");
+        }
+        matchedPortion.textContent = match;
+        const afterMatch = document.createTextNode(pmcp_text.slice(endIndex));
+
+        internal_div.appendChild(beforeMatch);
+        internal_div.appendChild(matchedPortion);
+        internal_div.appendChild(afterMatch);
+
+        // To account for the {} part, I'll brutally edit the resulting innerHTML:
+
+        internal_div.innerHTML = handle_brace(internal_div.innerHTML);
+
+        corpusText.appendChild(internal_div);
+        corpusText.appendChild(document.createElement("hr"));
+    }
+    return corpusText;
 }
 
 function handle_brace(str: string) {
