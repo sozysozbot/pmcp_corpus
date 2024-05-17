@@ -10,6 +10,24 @@
  * - we also want to add tooltips to each word
  * 
  * which makes the whole thing so much trickier.
+ 
+
+- 検索ハイライトは単に背景色がつくだけであり、その背景色付与は単一の HTML タグによって行わなくてもよい
+- 単語ツールチップは単一タグで行うことがマスト
+- 波カッコ内部においては単語ツールチップが出ることはないが、検索ハイライトはつく
+
+
+ということで、設計はこうあるべき：
+
+テキストは「単語」と「非単語」に分けられる
+- 「非単語」はパンクチュエーションやスペースや燐字や波カッコ
+
+マッチがゼロ幅であれば：
+    「非単語」の一種としてカーソル用の空 span を配置すればよい
+
+そうでなければ：
+    各文字はハイライトされるかどうかの 2 値を持つ。これは「単語」と「非単語」に分けられたやつとは独立に作用する。
+
  */
 function getSinglyHighlightedLine(o: { full_text: string, beginIndex: number, endIndex: number, match: string }) {
     const single_line = document.createElement("div");
