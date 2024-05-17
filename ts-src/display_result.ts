@@ -79,9 +79,21 @@ async function display_result() {
                 }
             })();
 
-            const div = document.createElement("div");
-            div.className = "searched-item";
-            div.appendChild(getCorpusTextElement(pmcp_text, matched_portions));
+            const searched_item = document.createElement("div");
+            searched_item.className = "searched-item";
+
+            {
+                const corpusText = document.createElement("div");
+                if (!location.href.includes("search_")) {
+                    corpusText.style.fontFamily = "rounded";
+                }
+                corpusText.className = "corpus-text";
+                for (const { match, beginIndex, endIndex } of matched_portions) {
+                    corpusText.appendChild(getSinglyHighlightedLine({ full_text: pmcp_text, beginIndex, endIndex, match }));
+                    corpusText.appendChild(document.createElement("hr"));
+                }
+                searched_item.appendChild(corpusText);
+            }
 
             if (kana != "") {
                 const transliteration = document.createElement("div");
@@ -89,30 +101,30 @@ async function display_result() {
                 transliteration.style.fontSize = "90%";
                 transliteration.style.color = "#424242";
 
-                div.appendChild(transliteration);
-                div.appendChild(document.createElement("hr"));
+                searched_item.appendChild(transliteration);
+                searched_item.appendChild(document.createElement("hr"));
             }
 
             const translationJa = document.createElement("div");
             translationJa.className = "translation-ja";
             translationJa.textContent = ja;
-            div.appendChild(translationJa);
+            searched_item.appendChild(translationJa);
 
             if (direct_ja !== "") {
                 const translationJaDirect = document.createElement("div");
                 translationJaDirect.className = "translation-ja-direct";
                 translationJaDirect.textContent = direct_ja;
-                div.appendChild(translationJaDirect);
+                searched_item.appendChild(translationJaDirect);
             }
 
             if (en !== "") {
                 const translationEn = document.createElement("div");
                 translationEn.className = "translation-en";
                 translationEn.textContent = en;
-                div.appendChild(translationEn);
+                searched_item.appendChild(translationEn);
             }
 
-            div.appendChild(document.createElement("hr"));
+            searched_item.appendChild(document.createElement("hr"));
 
             const details = document.createElement("details");
             const summary = document.createElement("summary");
@@ -135,9 +147,9 @@ async function display_result() {
                 ul.appendChild(li);
             }
 
-            div.appendChild(details);
+            searched_item.appendChild(details);
 
-            document.getElementById("results-section")!.appendChild(div);
+            document.getElementById("results-section")!.appendChild(searched_item);
             await new Promise(resolve => setTimeout(resolve, 0));
         }
     } catch (e: unknown) {
@@ -157,7 +169,7 @@ async function display_result() {
  * The basic functionality is to highlight the matched portion.
  * That is, we want
  * 
- *  <div class="corpus-text">icco <strong class="matched-portion">cecnutit</strong> lata pi lata cecnutit icco</div>
+ *  <div>icco <strong class="matched-portion">cecnutit</strong> lata pi lata cecnutit icco</div>
  * 
  * However, the tricky thing is that
  * - anything between an `{` and a `}` should be given a special font
@@ -165,39 +177,26 @@ async function display_result() {
  * 
  * which makes the whole thing so much trickier.
  */
-function getCorpusTextElement(pmcp_text: string, matched_portions: {
-    match: string;
-    beginIndex: number;
-    endIndex: number;
-}[]): HTMLDivElement {
-    const corpusText = document.createElement("div");
-    if (!location.href.includes("search_")) {
-        corpusText.style.fontFamily = "rounded";
+function getSinglyHighlightedLine(o: { full_text: string, beginIndex: number, endIndex: number, match: string }) {
+    const single_line = document.createElement("div");
+
+    const beforeMatch = document.createTextNode(o.full_text.slice(0, o.beginIndex));
+    const matchedPortion = document.createElement("strong");
+    matchedPortion.classList.add("matched-portion");
+    if (o.beginIndex === o.endIndex) {
+        matchedPortion.classList.add("zero-width");
     }
-    corpusText.className = "corpus-text";
-    for (const { match, beginIndex, endIndex } of matched_portions) {
-        const internal_div = document.createElement("div");
+    matchedPortion.textContent = o.match;
+    const afterMatch = document.createTextNode(o.full_text.slice(o.endIndex));
 
-        const beforeMatch = document.createTextNode(pmcp_text.slice(0, beginIndex));
-        const matchedPortion = document.createElement("strong");
-        matchedPortion.classList.add("matched-portion");
-        if (beginIndex === endIndex) {
-            matchedPortion.classList.add("zero-width");
-        }
-        matchedPortion.textContent = match;
-        const afterMatch = document.createTextNode(pmcp_text.slice(endIndex));
+    single_line.appendChild(beforeMatch);
+    single_line.appendChild(matchedPortion);
+    single_line.appendChild(afterMatch);
 
-        internal_div.appendChild(beforeMatch);
-        internal_div.appendChild(matchedPortion);
-        internal_div.appendChild(afterMatch);
-
-        // To account for the {} part, I'll brutally edit the resulting innerHTML:
-        // To add text tooltip to `PI`, I'll brutally edit the resulting innerHTML:
-        internal_div.innerHTML = handle_pi(handle_brace(internal_div.innerHTML));
-        corpusText.appendChild(internal_div);
-        corpusText.appendChild(document.createElement("hr"));
-    }
-    return corpusText;
+    // To account for the {} part, I'll brutally edit the resulting innerHTML:
+    // To add text tooltip to `PI`, I'll brutally edit the resulting innerHTML:
+    single_line.innerHTML = handle_pi(handle_brace(single_line.innerHTML));
+    return single_line;
 }
 
 function handle_brace(innerHTML: string) {
