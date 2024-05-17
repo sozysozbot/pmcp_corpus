@@ -21,8 +21,20 @@
 
 .hover-text {
     position: relative;
-    display: inline-block;
-    margin: 30px;
-    font-family: Arial;
-    text-align: center;
+}
+
+.tooltip-word-description {
+    font-family: initial;
+}
+
+.tooltip-part-of-speech {
+    border: 1px solid #f2b9b9;
+    padding: 1.5px;
+    color: #f2b9b9;
+}
+
+.tooltip-headword {
+    font-family: ycaxen_medium;
+    font-size: 120%;
+    letter-spacing: 0.03em;
 }
