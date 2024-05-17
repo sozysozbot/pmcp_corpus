@@ -1,0 +1,120 @@
+<html>
+
+<head>
+  <title>東島通商語コーパス検索システム「ビシェ」</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="tooltip.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header>
+    <div style="display: flex; justify-content: center; align-items: flex-start;">
+      <a href="search_.html" style="display: inline-flex; align-items: center; text-decoration: none; color: inherit;">
+        <div style="font-size: 30px; transform: translate(6px,-2px) rotate(-135deg);">🔍</div>
+        <div style="font-family: 'syt2ten1'; font-size: 50px; letter-spacing: 2px">ixe</div>
+      </a>
+    </div>
+    <div>東島通商語コーパス検索システム「ビシェ」</div>
+    <section id="search-section">
+      <div class="search-container">
+        <input type="text" id="search-bar" placeholder="正規表現で検索" value="" accesskey="f" autocapitalize="none"
+          autocomplete="off" oninput="display_result()" style="background-color: rgb(255, 255, 255);">
+        <div class="toggle_button">
+          <span style="letter-spacing: -2px;">㗊㗊㗊</span>
+          <input id="toggle_keyboard_balloon" class="toggle_input" type="checkbox" checked="false">
+          <label for="toggle_keyboard_balloon" class="toggle_label">
+          </label>
+        </div>
+      </div>
+    </section>
+    <div class="balloon" id="keyboard_balloon" style="position: absolute; right: 20px; display: none;">
+      <table class="keyboard" style="font-family: 'xedixel';">
+        <tbody>
+          <tr>
+            <td onclick="insertAtCursor(document.getElementById('search-bar'), 'p')">p</td>
+            <td onclick="insertAtCursor(document.getElementById('search-bar'), 'b')">b</td>
+            <td onclick="insertAtCursor(document.getElementById('search-bar'), 'm')">m</td>
+            <td onclick="insertAtCursor(document.getElementById('search-bar'), 'c')">c</td>
+            <td onclick="insertAtCursor(document.getElementById('search-bar'), 'x')">x</td>
+            <td onclick="insertAtCursor(document.getElementById('search-bar'), 'z')">z</td>
+          </tr>
+          <tr>
+            <td onclick="insertAtCursor(document.getElementById('search-bar'), 't')">t</td>
+            <td onclick="insertAtCursor(document.getElementById('search-bar'), 'd')">d</td>
+            <td onclick="insertAtCursor(document.getElementById('search-bar'), 'n')">n</td>
+            <td onclick="insertAtCursor(document.getElementById('search-bar'), 'l')">l</td>
+            <td onclick="insertAtCursor(document.getElementById('search-bar'), 'k')">k</td>
+            <td onclick="insertAtCursor(document.getElementById('search-bar'), 'a')">a</td>
+          </tr>
+          <tr>
+            <td onclick="insertAtCursor(document.getElementById('search-bar'), 'e')">e</td>
+            <td onclick="insertAtCursor(document.getElementById('search-bar'), 'i')">i</td>
+            <td onclick="insertAtCursor(document.getElementById('search-bar'), 'u')">u</td>
+            <td onclick="insertAtCursor(document.getElementById('search-bar'), 'o')">o</td>
+            <td onclick="insertAtCursor(document.getElementById('search-bar'), 'j')">j</td>
+            <td onclick="insertAtCursor(document.getElementById('search-bar'), 'w')">w</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </header>
+  <main>
+    <section id="search-count" style="visibility: visible;">1 個見つかりました。</section>
+    <section id="results-section">
+      <div class="searched-item">
+        <div style="font-family: rounded;" class="corpus-text">
+          <div>mo, ka e panleti polto leti nukil <span class="hover-text">pi
+              <span class="tooltip-text bottom-tooltip-text">
+                <span class="tooltip-headword">PI</span>
+                <span class="tooltip-pronunciation" lang="ja">［ピ］</span><br>
+                <span class="tooltip-word-description" lang="ja">
+                  <span class="tooltip-part-of-speech">文接続詞</span>
+                  ～して、～したが、～すると
+                </span>
+              </span>
+            </span> e jo ka mol lata cet leti <span
+              class="hover-text"><strong class="matched-portion">lataw</strong>elkel<span class="tooltip-text bottom-tooltip-text">
+                <span class="tooltip-headword">LATAWELKEL</span>
+                <span class="tooltip-pronunciation" lang="ja">［ラタウェㇽケㇽ］</span><br>
+                <span class="tooltip-word-description" lang="ja">
+                  <span class="tooltip-part-of-speech">名詞</span>
+                  栄養
+                </span>
+              </span></span>.
+          </div>
+          <hr>
+        </div>
+        <div style="font-size: 90%; color: rgb(66, 66, 66);">モ　カ·エ·パンレティ·ポㇽト·レティ·ヌキㇽ·ピ·エ·ヨ·カ·モㇽ·ラタ·セㇳ·レティ·ラタウェㇽケㇽ</div>
+        <hr>
+        <div class="translation-ja">文化、それはその地の心であり、その地に生きる人々の栄養である。</div>
+        <div class="translation-ja-direct">文化、それは一つの場所の心であり、そこにいる人たちの栄養である。</div>
+        <div class="translation-en">Culture: it is the soul of a place and the nourishment of the people who live there.
+        </div>
+        <hr>
+        <details>
+          <summary>出典: 我々の文化オープニング</summary>
+          <ul>
+            <li><a href="https://docs.google.com/document/d/1Qt7wpnstYOKuMzeHr3IfVscsL5x0LNLiiacUijZLdzQ/edit"
+                target="_blank">https://docs.google.com/document/d/1Qt7wpnstYOKuMzeHr3IfVscsL5x0LNLiiacUijZLdzQ/edit</a>
+            </li>
+          </ul>
+        </details>
+      </div>
+    </section>
+    <section>
+      <span class="hover-text"><span style="font-family: rounded">dicticlauzaite</span>
+        <span class="tooltip-text bottom-tooltip-text"><span
+            class="tooltip-headword">DICTICLAUZAITE</span>［ディㇲティㇲラウツァイテ］<br><span
+            style="border: 1px solid #f2b9b9;padding: 1.5px; color: #f2b9b9">名詞</span> 大工、建築家</span>
+      </span>
+    </section>
+  </main>
+  <footer style="text-align: right; color: gray; padding-right: 20px;">
+    <small>東島通商語コーパス検索システム「ビシェ」</small><br>
+    <small><a href="https://github.com/sozysozbot/bixe/issues/new">問題点・改善提案を GitHub で報告</a></small><br>
+    <small>作者: <a href="https://twitter.com/hsjoihs">@hsjoihs</a></small>
+  </footer>
+
+</body>
+</html>
