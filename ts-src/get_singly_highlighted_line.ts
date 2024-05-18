@@ -38,12 +38,15 @@ function getSinglyHighlightedLine(o: { full_text: string, beginIndex: number, en
     for (const tok of tokens) {
         const tok_start = offset;
         const tok_end = offset + tok.content.length;
-        const no_overlap = o.endIndex <= tok_start || tok_end <= o.beginIndex;
 
         const maybe_highlighted: (string | Node)[] = (() => {
-            if (no_overlap) {
-                return [tok.content];
-            } else if (o.beginIndex === o.endIndex) {
+            if (o.beginIndex === o.endIndex /* is zero-width match */
+                && tok_start <= o.beginIndex /* when the match lies at the leftmost position of the token, we want to include it */
+                && (tok.kind === "eof" || o.endIndex < tok_end
+                    /* We don't want to include the highlight when the match lies at the rightmost position of the token, to avoid duplication.
+                    The exception is when the token is a zero-width EOF token
+                    */
+                ) ) {
                 // zero-width match requires special handling
                 // but in a way it is simpler
                 const splitting_index = o.beginIndex - offset;
@@ -55,6 +58,8 @@ function getSinglyHighlightedLine(o: { full_text: string, beginIndex: number, en
                     zeroWidth,
                     tok.content.slice(splitting_index)
                 ];
+            } else if (o.endIndex <= tok_start || tok_end <= o.beginIndex) { // non-zero width and no overlap
+                return [tok.content];
             } else {
                 // non-zero width; we have to consider the case when the token partially contains the highlight
                 // We already know that `tok_start < o.endIndex` and `o.beginIndex < tok_end`
@@ -84,7 +89,8 @@ function getSinglyHighlightedLine(o: { full_text: string, beginIndex: number, en
                     single_line.append(...maybe_highlighted);
                 }
             } break;
-            case "others": {
+            case "others":
+            case "eof": {
                 single_line.append(...maybe_highlighted);
             } break;
             case "problematic-brace": {
@@ -105,6 +111,7 @@ function getSinglyHighlightedLine(o: { full_text: string, beginIndex: number, en
 type Token = { kind: "pmcp-word", content: string }
     | { kind: "others", content: string }
     | { kind: "problematic-brace", content: string }
+    | { kind: "eof", content: "" }
     ;
 
 function tokenize(full_text: string): Token[] {
@@ -183,6 +190,9 @@ function tokenize(full_text: string): Token[] {
     } else {
         state satisfies never; throw new Error("unreachable");
     }
+
+    // Add EOF token so that the zero-width match at the end of the string is properly displayed
+    ans.push({ kind: "eof", content: "" });
 
     return ans;
 }
