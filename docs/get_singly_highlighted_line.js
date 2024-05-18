@@ -207,11 +207,3 @@ function tokenize(full_text) {
     ans.push({ kind: "eof", content: "" });
     return ans;
 }
-function handle_brace(innerHTML) {
-    // This is a brutal hack that can potentially destroy the DOM structure, but who cares?
-    return innerHTML.replaceAll(/(\{[\s\S]*?\})/g, "<span class='problematic_brace'>$1</span>");
-}
-function handle_pi(innerHTML) {
-    // This is a brutal hack that can potentially destroy the DOM structure, which will surely bite me in the future
-    return innerHTML.replaceAll(/\bpi\b/g, `<span class="hover-text"><span class="main-text">pi</span><span class="tooltip-text bottom-tooltip-text"><span class="tooltip-headword">PI</span><span class="tooltip-pronunciation" lang="ja">［ピ］</span><br><span class="tooltip-word-description" lang="ja"><span class="tooltip-part-of-speech">文接続詞</span>～して、～したが、～すると</span></span></span>`);
-}
