@@ -2829,6 +2829,27 @@ const CORPUS = [
         "en": ""
     },
     {
+        "source": "異世界に転生したけど日本語が通じなかった",
+        "pmcp": "ci e jeclene lata jun?",
+        "direct_ja": "",
+        "ja": "それはユエスレオネ人か？",
+        "en": ""
+    },
+    {
+        "source": "異世界に転生したけど日本語が通じなかった",
+        "pmcp": "nepdale ticodel, lata cet nip kile",
+        "direct_ja": "",
+        "ja": "思ったより少ないですな",
+        "en": ""
+    },
+    {
+        "source": "異世界に転生したけど日本語が通じなかった",
+        "pmcp": "kaleti bujul nip pankaleti jo kileleti",
+        "direct_ja": "",
+        "ja": "この飛行機は来るにはよくない",
+        "en": ""
+    },
+    {
         "source": "踏越え論",
         "pmcp": "cemokoleti lukup-lukup",
         "direct_ja": "踏越えすることの論",
@@ -8325,9 +8346,16 @@ const CORPUS = [
     },
     {
         "source": "我々の遊戯",
-        "pmcp": "atakecit kin leti julo e kaleti belpic leti nocti. nip deliju xelit dat at zelena pi ka e pupcuk jo pac lijuit kije leti lata.",
+        "pmcp": "atakecit kin leti julo e kaleti belpic leti nocti.",
         "direct_ja": "",
-        "ja": "数字の足し算を特徴としたゲーム。役や強さを気にする必要がなく、初心者向けのルールといえる。",
+        "ja": "数字の足し算を特徴としたゲーム。",
+        "en": ""
+    },
+    {
+        "source": "我々の遊戯",
+        "pmcp": "nip deliju xelit dat at zelena pi ka e pupcuk jo pac lijuit kije leti lata.",
+        "direct_ja": "",
+        "ja": "役や強さを気にする必要がなく、初心者向けのルールといえる。",
         "en": ""
     },
     {
@@ -8360,9 +8388,16 @@ const CORPUS = [
     },
     {
         "source": "我々の遊戯",
-        "pmcp": "jo atakecit leti, cene panit makleti lime. keco, 兵(1leti) leti lime at 兵(1leti) leti lime mol pi cene kaceit 弓(2) leti kopzo.",
+        "pmcp": "jo atakecit leti, cene panit makleti lime.",
         "direct_ja": "",
-        "ja": "また、二つの道を統合することもできる。例えば、【兵】(1)の道と、【兵】(1)の道があれば、【弓】(2)を出すことができる。",
+        "ja": "また、二つの道を統合することもできる。",
+        "en": ""
+    },
+    {
+        "source": "我々の遊戯",
+        "pmcp": "keco, 兵(1leti) leti lime at 兵(1leti) leti lime mol pi cene kaceit 弓(2) leti kopzo.",
+        "direct_ja": "",
+        "ja": "例えば、【兵】(1)の道と、【兵】(1)の道があれば、【弓】(2)を出すことができる。",
         "en": ""
     },
     {
@@ -8493,9 +8528,16 @@ const CORPUS = [
     },
     {
         "source": "我々の遊戯",
-        "pmcp": "dat leti zelena e panleti pi xelit dat leti bapala leti kin. ci e panleti pi xelit dat leti kinlujot. ci panleti pi panleti dec leti dat e cunet.                                jo kaleti belpic amolit kin pi kinunzait bapala pi xelit zelena. mak-mak it ka.",
+        "pmcp": "dat leti zelena e panleti pi xelit dat leti bapala leti kin. ci e panleti pi xelit dat leti kinlujot. ci panleti pi panleti dec leti dat e cunet.",
         "direct_ja": "",
-        "ja": "役の強さが同じ場合は枚数を比較し、それも同じ場合は数の大きさを比較し、それも同じ場合は同色役のほうが強い。本ゲームは賭けと札の公開を繰り返し、その後判定をすることによって構成される。",
+        "ja": "役の強さが同じ場合は枚数を比較し、それも同じ場合は数の大きさを比較し、それも同じ場合は同色役のほうが強い。",
+        "en": ""
+    },
+    {
+        "source": "我々の遊戯",
+        "pmcp": "jo kaleti belpic amolit kin pi kinunzait bapala pi xelit zelena. mak-mak it ka.",
+        "direct_ja": "",
+        "ja": "本ゲームは賭けと札の公開を繰り返し、その後判定をすることによって構成される。",
         "en": ""
     },
     {
@@ -8675,9 +8717,16 @@ const CORPUS = [
     },
     {
         "source": "我々の遊戯",
-        "pmcp": "jo lukxe leti bapala molip nole xot e lucuc pi letit xep kin jo auc leti lata e molka. jo atakecit leti, ci e xeplata pi letit 1leti kin.",
+        "pmcp": "jo lukxe leti bapala molip nole xot e lucuc pi letit xep kin jo auc leti lata e molka.",
         "direct_ja": "",
-        "ja": "山札がなくなった時点で季節が終わり、最大得点者が勝者となる。また、勝者が親の場合はさらに1点を獲得する。",
+        "ja": "山札がなくなった時点で季節が終わり、最大得点者が勝者となる。",
+        "en": ""
+    },
+    {
+        "source": "我々の遊戯",
+        "pmcp": "jo atakecit leti, ci e xeplata pi letit 1leti kin.",
+        "direct_ja": "",
+        "ja": "また、勝者が親の場合はさらに1点を獲得する。",
         "en": ""
     },
     {
@@ -8703,9 +8752,30 @@ const CORPUS = [
     },
     {
         "source": "我々の遊戯",
-        "pmcp": "2-3-4leti lata it ka. lucit nincetkaik at bepale at zo at xiju at kinpit leti xedixel. bepale cene e cetkaik leti julo o mokzo leti julo. jo ka mi cet bijotit lucit cetkaik leti bepale leti nole.",
+        "pmcp": "2-3-4leti lata it ka.",
         "direct_ja": "",
-        "ja": "このゲームは 2~4 人で行う。紙机戦とボードと駒、投げ棒、 点棒を用いる。ボードは机戦用のボードや行山用のボードを使う。以下では机戦盤を使う場合を紹介する。",
+        "ja": "このゲームは 2~4 人で行う。",
+        "en": ""
+    },
+    {
+        "source": "我々の遊戯",
+        "pmcp": "lucit nincetkaik at bepale at zo at xiju at kinpit leti xedixel.",
+        "direct_ja": "",
+        "ja": "紙机戦とボードと駒、投げ棒、 点棒を用いる。",
+        "en": ""
+    },
+    {
+        "source": "我々の遊戯",
+        "pmcp": "bepale cene e cetkaik leti julo o mokzo leti julo.",
+        "direct_ja": "",
+        "ja": "ボードは机戦用のボードや行山用のボードを使う。",
+        "en": ""
+    },
+    {
+        "source": "我々の遊戯",
+        "pmcp": "jo ka mi cet bijotit lucit cetkaik leti bepale leti nole.",
+        "direct_ja": "",
+        "ja": "以下では机戦盤を使う場合を紹介する。",
         "en": ""
     },
     {
@@ -8717,9 +8787,30 @@ const CORPUS = [
     },
     {
         "source": "我々の遊戯",
-        "pmcp": "jo kaleti belpic cetleti dije mol. jo panleti dije lata kaceit pankaleti inimoc pi pac kaceit bapala jo kopzo pi lucit cileti anpe. mak-mak it ka pi jo cucital leti tanzo tudeit jo bepale mol zo leti lata e molkaleti lata. keco, ka e palbitixumo.",
+        "pmcp": "jo kaleti belpic cetleti dije mol.",
         "direct_ja": "",
-        "ja": "このゲームは複数の手番によって成り立っている。手番において、プレーヤーは対応する資源を支払って手札から札を出し、その効果を適用することを繰り返す。手番を繰り返し、 盤に置いた駒を先に中央の皇山まで進めたものを勝者とする。以下のルートは一例である。",
+        "ja": "このゲームは複数の手番によって成り立っている。",
+        "en": ""
+    },
+    {
+        "source": "我々の遊戯",
+        "pmcp": "jo panleti dije lata kaceit pankaleti inimoc pi pac kaceit bapala jo kopzo pi lucit cileti anpe.",
+        "direct_ja": "",
+        "ja": "手番において、プレーヤーは対応する資源を支払って手札から札を出し、その効果を適用することを繰り返す。",
+        "en": ""
+    },
+    {
+        "source": "我々の遊戯",
+        "pmcp": "mak-mak it ka pi jo cucital leti tanzo tudeit jo bepale mol zo leti lata e molkaleti lata.",
+        "direct_ja": "",
+        "ja": "手番を繰り返し、 盤に置いた駒を先に中央の皇山まで進めたものを勝者とする。",
+        "en": ""
+    },
+    {
+        "source": "我々の遊戯",
+        "pmcp": "keco, ka e palbitixumo.",
+        "direct_ja": "",
+        "ja": "以下のルートは一例である。",
         "en": ""
     },
     {
@@ -8955,9 +9046,16 @@ const CORPUS = [
     },
     {
         "source": "我々の遊戯",
-        "pmcp": "lucit docnetoc leti cubelpic. laneme penulleti lukup-lukup letit kaleti alailen pi lukupit launza.",
+        "pmcp": "lucit docnetoc leti cubelpic.",
         "direct_ja": "",
-        "ja": "酒を賭けて行われていた賭博の一種。ラネーメ古論¹⁰にその名が見られ、以下のような記述がされている。",
+        "ja": "酒を賭けて行われていた賭博の一種。",
+        "en": ""
+    },
+    {
+        "source": "我々の遊戯",
+        "pmcp": "laneme penulleti lukup-lukup letit kaleti alailen pi lukupit launza.",
+        "direct_ja": "",
+        "ja": "ラネーメ古論¹⁰にその名が見られ、以下のような記述がされている。",
         "en": ""
     },
     {
@@ -9039,9 +9137,23 @@ const CORPUS = [
     },
     {
         "source": "我々の遊戯",
-        "pmcp": "jo atakecit leti, lata ticotit \"牛行\" e etleti lata nip e co mak e tude pi aucleti zai mol nutok pi kile jo kile leti julo. lokatan lukipit \"牛行之名故此片静行而如牛\". muwi lukupit \"牛此直之歪言\".zo e tude jo kame palbitixumo? kame kin leti zo mol? jexet nip e cetleti pi nip cene e ticot kije.",
+        "pmcp": "jo atakecit leti, lata ticotit \"牛行\" e etleti lata nip e co mak e tude pi aucleti zai mol nutok pi kile jo kile leti julo.",
         "direct_ja": "",
-        "ja": "なお、「牛行」とは他のプレーヤーに一度もスタートに戻されず、全ての線が書かれたマスに止まったうえでゴールすることだと考えられている。ローハタムは「牛のようにゆっくり進んでいるから牛行という」という説を、ムイは「牛という単語は真っ直ぐという単語の訛り¹²である」という説を挙げている。どのようなルートを駒が進んだか、駒はいくつあったかなどについては余り証拠がなく分かっていない。",
+        "ja": "なお、「牛行」とは他のプレーヤーに一度もスタートに戻されず、全ての線が書かれたマスに止まったうえでゴールすることだと考えられている。",
+        "en": ""
+    },
+    {
+        "source": "我々の遊戯",
+        "pmcp": "lokatan lukipit \"牛行之名故此片静行而如牛\". muwi lukupit \"牛此直之歪言\".",
+        "direct_ja": "",
+        "ja": "ローハタムは「牛のようにゆっくり進んでいるから牛行という」という説を、ムイは「牛という単語は真っ直ぐという単語の訛り¹²である」という説を挙げている。",
+        "en": ""
+    },
+    {
+        "source": "我々の遊戯",
+        "pmcp": "zo e tude jo kame palbitixumo? kame kin leti zo mol? jexet nip e cetleti pi nip cene e ticot kije.",
+        "direct_ja": "",
+        "ja": "どのようなルートを駒が進んだか、駒はいくつあったかなどについては余り証拠がなく分かっていない。",
         "en": ""
     },
     {
@@ -9102,9 +9214,23 @@ const CORPUS = [
     },
     {
         "source": "我々の遊戯",
-        "pmcp": "jo kaleti belpic cetleti dije mol. jo dije lata doktit xije pi it pankaleti cul. mak-mak it ka pi jo lucucleti poto jo pac penxeit 2?leti inimoc leti lata jo auc e molka.",
+        "pmcp": "jo kaleti belpic cetleti dije mol.",
         "direct_ja": "",
-        "ja": "このゲームは複数の手番によって成り立っている。手番において、プレーヤーは投げ棒を投げ、アクションを行う。これを繰り返し、先にゴール地点に 20 資源を運んだプレーヤーの勝利となる。",
+        "ja": "このゲームは複数の手番によって成り立っている。",
+        "en": ""
+    },
+    {
+        "source": "我々の遊戯",
+        "pmcp": "jo dije lata doktit xije pi it pankaleti cul.",
+        "direct_ja": "",
+        "ja": "手番において、プレーヤーは投げ棒を投げ、アクションを行う。",
+        "en": ""
+    },
+    {
+        "source": "我々の遊戯",
+        "pmcp": "mak-mak it ka pi jo lucucleti poto jo pac penxeit 2?leti inimoc leti lata jo auc e molka.",
+        "direct_ja": "",
+        "ja": "これを繰り返し、先にゴール地点に 20 資源を運んだプレーヤーの勝利となる。",
         "en": ""
     },
     {
@@ -9116,9 +9242,16 @@ const CORPUS = [
     },
     {
         "source": "我々の遊戯",
-        "pmcp": "jo dije lata doktit xiju pi xelit cileti kin pi it launza leti panleti. jo atakecit leti, \"amolit inimoc jo panleti poto\" e \"atakecit cileti inimoc leti kin jo pankaleti bepale leti julo\". \"nipit panleti leti poto leti inimoc\" e \"nuwatakecit cileti inimoc leti kin jo pankaleti bepale leti julo\".",
+        "pmcp": "jo dije lata doktit xiju pi xelit cileti kin pi it launza leti panleti.",
         "direct_ja": "",
-        "ja": "手番において、プレーヤーは投げ棒を投げ、その数を確認した上で、以下のどれか１つを行う。なお、「ある場所に資源を載せる」「ある場所の資源を捨てる」というのはそれぞれ対応する点数トラックにその数を加える、または減らすという意味である。",
+        "ja": "手番において、プレーヤーは投げ棒を投げ、その数を確認した上で、以下のどれか１つを行う。",
+        "en": ""
+    },
+    {
+        "source": "我々の遊戯",
+        "pmcp": "jo atakecit leti, \"amolit inimoc jo panleti poto\" e \"atakecit cileti inimoc leti kin jo pankaleti bepale leti julo\". \"nipit panleti leti poto leti inimoc\" e \"nuwatakecit cileti inimoc leti kin jo pankaleti bepale leti julo\".",
+        "direct_ja": "",
+        "ja": "なお、「ある場所に資源を載せる」「ある場所の資源を捨てる」というのはそれぞれ対応する点数トラックにその数を加える、または減らすという意味である。",
         "en": ""
     },
     {
@@ -9165,9 +9298,23 @@ const CORPUS = [
     },
     {
         "source": "我々の遊戯",
-        "pmcp": "jo pijume tude jo lucucleti poto leti nole deliju nip-nole atakecit ci letit leti aucleti inimoc jo lucucleti poto. cileti pijume mol jo lucucleti poto. e ci dokit pijume pi tudeit ci jo pac leti poto.",
+        "pmcp": "jo pijume tude jo lucucleti poto leti nole deliju nip-nole atakecit ci letit leti aucleti inimoc jo lucucleti poto.",
         "direct_ja": "",
-        "ja": "ゴール地点に到達した船がある場合、その船に載っている全ての資源を直ちにゴール資源に追加する。その船はゴール地点にとどまる。その船は荷下ろしアクションを使うまでスタート地点に戻らない。",
+        "ja": "ゴール地点に到達した船がある場合、その船に載っている全ての資源を直ちにゴール資源に追加する。",
+        "en": ""
+    },
+    {
+        "source": "我々の遊戯",
+        "pmcp": "cileti pijume mol jo lucucleti poto.",
+        "direct_ja": "",
+        "ja": "その船はゴール地点にとどまる。",
+        "en": ""
+    },
+    {
+        "source": "我々の遊戯",
+        "pmcp": "e ci dokit pijume pi tudeit ci jo pac leti poto.",
+        "direct_ja": "",
+        "ja": "その船は荷下ろしアクションを使うまでスタート地点に戻らない。",
         "en": ""
     },
     {
@@ -9200,9 +9347,16 @@ const CORPUS = [
     },
     {
         "source": "我々の遊戯",
-        "pmcp": "mak-mak it ka. panleti lata tudeit 2?leti inimoc jo lucucleti poto pi belpic e lucuc jo cileti cai. jo kaleti nole, jo lucucleti poto tudeit xep kin leti inimoc jo auc leti lata e molka.",
+        "pmcp": "mak-mak it ka. panleti lata tudeit 2?leti inimoc jo lucucleti poto pi belpic e lucuc jo cileti cai.",
         "direct_ja": "",
-        "ja": "以上の手番を繰り返し、20 資源をゴール地点に移動させたプレーヤーがいるとき、ゲームはそのラウンドで終了する。この時、最も多くの資源をゴール地点に運んだプレーヤーの勝利となる。",
+        "ja": "以上の手番を繰り返し、20 資源をゴール地点に移動させたプレーヤーがいるとき、ゲームはそのラウンドで終了する。",
+        "en": ""
+    },
+    {
+        "source": "我々の遊戯",
+        "pmcp": "jo kaleti nole, jo lucucleti poto tudeit xep kin leti inimoc jo auc leti lata e molka.",
+        "direct_ja": "",
+        "ja": "この時、最も多くの資源をゴール地点に運んだプレーヤーの勝利となる。",
         "en": ""
     },
     {
@@ -9272,49 +9426,70 @@ const CORPUS = [
         "source": "筆兵無傾AdC広報処コメント",
         "pmcp": "jo nippon mol auc, cala! mi e ail mo leti cep leti eckijacil leti polto leti lilata leti jegin gatu xadosamma.",
         "direct_ja": "",
-        "ja": "日本の皆様、こんにちは。私はアイル共和国文化省広報処の事務長、イェーギン・ガートゥ・シャードザンマーである。",
+        "ja": "日本の皆様、こんにちは。アイル共和国文化省広報処の事務長、イェーギン・ガートゥ・シャードザンマーです。",
         "en": ""
     },
     {
         "source": "筆兵無傾AdC広報処コメント",
-        "pmcp": "jo kaleti nole mi iceit nippon cetkaik leti latacet leti pulec pi kanteit tude lukup jo \"筆兵無傾 {🚩advent kalendar}\". ",
+        "pmcp": "jo kaleti nole mi iceit nippon cetkaik leti latacet leti pulec pi kanteit tude lukup jo \"筆兵無傾 {🚩advent kalendar}\".",
         "direct_ja": "",
-        "ja": "今私は日本机戦連盟から依頼を受けて「筆兵無傾 Advent Calendar」に言葉を書く。",
+        "ja": "この度、日本机戦連盟より『筆兵無傾 Advent Calendar 2023』にコメントを寄せるよう依頼されました。",
         "en": ""
     },
     {
         "source": "筆兵無傾AdC広報処コメント",
-        "pmcp": "mi jo latacet cenocit ka e xelit tude mi cetleti unde leti kulanucta cet leti alwe. ",
+        "pmcp": "mi jo latacet cenocit ka e xelit tude mi cetleti unde leti kulanucta cet leti alwe.",
         "direct_ja": "",
-        "ja": "私は連盟からこれが私たちの世界を取材する記事のイベントであると聞いている。",
+        "ja": "これは我々の世界について取材した特集記事のイベントだとお聞きしています。",
         "en": ""
     },
     {
         "source": "筆兵無傾AdC広報処コメント",
         "pmcp": "jo nippon delu lijuit tude ail at mi cetleti unde at cileti mo leti enja mol jo eckijacil pi jo cileti lilata mi cet xaceit jo aucleti kanteit tude kulanucta leti lata at kanteit kije kulanucta leti lata.",
         "direct_ja": "",
-        "ja": "広報処にはアイルと我々の世界、その文化を日本に教えるという仕事があり、その長として私は全ての記事を書く人と記事を読む人にとても感謝する。",
+        "ja": "アイル共和国、ひいてはファイクレオネとその文化を日本に届けることを使命の一つとする広報処の長として、記事を執筆してくださる方々、および読んでくださる方々のすべてに心よりの感謝を申し上げます。",
         "en": ""
     },
     {
         "source": "筆兵無傾AdC広報処コメント",
         "pmcp": "nippon lata kanteit tude kapoto leti kulanucta pi mi jo ka ticotit kije mi cetleti iniwi leti ekijacil leti kilpel.",
         "direct_ja": "",
-        "ja": "日本人がこちらの記事を書き、私はこのことに我々の日々の広報の成果を感じる。",
+        "ja": "日本の方々から特集記事が組まれるほどにこちら側への関心が高まっていることに、我々の日々の活動の成果を感じております。",
         "en": ""
     },
     {
         "source": "筆兵無傾AdC広報処コメント",
-        "pmcp": "jo launza, mi lukupit kaleti alwe leti cela. jo ka lata jo cunenek kaceit panleti kulanucta. ka e pac jo panleti cunenek pi e lucuc jo tuwacait ectene leti cunenek. jo mi cetleti unde xekumel jo cunenek iceit panleti tuwacait leti julo jo mele leti lata leti alwe mol. ka e pac jo panleti cunenek pi ka e lucuc jo xekumel leti lexicnen. ka e \"macalo\" pi ka e tuwaceit xekumel leti cul jo leadijo leti panleti polto. makleti xale leti mo mol jo waxec leti unde pi ka cet e pac jo waxec leti polto pi e tude jo waxec leti lime. mi cet xelit ka pi cene lijuit kije unde e waxec, pi nuwaxec leti julo mol jo mi cet at co cet leti liju. mi cet at co cet leti mo e waxec pi e xale, pi mi cet at co cet lijuit kije makleti mo pi mi cet at co cet xelit leti unde delu e tude jo panka, metica.",
+        "pmcp": "jo launza, mi lukupit kaleti alwe leti cela. jo ka lata jo cunenek kaceit panleti kulanucta. ka e pac jo panleti cunenek pi e lucuc jo tuwacait ectene leti cunenek.",
         "direct_ja": "",
-        "ja": "次に私はこのイベントの形式を話す。これにおいて人は一日に一つの記事を公開する。これはある日に始まり聖人を祝う日に終わる。我々の世界では子供が日に一つの祝いの品を近くの人からもらう行事が存在する。これはある日に始まり子供の誕生日に終わる。これは「マーサロ」であり、レアディオのある地域における子供の祝い方である。ふたつの似ている文化が別の世界にあり、これらは別の場所に始まり別の道をたどっている。われわれはこれを見て世界が違っていても異ならない部分が我々とあなたたちにあるという学びを学ぶことができる。我々とあなた方の文化は違っていて似ているが、ふたつの文化を知れば、我々とあなた方が見る世界はきっととてもよくなるだろう。",
+        "ja": "さて、聖人の記念日に向けて毎日一つずつ記事が発表されるという本イベントの形式ですが、",
+        "en": ""
+    },
+    {
+        "source": "筆兵無傾AdC広報処コメント",
+        "pmcp": "jo mi cetleti unde xekumel jo cunenek iceit panleti tuwacait leti julo jo mele leti lata leti alwe mol. ka e pac jo panleti cunenek pi ka e lucuc jo xekumel leti lexicnen. ka e \"macalo\" pi ka e tuwaceit xekumel leti cul jo leadijo leti panleti polto.",
+        "direct_ja": "",
+        "ja": "こちらの世界にも「マーサロ」という風習が存在します。これはレアディオという地方で見られる子どもの誕生日に向けて近所の人々が一日ずつお祝いの品を持ち回りで贈るというお祝いの方法なのですが、",
+        "en": ""
+    },
+    {
+        "source": "筆兵無傾AdC広報処コメント",
+        "pmcp": "makleti xale leti mo mol jo waxec leti unde pi ka cet e pac jo waxec leti polto pi e tude jo waxec leti lime. mi cet xelit ka pi cene lijuit kije unde e waxec, pi nuwaxec leti julo mol jo mi cet at co cet leti liju.",
+        "direct_ja": "",
+        "ja": "まったく独立して歩んできたはずの世界においてもこうして似た慣習があるということは、世界が違えども私たち人間に共通するものがあることを教えてくれます。",
+        "en": ""
+    },
+    {
+        "source": "筆兵無傾AdC広報処コメント",
+        "pmcp": "mi cet at co cet leti mo e waxec pi e xale, pi mi cet at co cet lijuit kije makleti mo pi mi cet at co cet xelit leti unde delu e tude jo panka, metica.",
+        "direct_ja": "",
+        "ja": "私たちの文化は似ていて違っていますが、それらを知ることは、きっと私たちの目に映る世界をより素晴らしいものにしてくれるでしょう。",
         "en": ""
     },
     {
         "source": "筆兵無傾AdC広報処コメント",
         "pmcp": "jo lucucleti, mi tuwacait ka. \"筆兵無傾 {🚩advent kalendar}\" e tude jo panka pi mi cet at co cet leti tudekile e tude jo xep, metica.",
         "direct_ja": "",
-        "ja": "終わりに、私はこれを祈る。「筆兵無傾 Advent Calendar」がうまくいって我々とあなた方の交流が盛んになりますように。",
+        "ja": "最後に、『筆兵無傾 Advent Calendar 2023』の成功およびこれからの私たちの交流がますます盛んになっていくことをお祈りします。",
         "en": ""
     },
     {
@@ -9322,6 +9497,13 @@ const CORPUS = [
         "pmcp": "mugaxiju e belpic? mak-mak doktit nuwaxecleti \"zo\". hata, setija!",
         "direct_ja": "",
         "ja": "ムガシユはゲームなのか？くりかえし同じ「ツォ」を打て。ハタよ、ゼティヤよ！",
+        "en": ""
+    },
+    {
+        "source": "discord会話",
+        "pmcp": "icecleti lata luc e kin jo 1000000 leti.",
+        "direct_ja": "",
+        "ja": "死者数は百万人にのぼった。",
         "en": ""
     },
     {
@@ -9647,13 +9829,6 @@ const CORPUS = [
         "en": ""
     },
     {
-        "source": "discord会話",
-        "pmcp": "icecleti lata luc e kin jo 1000000 leti.",
-        "direct_ja": "",
-        "ja": "死者数は百万人にのぼった。",
-        "en": ""
-    },
-    {
         "source": "製造業者紹介チラシ",
         "pmcp": "okijau belpiczanta",
         "direct_ja": "",
@@ -9689,38 +9864,31 @@ const CORPUS = [
         "en": ""
     },
     {
-        "source": "異世界に転生したけど日本語が通じなかった",
-        "pmcp": "ci e jeclene lata jun?",
+        "source": "ゲムマ2024春広報処コメント",
+        "pmcp": "jo nippon mol auc, cala!",
         "direct_ja": "",
-        "ja": "それはユエスレオネ人か？",
-        "en": ""
-    },
-    {
-        "source": "異世界に転生したけど日本語が通じなかった",
-        "pmcp": "nepdale ticodel, lata cet nip kile",
-        "direct_ja": "",
-        "ja": "思ったより少ないですな",
-        "en": ""
-    },
-    {
-        "source": "異世界に転生したけど日本語が通じなかった",
-        "pmcp": "kaleti bujul nip pankaleti jo kileleti",
-        "direct_ja": "",
-        "ja": "この飛行機は来るにはよくない",
+        "ja": "日本の皆様、こんにちは。",
         "en": ""
     },
     {
         "source": "ゲムマ2024春広報処コメント",
-        "pmcp": "jo nippon mol auc, cala! mi e ail mo leti cep leti eckijacil leti polto leti lilata leti jegin gatu xadosamma.",
+        "pmcp": "mi e ail mo leti cep leti eckijacil leti polto leti lilata leti jegin gatu xadosamma.",
         "direct_ja": "",
-        "ja": "日本の皆様、こんにちは。私はアイル共和国文化省広報処の事務長、イェーギン・ガートゥ・シャードザンマーです。",
+        "ja": "私はアイル共和国文化省広報処の事務長、イェーギン・ガートゥ・シャードザンマーです。",
         "en": ""
     },
     {
         "source": "ゲムマ2024春広報処コメント",
-        "pmcp": "mi tuwacait kaleti atime leti \"gemu maketo\" e lucuc pi nupankaleti molipleti julo cila. \"gemu maketo\" e jo nippon belpic leti alwe.",
+        "pmcp": "mi tuwacait kaleti atime leti \"gemu maketo\" e lucuc pi nupankaleti molipleti julo cila.",
         "direct_ja": "",
-        "ja": "「ゲームマーケット」が無事に終わったこと、心よりお祝いを申し上げます。ゲームマーケットは日本の遊戯の祭典です。",
+        "ja": "「ゲームマーケット」が無事に終わったこと、心よりお祝いを申し上げます。",
+        "en": ""
+    },
+    {
+        "source": "ゲムマ2024春広報処コメント",
+        "pmcp": "\"gemu maketo\" e jo nippon belpic leti alwe.",
+        "direct_ja": "",
+        "ja": "ゲームマーケットは日本の遊戯の祭典です。",
         "en": ""
     },
     {
@@ -9781,14 +9949,14 @@ const CORPUS = [
     },
     {
         "source": "ゲムマ2024春広報処コメント",
-        "pmcp": " mi cenotit nippon cetkaik leti latacet cuit kije ka cet jo \"bucu\" pi lukupit ka. nip cene e tude jo \"gemu maketo\" leti lata delu cuit tude jo ci, metica.",
+        "pmcp": "mi cenotit nippon cetkaik leti latacet cuit kije ka cet jo \"bucu\" pi lukupit ka. nip cene e tude jo \"gemu maketo\" leti lata delu cuit tude jo ci, metica.",
         "direct_ja": "",
         "ja": "「BOOTH」においてもこれらは販売される予定のため、今回の「ゲームマーケット」に来られなかった方はぜひそちらで買われることをおすすめします。",
         "en": ""
     },
     {
         "source": "ゲムマ2024春広報処コメント",
-        "pmcp": "jo lucucleti, mi mak xep xaceit jo nippon cetkaik  leti latacet at nippon lata cet at \"gemu maketo\" leti lata cet.",
+        "pmcp": "jo lucucleti, mi mak xep xaceit jo nippon cetkaik leti latacet at nippon lata cet at \"gemu maketo\" leti lata cet.",
         "direct_ja": "",
         "ja": "最後に、日本机戦連盟、日本の人々ならびにゲームマーケットの方々に今一度多大なる感謝を述べて、終わりの言葉といたします。",
         "en": ""

@@ -403,6 +403,9 @@ PMCFショーケース	"bal mi cet luc ka kantel jo pame," alic ticot lucu, "cuk
 連盟員速習	auc leti lata cet pac lijuit kije cetkaik.		全ての人たちが、机戦を学び始める。			
 連盟員速習	pulonleti julo nip cene tudeit nupanleti dec.	演じることは、異なる色に至らせることができない。	ワイルドカードは、異なる色のものに変身することができない。			
 連盟員速習	coleti zo e tude jo coleti zo molipleti poto.		あなたの駒は、あなたの駒がない場所へ行く。			
+異世界に転生したけど日本語が通じなかった	CI E JECLENE LATA JUN?		それはユエスレオネ人か？			
+異世界に転生したけど日本語が通じなかった	nepdale ticodel, LATA CET NIP KILE		思ったより少ないですな			
+異世界に転生したけど日本語が通じなかった	KALETI bujul NIP PANKALETI JO KILELETI		この飛行機は来るにはよくない		bujul < vyjul「飛行機」	
 踏越え論	CEMOKOLETI LUKUP-LUKUP	踏越えすることの論	踏越えに関して			
 踏越え論	AIL MO LETI CEP		アイル共和国文化省			
 踏越え論	JO KALETI NOLE CETKAIK LETI CEMOKOLETI CEPKULANTE E CETLETI PI LATA CET AT CEP CET E KILE JO NUPANKALETI.		今、机戦における踏越えルールはたくさんあり、官民ともに困っている。			
@@ -1188,12 +1191,14 @@ PMCF ポスター	INUCA.KETACUKA		イヌサ・ケタスカ
 我々の遊戯	mak-mak it ka. jo kaceit jo lape leti lata leti etleti lata nip kaceit leti nole cileti lata e xeplata pi kaceit dutucunleti dat.		何度か繰り返し、最後に出した人以外が出さなかった場合は最後に出した人が親となり、新しく役を出す。			
 我々の遊戯	mak-mak it ka pi lata leti kopzo molip jo pac jo aucleti lata pi ci e molka.		これを繰り返し、一番最初に手札を全てを出し切った人が勝利となる。			
 我々の遊戯	値木 makup		値木（値木：マㇰホㇷ゚）			
-我々の遊戯	atakecit kin leti julo e kaleti belpic leti nocti. nip deliju xelit dat at zelena pi ka e pupcuk jo pac lijuit kije leti lata.		数字の足し算を特徴としたゲーム。役や強さを気にする必要がなく、初心者向けのルールといえる。			
+我々の遊戯	atakecit kin leti julo e kaleti belpic leti nocti.		数字の足し算を特徴としたゲーム。			
+我々の遊戯	nip deliju xelit dat at zelena pi ka e pupcuk jo pac lijuit kije leti lata.		役や強さを気にする必要がなく、初心者向けのルールといえる。			
 我々の遊戯	pac it leti cul		準備			
 我々の遊戯	aucleti lata letit 6leti kopzo pi kinunzait 2leti bapala pi tectelit xeplata. jo kaleti belpic kinunzait leti bapala leti alailen e "lime"		各プレーヤーに6枚ずつ配り、山札から2枚を公開札として配置する。その後、親を決定する。                                このゲームでは最初に置かれた公開札をそれぞれ道と呼ぶ。			
 我々の遊戯	lata kaceit bapala (cet) jo lime. jo kaleti nole, kaceit leti bapala leti tek deliju e panleti jo belpic leti polto mol bapala leti kin.		プレーヤーは場の道に対し、合計値が接続する場の札の数と同じになるように出す。			
 我々の遊戯	keco, 筆(6leti) mol pi cene kaceit 筆(6leti) o cene kaceit 兵(1) at 弓(2) at 車(3) o cene kaceit 無(0) at 車(3) at 車(3) o et.		例えば、【筆】(6)が出ていれば、【筆】(6)を出すか、例えば、【兵】(1)と【弓】(2)と【車】(3)や、【無】(0)と【車】(3)と【車】(3)のような札を出すことができる。			
-我々の遊戯	jo atakecit leti, cene panit makleti lime. keco, 兵(1leti) leti lime at 兵(1leti) leti lime mol pi cene kaceit 弓(2) leti kopzo.		また、二つの道を統合することもできる。例えば、【兵】(1)の道と、【兵】(1)の道があれば、【弓】(2)を出すことができる。			
+我々の遊戯	jo atakecit leti, cene panit makleti lime.		また、二つの道を統合することもできる。			
+我々の遊戯	keco, 兵(1leti) leti lime at 兵(1leti) leti lime mol pi cene kaceit 弓(2) leti kopzo.		例えば、【兵】(1)の道と、【兵】(1)の道があれば、【弓】(2)を出すことができる。			
 我々の遊戯	nip cene amolit o celene nip amolit pi deliju iceit jo lukxe pi delu atakecit lime.		札が出せない、もしくは出したくない場合は、山札から引いて道を増やす。			
 我々の遊戯	mak-mak it ka pi amolit aucleti bapala leti lata molkait.		以上を繰り返し、全て札を出し切ったプレーヤーが勝利する。			
 我々の遊戯	kaceit 皇 o 王 o 船 pi ka cet nip-nole e aucleti lime molip pi lauzait dutucunleti makleti lime.		【皇】、【王】、【船】は出した瞬間にすべての道を消し去り、新たな二本の道を作る効果がある。			
@@ -1212,7 +1217,8 @@ PMCF ポスター	INUCA.KETACUKA		イヌサ・ケタスカ
 我々の遊戯	laiju leti kin		連番			
 我々の遊戯	mena		セット			
 我々の遊戯	panleti		一枚			
-我々の遊戯	dat leti zelena e panleti pi xelit dat leti bapala leti kin. ci e panleti pi xelit dat leti kinlujot. ci panleti pi panleti dec leti dat e cunet.                                jo kaleti belpic amolit kin pi kinunzait bapala pi xelit zelena. mak-mak it ka.		役の強さが同じ場合は枚数を比較し、それも同じ場合は数の大きさを比較し、それも同じ場合は同色役のほうが強い。本ゲームは賭けと札の公開を繰り返し、その後判定をすることによって構成される。			
+我々の遊戯	dat leti zelena e panleti pi xelit dat leti bapala leti kin. ci e panleti pi xelit dat leti kinlujot. ci panleti pi panleti dec leti dat e cunet.		役の強さが同じ場合は枚数を比較し、それも同じ場合は数の大きさを比較し、それも同じ場合は同色役のほうが強い。			
+我々の遊戯	jo kaleti belpic amolit kin pi kinunzait bapala pi xelit zelena. mak-mak it ka.		本ゲームは賭けと札の公開を繰り返し、その後判定をすることによって構成される。			
 我々の遊戯	kin leti amolleti		賭け			
 我々の遊戯	jo belpic leti poto amolit atakecleti kin.		場に参加料を出す。			
 我々の遊戯	jo laiju tectelit jo launza leti it leti.		順に以下の行動を選択する。			
@@ -1238,13 +1244,20 @@ PMCF ポスター	INUCA.KETACUKA		イヌサ・ケタスカ
 我々の遊戯	tactelit atakecleti pi delu amolit panleti dec leti cunetleti 1leti bapala o panleti cunet leti xep kin leti bapala leti dat.		参加を選択して以降は、同じ色を含みそれより強い札１枚か、同じ強さでより枚数の多い役を出すこととなる。			
 我々の遊戯	panleti lata lap e atakec pi etleti lata nip e atakec pi ci iceit aucleti bapala jo poto jo cileti nole. ci e launza leti xeplata.		一人を除いて全員が不参加となった場合、その一人はその時点で場に出ている全ての札を得て、次の親となる。			
 我々の遊戯	nipit aucleti kopzo leti lata letit kin. kaleti kin e panleti jo ka. ka e jo cileti nole kopzo e xep kin jo auc leti lata leti kopzo leti kin.		手札がなくなった人はその時点で手札の枚数が一番多い人の手札の枚数分の点数を得る。			
-我々の遊戯	jo lukxe leti bapala molip nole xot e lucuc pi letit xep kin jo auc leti lata e molka. jo atakecit leti, ci e xeplata pi letit 1leti kin.		山札がなくなった時点で季節が終わり、最大得点者が勝者となる。また、勝者が親の場合はさらに1点を獲得する。			
+我々の遊戯	jo lukxe leti bapala molip nole xot e lucuc pi letit xep kin jo auc leti lata e molka.		山札がなくなった時点で季節が終わり、最大得点者が勝者となる。			
+我々の遊戯	jo atakecit leti, ci e xeplata pi letit 1leti kin.		また、勝者が親の場合はさらに1点を獲得する。			
 我々の遊戯	xelit kileleti cul leti belpic		到達を目指すゲーム			
 我々の遊戯	jo ka cet leti belpic lata xelit kileleti jo lucucleti poto.		これらのゲームでは、ゴールへの到達を目指す。			
 我々の遊戯	行山 mokzo		行山(【行山】:モㇰツォ)			
-我々の遊戯	2-3-4leti lata it ka. lucit nincetkaik at bepale at zo at xiju at kinpit leti xedixel. bepale cene e cetkaik leti julo o mokzo leti julo. jo ka mi cet bijotit lucit cetkaik leti bepale leti nole.		このゲームは 2~4 人で行う。紙机戦とボードと駒、投げ棒、 点棒を用いる。ボードは机戦用のボードや行山用のボードを使う。以下では机戦盤を使う場合を紹介する。			
+我々の遊戯	2-3-4leti lata it ka.		このゲームは 2~4 人で行う。			
+我々の遊戯	lucit nincetkaik at bepale at zo at xiju at kinpit leti xedixel.		紙机戦とボードと駒、投げ棒、 点棒を用いる。			
+我々の遊戯	bepale cene e cetkaik leti julo o mokzo leti julo.		ボードは机戦用のボードや行山用のボードを使う。			
+我々の遊戯	jo ka mi cet bijotit lucit cetkaik leti bepale leti nole.		以下では机戦盤を使う場合を紹介する。			
 我々の遊戯	belpic leti cela		ゲームの構造			
-我々の遊戯	jo kaleti belpic cetleti dije mol. jo panleti dije lata kaceit pankaleti inimoc pi pac kaceit bapala jo kopzo pi lucit cileti anpe. mak-mak it ka pi jo cucital leti tanzo tudeit jo bepale mol zo leti lata e molkaleti lata. keco, ka e palbitixumo.		このゲームは複数の手番によって成り立っている。手番において、プレーヤーは対応する資源を支払って手札から札を出し、その効果を適用することを繰り返す。手番を繰り返し、 盤に置いた駒を先に中央の皇山まで進めたものを勝者とする。以下のルートは一例である。			
+我々の遊戯	jo kaleti belpic cetleti dije mol.		このゲームは複数の手番によって成り立っている。			
+我々の遊戯	jo panleti dije lata kaceit pankaleti inimoc pi pac kaceit bapala jo kopzo pi lucit cileti anpe.		手番において、プレーヤーは対応する資源を支払って手札から札を出し、その効果を適用することを繰り返す。			
+我々の遊戯	mak-mak it ka pi jo cucital leti tanzo tudeit jo bepale mol zo leti lata e molkaleti lata.		手番を繰り返し、 盤に置いた駒を先に中央の皇山まで進めたものを勝者とする。			
+我々の遊戯	keco, ka e palbitixumo.		以下のルートは一例である。			
 我々の遊戯	🖼️		🖼️			
 我々の遊戯	dije leti xep pulac		手番の概要			
 我々の遊戯	1. letit kopzo. kaleti kin deliju e panleti jo kopzo leti jukenel leti kin. (jo pac, kopzo leti jukenel leti kin e 3leti.)		1. 手札を上限枚数になるまで引く。(初期の上限枚数は 3 枚)			
@@ -1278,7 +1291,8 @@ PMCF ポスター	INUCA.KETACUKA		イヌサ・ケタスカ
 我々の遊戯	王    jo 1leti cai letit 2leti 銭.		【王】:自分の手番毎に 2 銭を得る。			
 我々の遊戯	皇    jo 1leti cai tudeit zo jo panleti nutok. (cene lucit 弓 at 馬 leti anpe jo panleti nole.)		【皇】:自分の手番毎に駒を 1 つ進める。(【弓】、【馬】の効果と重複あり)			
 我々の遊戯	六裁 netxiju		六裁(【六裁】:ネッシュ)			
-我々の遊戯	lucit docnetoc leti cubelpic. laneme penulleti lukup-lukup letit kaleti alailen pi lukupit launza.		酒を賭けて行われていた賭博の一種。ラネーメ古論¹⁰にその名が見られ、以下のような記述がされている。			
+我々の遊戯	lucit docnetoc leti cubelpic.		酒を賭けて行われていた賭博の一種。			
+我々の遊戯	laneme penulleti lukup-lukup letit kaleti alailen pi lukupit launza.		ラネーメ古論¹⁰にその名が見られ、以下のような記述がされている。			
 我々の遊戯	jo kaleti kantel cene it ticot-ticot jo ka.		こういった記述から、以下のことが推測される。			
 我々の遊戯	- letit xep late leti lata it ka.		- ある程度の資本力のある人がこれを遊んでいたこと			
 我々の遊戯	- cunetleti it leti mol pi kaleti alailen e "牛行".		- 「牛行」という強い行動があること			
@@ -1290,7 +1304,9 @@ PMCF ポスター	INUCA.KETACUKA		イヌサ・ケタスカ
 我々の遊戯	- jo zo mol nutok zai mol pi kunlanit zai leti kin leti docnetoc.		・止まったマスに線が書かれていれば、その本数に対応した杯数の酒を飲む。			
 我々の遊戯	- jo zo mol nutok etleti lata leti zo mol pi cileti zo e tude jo pac it leti nutok.		・止まったマスに他のプレーヤーの駒があれば、その相手の駒はスタート地点に戻る。			
 我々の遊戯	- kile jo lucucleti poto leti lata tectelit iceit kame.		・最初にゴールしたプレーヤーから順に褒賞を選ぶ。			
-我々の遊戯	jo atakecit leti, lata ticotit "牛行" e etleti lata nip e co mak e tude pi aucleti zai mol nutok pi kile jo kile leti julo. lokatan lukipit "牛行之名故此片静行而如牛". muwi lukupit "牛此直之歪言".zo e tude jo kame palbitixumo? kame kin leti zo mol? jexet nip e cetleti pi nip cene e ticot kije.		なお、「牛行」とは他のプレーヤーに一度もスタートに戻されず、全ての線が書かれたマスに止まったうえでゴールすることだと考えられている。ローハタムは「牛のようにゆっくり進んでいるから牛行という」という説を、ムイは「牛という単語は真っ直ぐという単語の訛り¹²である」という説を挙げている。どのようなルートを駒が進んだか、駒はいくつあったかなどについては余り証拠がなく分かっていない。			
+我々の遊戯	jo atakecit leti, lata ticotit "牛行" e etleti lata nip e co mak e tude pi aucleti zai mol nutok pi kile jo kile leti julo.		なお、「牛行」とは他のプレーヤーに一度もスタートに戻されず、全ての線が書かれたマスに止まったうえでゴールすることだと考えられている。			
+我々の遊戯	lokatan lukipit "牛行之名故此片静行而如牛". muwi lukupit "牛此直之歪言".		ローハタムは「牛のようにゆっくり進んでいるから牛行という」という説を、ムイは「牛という単語は真っ直ぐという単語の訛り¹²である」という説を挙げている。			
+我々の遊戯	zo e tude jo kame palbitixumo? kame kin leti zo mol? jexet nip e cetleti pi nip cene e ticot kije.		どのようなルートを駒が進んだか、駒はいくつあったかなどについては余り証拠がなく分かっていない。			
 我々の遊戯	連船之遊 tude-pijume		連船之遊(【連船之遊】:ネカナモカヌツ)			
 我々の遊戯	makleti o dukaleti o jupleti lata it kaleti belpic. jo bepale lata tudeit 3leti mobit pijume leti zo pi penxeit inimoc.		このゲームは、2~4 人で行う。ボードと3つの船を模した駒を用いる。プレーヤーは船駒を動かし、資源を運ぶ。			
 我々の遊戯	bepale		ボード			
@@ -1299,21 +1315,27 @@ PMCF ポスター	INUCA.KETACUKA		イヌサ・ケタスカ
 我々の遊戯	aucleti lata letit 3leti pijume. pijume e kile jo pac leti poto pi celene tude jo lucucleti poto. pijume letit dec pi kaleti dec e panleti jo lata leti dec. aucleti lata letit jo kin leti bepale e tudeleti 5leti zo. pi kaleti dec e panleti jo lata leti dec. jo pac it belpic leti nole amolit pijume jo pac leti poto pi amolit 1leti zo jo pac leti poto leti kin leti bepale leti 20leti poto pi panleti pijume leti inimoc leti kin leti bepale leti 5leti poto pi amolit etleti zo cet jo kin leti bepale leti 0leti poto.		各プレーヤーはスタート地点からゴール地点にかけて移動する船駒 3 つ(それぞれのプレーヤーの駒は色によって区別され、プレーヤーの駒3つは記号などによって区別される)、点数トラックを移動するプレーヤー色と同じ色の駒を 5 つ持つ。ゲーム開始時には船駒をスタート地点、スタート地点の点数トラックの 20 の位置に駒を 1 つ、船駒 1 つの資源トラックの 5 の位置に駒を1 つ、点数トラックの 0 の位置にそれ以外の駒を配置する。			
 我々の遊戯	🖼️		🖼️			
 我々の遊戯	belpic leti cela		ゲームの構造			
-我々の遊戯	jo kaleti belpic cetleti dije mol. jo dije lata doktit xije pi it pankaleti cul. mak-mak it ka pi jo lucucleti poto jo pac penxeit 2?leti inimoc leti lata jo auc e molka.		このゲームは複数の手番によって成り立っている。手番において、プレーヤーは投げ棒を投げ、アクションを行う。これを繰り返し、先にゴール地点に 20 資源を運んだプレーヤーの勝利となる。			
+我々の遊戯	jo kaleti belpic cetleti dije mol.		このゲームは複数の手番によって成り立っている。			
+我々の遊戯	jo dije lata doktit xije pi it pankaleti cul.		手番において、プレーヤーは投げ棒を投げ、アクションを行う。			
+我々の遊戯	mak-mak it ka pi jo lucucleti poto jo pac penxeit 2?leti inimoc leti lata jo auc e molka.		これを繰り返し、先にゴール地点に 20 資源を運んだプレーヤーの勝利となる。			
 我々の遊戯	dije leti pulac		手番の概要			
-我々の遊戯	jo dije lata doktit xiju pi xelit cileti kin pi it launza leti panleti. jo atakecit leti, "amolit inimoc jo panleti poto" e "atakecit cileti inimoc leti kin jo pankaleti bepale leti julo". "nipit panleti leti poto leti inimoc" e "nuwatakecit cileti inimoc leti kin jo pankaleti bepale leti julo".		手番において、プレーヤーは投げ棒を投げ、その数を確認した上で、以下のどれか１つを行う。なお、「ある場所に資源を載せる」「ある場所の資源を捨てる」というのはそれぞれ対応する点数トラックにその数を加える、または減らすという意味である。			
+我々の遊戯	jo dije lata doktit xiju pi xelit cileti kin pi it launza leti panleti.		手番において、プレーヤーは投げ棒を投げ、その数を確認した上で、以下のどれか１つを行う。			
+我々の遊戯	jo atakecit leti, "amolit inimoc jo panleti poto" e "atakecit cileti inimoc leti kin jo pankaleti bepale leti julo". "nipit panleti leti poto leti inimoc" e "nuwatakecit cileti inimoc leti kin jo pankaleti bepale leti julo".		なお、「ある場所に資源を載せる」「ある場所の資源を捨てる」というのはそれぞれ対応する点数トラックにその数を加える、または減らすという意味である。			
 我々の遊戯	- tudeleti    nipit xiju leti kin leti inimoc pi tudeit pijume leti zo jo xiju leti kin leti nutok.		- 移動:投げ棒の数資源を捨てて船駒一つを投げ棒のマス数分移動する。			
 我々の遊戯	- lauzait pijume leti cul    nipit jo pac leti poto leti 5leti inimoc pi jo pac leti poto leti inimoc molip pijume amolit 5leti inimoc.		- 造船: スタート地点の 5 資源を捨てスタート地点にある 0 資源の船に 5 資源を載せる			
 我々の遊戯	- xactije    amolit leti xiju leti kin leti inimoc jo panleti pijume.		- 補給:[投げ棒の数]の資源をいずれかの船に載せる			
 我々の遊戯	- tuwalenija    tectelit 1leti coleti pijume pi tectelit etleti jo nuwaxecleti nutok mol 1leti pijume. letit kije nuwatakecit 1leti jo xiju leti kin leti inimoc jo cileti pijume. (amolit kaleti inimoc jo coleti pijume)		- 略奪:同じマスの船から[投げ棒の数-1]資源を獲得(その船に載せる)			
 我々の遊戯	- dokit pijume leti    cul tudeit coleti 1leti pijume jo pac leti poto pi amolit cileti pijume letit leti inimoc jo pac leti poto.		- 召集:船をスタートに戻し、スタート地点にそれに載っている資源を載せる。			
 我々の遊戯	- jo tude jo lucucleti poto leti nole		- ゴール地点に到達した際			
-我々の遊戯	jo pijume tude jo lucucleti poto leti nole deliju nip-nole atakecit ci letit leti aucleti inimoc jo lucucleti poto. cileti pijume mol jo lucucleti poto. e ci dokit pijume pi tudeit ci jo pac leti poto.		ゴール地点に到達した船がある場合、その船に載っている全ての資源を直ちにゴール資源に追加する。その船はゴール地点にとどまる。その船は荷下ろしアクションを使うまでスタート地点に戻らない。			
+我々の遊戯	jo pijume tude jo lucucleti poto leti nole deliju nip-nole atakecit ci letit leti aucleti inimoc jo lucucleti poto.		ゴール地点に到達した船がある場合、その船に載っている全ての資源を直ちにゴール資源に追加する。			
+我々の遊戯	cileti pijume mol jo lucucleti poto.		その船はゴール地点にとどまる。			
+我々の遊戯	e ci dokit pijume pi tudeit ci jo pac leti poto.		その船は荷下ろしアクションを使うまでスタート地点に戻らない。			
 我々の遊戯	- nip letit inimoc leti pijume		- 資源0の船			
 我々の遊戯	pijume leti inimoc e tude jo 0leti pi kaleti pijume nip-nole e tude jo pac leti poto.		資源が 0 になった船は直ちにスタート地点に戻る。			
 我々の遊戯	- nip it dije		- パス			
 我々の遊戯	xiju e 0leti pi lata deliju nip it dije. inimoc molip jo pac it leti poto pi lata deliju nip it dije.		投げ棒で０が出た場合、あるいはスタート地点に資源がない場合、手番はパスとなる。			
-我々の遊戯	mak-mak it ka. panleti lata tudeit 2?leti inimoc jo lucucleti poto pi belpic e lucuc jo cileti cai. jo kaleti nole, jo lucucleti poto tudeit xep kin leti inimoc jo auc leti lata e molka.		以上の手番を繰り返し、20 資源をゴール地点に移動させたプレーヤーがいるとき、ゲームはそのラウンドで終了する。この時、最も多くの資源をゴール地点に運んだプレーヤーの勝利となる。			
+我々の遊戯	mak-mak it ka. panleti lata tudeit 2?leti inimoc jo lucucleti poto pi belpic e lucuc jo cileti cai.		以上の手番を繰り返し、20 資源をゴール地点に移動させたプレーヤーがいるとき、ゲームはそのラウンドで終了する。			
+我々の遊戯	jo kaleti nole, jo lucucleti poto tudeit xep kin leti inimoc jo auc leti lata e molka.		この時、最も多くの資源をゴール地点に運んだプレーヤーの勝利となる。			
 我々の遊戯	我々之遊術 (言将言)		我々の遊戯（日本語）			
 我々の遊戯	jo lewa 五星九月 一位圧		令和 5 年 9 月 初版			
 我々の遊戯	jo lewa 五星十一月 二位圧		令和 5 年 11 月 第２版			
@@ -1323,14 +1345,18 @@ PMCF ポスター	INUCA.KETACUKA		イヌサ・ケタスカ
 2023年5月ゲムマ収録漏れ資料	jo polapobo leti 1leti tencumital lauzait		ポラポボ１刑務所にて製作			
 2023年5月ゲムマ収録漏れ資料	MALUCTINO		粘着テープ			
 2023年5月ゲムマ収録漏れ資料	BEPAME		虫眼鏡			
-筆兵無傾AdC広報処コメント	JO NIPPON MOL AUC, CALA! MI E AIL MO LETI CEP LETI ECKIJACIL LETI POLTO LETI LILATA LETI JEGIN GATU XADOSAMMA.		日本の皆様、こんにちは。私はアイル共和国文化省広報処の事務長、イェーギン・ガートゥ・シャードザンマーである。			
-筆兵無傾AdC広報処コメント	JO KALETI NOLE MI ICEIT NIPPON CETKAIK LETI LATACET LETI PULEC PI KANTEIT TUDE LUKUP JO "筆兵無傾 {🚩advent kalendar}". 		今私は日本机戦連盟から依頼を受けて「筆兵無傾 Advent Calendar」に言葉を書く。			
-筆兵無傾AdC広報処コメント	MI JO LATACET CENOCIT KA E XELIT TUDE MI CETLETI UNDE LETI KULANUCTA CET LETI ALWE. 		私は連盟からこれが私たちの世界を取材する記事のイベントであると聞いている。			
-筆兵無傾AdC広報処コメント	JO NIPPON DELU LIJUIT TUDE AIL AT MI CETLETI UNDE AT CILETI MO LETI ENJA MOL JO ECKIJACIL PI JO CILETI LILATA MI CET XACEIT JO AUCLETI KANTEIT TUDE KULANUCTA LETI LATA AT KANTEIT KIJE KULANUCTA LETI LATA.		広報処にはアイルと我々の世界、その文化を日本に教えるという仕事があり、その長として私は全ての記事を書く人と記事を読む人にとても感謝する。			
-筆兵無傾AdC広報処コメント	NIPPON LATA KANTEIT TUDE KAPOTO LETI KULANUCTA PI MI JO KA TICOTIT KIJE MI CETLETI INIWI LETI EKIJACIL LETI KILPEL.		日本人がこちらの記事を書き、私はこのことに我々の日々の広報の成果を感じる。			
-筆兵無傾AdC広報処コメント	JO LAUNZA, MI LUKUPIT KALETI ALWE LETI CELA. JO KA LATA JO CUNENEK KACEIT PANLETI KULANUCTA. KA E PAC JO PANLETI CUNENEK PI E LUCUC JO TUWACAIT ECTENE lETI CUNENEK. JO MI CETLETI UNDE XEKUMEL JO CUNENEK ICEIT PANLETI TUWACAIT LETI JULO JO MELE LETI LATA LETI ALWE MOL. KA E PAC JO PANLETI CUNENEK PI KA E LUCUC JO XEKUMEL LETI LEXICNEN. KA E "MACALO" PI KA E TUWACEIT XEKUMEL LETI CUL JO LEADIJO LETI PANLETI POLTO. MAKLETI XALE LETI MO MOL JO WAXEC LETI UNDE PI KA CET E PAC JO WAXEC LETI POLTO PI E TUDE JO WAXEC LETI LIME. MI CET XELIT KA PI CENE LIJUIT KIJE UNDE E WAXEC, PI NUWAXEC LETI JULO MOL JO MI CET AT CO CET LETI LIJU. MI CET AT CO CET LETI MO E WAXEC PI E XALE, PI MI CET AT CO CET LIJUIT KIJE MAKLETI MO PI MI CET AT CO CET XELIT LETI UNDE DELU E TUDE JO PANKA, METICA.		次に私はこのイベントの形式を話す。これにおいて人は一日に一つの記事を公開する。これはある日に始まり聖人を祝う日に終わる。我々の世界では子供が日に一つの祝いの品を近くの人からもらう行事が存在する。これはある日に始まり子供の誕生日に終わる。これは「マーサロ」であり、レアディオのある地域における子供の祝い方である。ふたつの似ている文化が別の世界にあり、これらは別の場所に始まり別の道をたどっている。われわれはこれを見て世界が違っていても異ならない部分が我々とあなたたちにあるという学びを学ぶことができる。我々とあなた方の文化は違っていて似ているが、ふたつの文化を知れば、我々とあなた方が見る世界はきっととてもよくなるだろう。			
-筆兵無傾AdC広報処コメント	JO LUCUCLETI, MI TUWACAIT KA. "筆兵無傾 {🚩advent kalendar}" E TUDE JO PANKA PI MI CET AT CO CET LETI TUDEKILE E TUDE JO XEP, METICA.		終わりに、私はこれを祈る。「筆兵無傾 Advent Calendar」がうまくいって我々とあなた方の交流が盛んになりますように。			
+筆兵無傾AdC広報処コメント	JO NIPPON MOL AUC, CALA! MI E AIL MO LETI CEP LETI ECKIJACIL LETI POLTO LETI LILATA LETI JEGIN GATU XADOSAMMA.		日本の皆様、こんにちは。アイル共和国文化省広報処の事務長、イェーギン・ガートゥ・シャードザンマーです。			
+筆兵無傾AdC広報処コメント	JO KALETI NOLE MI ICEIT NIPPON CETKAIK LETI LATACET LETI PULEC PI KANTEIT TUDE LUKUP JO "筆兵無傾 {🚩advent kalendar}".		この度、日本机戦連盟より『筆兵無傾 Advent Calendar 2023』にコメントを寄せるよう依頼されました。			
+筆兵無傾AdC広報処コメント	MI JO LATACET CENOCIT KA E XELIT TUDE MI CETLETI UNDE LETI KULANUCTA CET LETI ALWE.		これは我々の世界について取材した特集記事のイベントだとお聞きしています。			
+筆兵無傾AdC広報処コメント	JO NIPPON DELU LIJUIT TUDE AIL AT MI CETLETI UNDE AT CILETI MO LETI ENJA MOL JO ECKIJACIL PI JO CILETI LILATA MI CET XACEIT JO AUCLETI KANTEIT TUDE KULANUCTA LETI LATA AT KANTEIT KIJE KULANUCTA LETI LATA.		アイル共和国、ひいてはファイクレオネとその文化を日本に届けることを使命の一つとする広報処の長として、記事を執筆してくださる方々、および読んでくださる方々のすべてに心よりの感謝を申し上げます。			
+筆兵無傾AdC広報処コメント	NIPPON LATA KANTEIT TUDE KAPOTO LETI KULANUCTA PI MI JO KA TICOTIT KIJE MI CETLETI INIWI LETI EKIJACIL LETI KILPEL.		日本の方々から特集記事が組まれるほどにこちら側への関心が高まっていることに、我々の日々の活動の成果を感じております。			
+筆兵無傾AdC広報処コメント	JO LAUNZA, MI LUKUPIT KALETI ALWE LETI CELA. JO KA LATA JO CUNENEK KACEIT PANLETI KULANUCTA. KA E PAC JO PANLETI CUNENEK PI E LUCUC JO TUWACAIT ECTENE lETI CUNENEK.		さて、聖人の記念日に向けて毎日一つずつ記事が発表されるという本イベントの形式ですが、			
+筆兵無傾AdC広報処コメント	JO MI CETLETI UNDE XEKUMEL JO CUNENEK ICEIT PANLETI TUWACAIT LETI JULO JO MELE LETI LATA LETI ALWE MOL. KA E PAC JO PANLETI CUNENEK PI KA E LUCUC JO XEKUMEL LETI LEXICNEN. KA E "MACALO" PI KA E TUWACEIT XEKUMEL LETI CUL JO LEADIJO LETI PANLETI POLTO.		こちらの世界にも「マーサロ」という風習が存在します。これはレアディオという地方で見られる子どもの誕生日に向けて近所の人々が一日ずつお祝いの品を持ち回りで贈るというお祝いの方法なのですが、			
+筆兵無傾AdC広報処コメント	MAKLETI XALE LETI MO MOL JO WAXEC LETI UNDE PI KA CET E PAC JO WAXEC LETI POLTO PI E TUDE JO WAXEC LETI LIME. MI CET XELIT KA PI CENE LIJUIT KIJE UNDE E WAXEC, PI NUWAXEC LETI JULO MOL JO MI CET AT CO CET LETI LIJU.		まったく独立して歩んできたはずの世界においてもこうして似た慣習があるということは、世界が違えども私たち人間に共通するものがあることを教えてくれます。			
+筆兵無傾AdC広報処コメント	MI CET AT CO CET LETI MO E WAXEC PI E XALE, PI MI CET AT CO CET LIJUIT KIJE MAKLETI MO PI MI CET AT CO CET XELIT LETI UNDE DELU E TUDE JO PANKA, METICA.		私たちの文化は似ていて違っていますが、それらを知ることは、きっと私たちの目に映る世界をより素晴らしいものにしてくれるでしょう。			
+筆兵無傾AdC広報処コメント	JO LUCUCLETI, MI TUWACAIT KA. "筆兵無傾 {🚩advent kalendar}" E TUDE JO PANKA PI MI CET AT CO CET LETI TUDEKILE E TUDE JO XEP, METICA.		最後に、『筆兵無傾 Advent Calendar 2023』の成功およびこれからの私たちの交流がますます盛んになっていくことをお祈りします。			
 フォントテスト用パングラム	MUGAXIJU E BELPIC? MAK-MAK DOKTIT NUWAXECLETI "ZO". HATA, SETIJA!		ムガシユはゲームなのか？くりかえし同じ「ツォ」を打て。ハタよ、ゼティヤよ！			
+discord会話	ICECLETI LATA LUC E KIN JO 1000000 LETI.		死者数は百万人にのぼった。			
 筆兵無傾バランスゲームのカード	壊国人		国を壊す人			
 筆兵無傾バランスゲームのカード	汝須無受斥之圧		あなたは排斥されてはならない			
 筆兵無傾バランスゲームのカード	CEKOLATA		裏切者			
@@ -1377,17 +1403,15 @@ PMCF ポスター	INUCA.KETACUKA		イヌサ・ケタスカ
 かるたスライド	- pemecepe lukup		- 東島通商語で			
 かるたスライド	- nippon lukup		- 日本語で			
 かるたスライド	xace!		ありがとうございました			
-discord会話	ICECLETI LATA LUC E KIN JO 1000000 LETI.		死者数は百万人にのぼった。			
 製造業者紹介チラシ	OKIJAU BELPICZANTA		『ホーギャウ玩具』【骨門遊刀】			
 製造業者紹介チラシ	DOKTIT LUJOT LETI DICTIC		『打字の家』【撃字家】			
 製造業者紹介チラシ	KIN LETI MENA		『数の友』【値之友】			
 製造業者紹介チラシ	TAUPO DIXEC LETI KECTENE		タウポ自然科学大学			
 製造業者紹介チラシ	SIKSIJU-BELPIC		『琥珀ゲームズ』【蜜石遊術】			
-異世界に転生したけど日本語が通じなかった	CI E JECLENE LATA JUN?		それはユエスレオネ人か？			
-異世界に転生したけど日本語が通じなかった	nepdale ticodel, LATA CET NIP KILE		思ったより少ないですな			
-異世界に転生したけど日本語が通じなかった	KALETI bujul NIP PANKALETI JO KILELETI		この飛行機は来るにはよくない		bujul < vyjul「飛行機」	
-ゲムマ2024春広報処コメント	JO NIPPON MOL AUC, CALA! MI E AIL MO LETI CEP LETI ECKIJACIL LETI POLTO LETI LILATA LETI JEGIN GATU XADOSAMMA.		日本の皆様、こんにちは。私はアイル共和国文化省広報処の事務長、イェーギン・ガートゥ・シャードザンマーです。			
-ゲムマ2024春広報処コメント	MI TUWACAIT KALETI ATIME LETI "GEMU MAKETO" E LUCUC PI NUPANKALETI MOLIPLETI JULO CILA. "GEMU MAKETO" E JO NIPPON BELPIC LETI ALWE.		「ゲームマーケット」が無事に終わったこと、心よりお祝いを申し上げます。ゲームマーケットは日本の遊戯の祭典です。			
+ゲムマ2024春広報処コメント	JO NIPPON MOL AUC, CALA!		日本の皆様、こんにちは。			
+ゲムマ2024春広報処コメント	MI E AIL MO LETI CEP LETI ECKIJACIL LETI POLTO LETI LILATA LETI JEGIN GATU XADOSAMMA.		私はアイル共和国文化省広報処の事務長、イェーギン・ガートゥ・シャードザンマーです。			
+ゲムマ2024春広報処コメント	MI TUWACAIT KALETI ATIME LETI "GEMU MAKETO" E LUCUC PI NUPANKALETI MOLIPLETI JULO CILA.		「ゲームマーケット」が無事に終わったこと、心よりお祝いを申し上げます。			
+ゲムマ2024春広報処コメント	"GEMU MAKETO" E JO NIPPON BELPIC LETI ALWE.		ゲームマーケットは日本の遊戯の祭典です。			
 ゲムマ2024春広報処コメント	 "BELPIC, KA E LATA LETI LIJU TUDE JO LATA LETI CUL, PI LATA LETI TUDE JO TATALETI CUL, PI LATA AT LATA LETI PALBICLETI CUL."		「遊戯は人から人へと伝えられ、人々に楽しみを与え、人と人と繋ぐものである。」			
 ゲムマ2024春広報処コメント	LUKUPIT KA XALE, BELPIC LETIT XEP-XEP METIC. IT KALETI ALWE LETI JULO E PANKALETI JULO CILA.		こう言われているように遊戯は無限の可能性を秘めたものであり、その遊戯の祭典が開かれるのは誠に素晴らしいことであります。			
 ゲムマ2024春広報処コメント	JO KALETI "GEMU MAKETO", NIPPON CETKAIK LETI LATACET MAK MOL PI CUIT KIJE MI CETLETI BELPIC AT KULANTE.		今回の「ゲームマーケット」では日本机戦連盟が再び参加して、我々の遊戯や本を販売していました。			
@@ -1396,5 +1420,5 @@ discord会話	ICECLETI LATA LUC E KIN JO 1000000 LETI.		死者数は百万人に
 ゲムマ2024春広報処コメント	JO "耳声手片", LATA CENOCIT LUKUPIT AIL JULO LETI JUTATA PI LETIT KIJE ZO.		「耳声手片」では人々はアイルについて話す声を聞いて、対応する札を取ります。			
 ゲムマ2024春広報処コメント	JO JUCNUKLETI, MI CENOCIT LATA CET CUIT TUDE JO AUCLETI "耳声手片" PI CUIT TUDE JO CETLETI "筆兵無傾" AT CETLETI "NIPPON BELPIC" LETI JULO.		驚くべきことにかるたは完売し、「筆兵無傾」と「日本の遊戯」の売れ行きも好調であったということです。			
 ゲムマ2024春広報処コメント	NIPPON LATA CET XELIT AIL AT MI CETLETI UNDE PI MI CET XACEIT JO KA.		日本の人々がアイル共和国および我々の世界を楽しんでくださっていることに感謝申し上げます。			
-ゲムマ2024春広報処コメント	 MI CENOTIT NIPPON CETKAIK LETI LATACET CUIT KIJE KA CET JO "BUCU" PI LUKUPIT KA. NIP CENE E TUDE JO "GEMU MAKETO" LETI LATA DELU CUIT TUDE JO CI, METICA.		「BOOTH」においてもこれらは販売される予定のため、今回の「ゲームマーケット」に来られなかった方はぜひそちらで買われることをおすすめします。			
-ゲムマ2024春広報処コメント	JO LUCUCLETI, MI MAK XEP XACEIT JO NIPPON CETKAIK  LETI LATACET AT NIPPON LATA CET AT "GEMU MAKETO" LETI LATA CET.		最後に、日本机戦連盟、日本の人々ならびにゲームマーケットの方々に今一度多大なる感謝を述べて、終わりの言葉といたします。			
+ゲムマ2024春広報処コメント	MI CENOTIT NIPPON CETKAIK LETI LATACET CUIT KIJE KA CET JO "BUCU" PI LUKUPIT KA. NIP CENE E TUDE JO "GEMU MAKETO" LETI LATA DELU CUIT TUDE JO CI, METICA.		「BOOTH」においてもこれらは販売される予定のため、今回の「ゲームマーケット」に来られなかった方はぜひそちらで買われることをおすすめします。			
+ゲムマ2024春広報処コメント	JO LUCUCLETI, MI MAK XEP XACEIT JO NIPPON CETKAIK LETI LATACET AT NIPPON LATA CET AT "GEMU MAKETO" LETI LATA CET.		最後に、日本机戦連盟、日本の人々ならびにゲームマーケットの方々に今一度多大なる感謝を述べて、終わりの言葉といたします。			
