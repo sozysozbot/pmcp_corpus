@@ -30,6 +30,8 @@
 
  */
 function getSinglyHighlightedLine(o: { full_text: string, beginIndex: number, endIndex: number, match: string }) {
+    const tokens = tokenize(o.full_text);
+    console.log(tokens);
     const single_line = document.createElement("div");
 
     const beforeMatch = document.createTextNode(o.full_text.slice(0, o.beginIndex));
@@ -49,6 +51,68 @@ function getSinglyHighlightedLine(o: { full_text: string, beginIndex: number, en
     // To add text tooltip to `PI`, I'll brutally edit the resulting innerHTML:
     single_line.innerHTML = handle_pi(handle_brace(single_line.innerHTML));
     return single_line;
+}
+
+type Token = { kind: "pmcp-word", content: string }
+    | { kind: "other-plain-char", content: string }
+    | { kind: "problematic-brace", content: string }
+    ;
+
+function tokenize(full_text: string): Token[] {
+    const ans: Token[] = [];
+    type TokenizerState = { kind: "handling-word", current_word: string }
+        | { kind: "inside-brace", depth: number, content: string };
+    let state: TokenizerState = { kind: "handling-word", current_word: "" };
+    const chars = [...full_text];
+    for (const c of chars) {
+        switch (state.kind) {
+            case "handling-word": {
+                if (c === '{') {
+                    if (state.current_word !== "") {
+                        ans.push({ kind: "pmcp-word", content: state.current_word });
+                    }
+                    state = { kind: "inside-brace", depth: 1, content: "{" };
+                } else if (c === '}') {
+                    throw new Error(`Unexpected closing } encountered while handling words. The full text is:\n\n${full_text}`);
+                } else if (/[a-zA-Z]/.exec(c)) { // word character
+                    state.current_word += c;
+                } else { // other character; word ends
+                    if (state.current_word !== "") {
+                        ans.push({ kind: "pmcp-word", content: state.current_word });
+                    }
+                    ans.push({ kind: "other-plain-char", content: c });
+                    state = { kind: "handling-word", current_word: "" };
+                }
+            } break;
+            case "inside-brace": {
+                if (c === '{') {
+                    state = { kind: "inside-brace", depth: state.depth + 1, content: state.content + "{" };
+                } else if (c === '}') {
+                    if (state.depth === 1) {
+                        ans.push({ kind: "problematic-brace", content: state.content + "}" });
+                        state = { kind: "handling-word", current_word: "" };
+                    } else {
+                        state = { kind: "inside-brace", depth: state.depth - 1, content: state.content + "}" };
+                    }
+                } else {
+                    state.content += c;
+                }
+            } break;
+            default: state satisfies never; throw new Error("unreachable");
+        }
+    }
+
+    if (state.kind === "handling-word") {
+        if (state.current_word !== "") {
+            ans.push({ kind: "pmcp-word", content: state.current_word });
+        }
+    } else if (state.kind === "inside-brace") {
+        throw new Error(`Closing } not encountered. The full text is:\n\n${full_text}`)
+    } else {
+        state satisfies never; throw new Error("unreachable");
+    }
+
+    return ans;
 }
 
 function handle_brace(innerHTML: string) {
