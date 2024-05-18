@@ -34,9 +34,9 @@ type CorpusElem = {
 const CORPUS: CorpusElem[] = ${JSON.stringify(corpus.slice(1), null, 2)};`);
 fs.writeFileSync('../ts-src/linkMap.ts', `/* AUTOMATICALLY GENERATED. DO NOT EDIT MANUALLY */
 type Source = ${sources.map(s => JSON.stringify(s)).join(" | ")};
-
+const sources_new_to_old: string[] = ${JSON.stringify(sources)};
 const is_valid_source = (source: string): source is Source => {
-  return ${JSON.stringify(sources)}.includes(source);
+  return sources_new_to_old.includes(source);
 }
 
 type Hyperlinks = {

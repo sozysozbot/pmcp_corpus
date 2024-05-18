@@ -1,5 +1,8 @@
+let corpus_new_to_old = [...CORPUS];
+corpus_new_to_old.sort((a, b) => sources_new_to_old.indexOf(a.source) - sources_new_to_old.indexOf(b.source))
+
 function get_matches(regex_str: string) {
-    return CORPUS.filter(item => item.pmcp.match(new RegExp(regex_str, "gi"))).map(item => {
+    return corpus_new_to_old.filter(item => item.pmcp.match(new RegExp(regex_str, "gi"))).map(item => {
         const matched_portions = [];
         /* 
         g - global 
