@@ -7,7 +7,8 @@
  * })
  * returns
  *
-<span class="hover-text">pi
+<span class="hover-text">
+    <span class="main-text">pi</span>
     <span class="tooltip-text bottom-tooltip-text">
         <span class="tooltip-headword">PI</span>
         <span class="tooltip-pronunciation" lang="ja">［ピ］</span>
@@ -22,7 +23,12 @@
 function getHoverableText(lemma, description) {
     const hover_text = document.createElement("span");
     hover_text.classList.add("hover-text");
-    hover_text.appendChild(document.createTextNode(lemma));
+    {
+        const main_text = document.createElement("span");
+        main_text.classList.add("main-text");
+        main_text.textContent = lemma;
+        hover_text.appendChild(main_text);
+    }
     {
         const tooltip = document.createElement("span");
         tooltip.classList.add("tooltip-text", "bottom-tooltip-text");

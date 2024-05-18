@@ -34,6 +34,34 @@ function getSinglyHighlightedLine(o: { full_text: string, beginIndex: number, en
     console.log(tokens);
     const single_line = document.createElement("div");
 
+    for (const tok of tokens) {
+        switch (tok.kind) {
+            case "pmcp-word": {
+                if (tok.content === "pi") {
+                    single_line.append(getHoverableText("pi", {
+                        headword: "pi",
+                        part_of_speech: "文接続詞",
+                        content: "～して、～したが、～すると"
+                    }));
+                } else {
+                    single_line.append(document.createTextNode(tok.content));
+                }
+            } break;
+            case "other-plain-char": {
+                single_line.append(document.createTextNode(tok.content));
+            } break;
+            case "problematic-brace": {
+                const problematic_brace = document.createElement("span");
+                problematic_brace.classList.add('problematic_brace');
+                problematic_brace.textContent = tok.content;
+                single_line.appendChild(problematic_brace);
+            } break;
+            default: {
+                tok satisfies never; throw new Error("unreachable");
+            }
+        }
+    }
+
     const beforeMatch = document.createTextNode(o.full_text.slice(0, o.beginIndex));
     const matchedPortion = document.createElement("strong");
     matchedPortion.classList.add("matched-portion");
@@ -43,13 +71,13 @@ function getSinglyHighlightedLine(o: { full_text: string, beginIndex: number, en
     matchedPortion.textContent = o.match;
     const afterMatch = document.createTextNode(o.full_text.slice(o.endIndex));
 
-    single_line.appendChild(beforeMatch);
-    single_line.appendChild(matchedPortion);
-    single_line.appendChild(afterMatch);
+    //  single_line.appendChild(beforeMatch);
+    //  single_line.appendChild(matchedPortion);
+    //  single_line.appendChild(afterMatch);
 
     // To account for the {} part, I'll brutally edit the resulting innerHTML:
     // To add text tooltip to `PI`, I'll brutally edit the resulting innerHTML:
-    single_line.innerHTML = handle_pi(handle_brace(single_line.innerHTML));
+    //  single_line.innerHTML = handle_pi(handle_brace(single_line.innerHTML));
     return single_line;
 }
 
@@ -63,8 +91,9 @@ function tokenize(full_text: string): Token[] {
     type TokenizerState = { kind: "handling-word", current_word: string }
         | { kind: "inside-brace", depth: number, content: string };
     let state: TokenizerState = { kind: "handling-word", current_word: "" };
-    const chars = [...full_text];
-    for (const c of chars) {
+    for (let i = 0; i < full_text.length; i++) {
+        // Since we will be using regex's index, we need the surrogate pair to be separated
+        const c = full_text[i];
         switch (state.kind) {
             case "handling-word": {
                 if (c === '{') {
