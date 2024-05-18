@@ -1,5 +1,5 @@
 /**
- * getHoverableText("pi", {
+ * getHoverableText(["pi"], {
  *  headword: "pi",
  *  part_of_speech: "文接続詞",
  *  content: "～して、～したが、～すると"
@@ -19,13 +19,13 @@
     </span>
 </span>
  */
-function getHoverableText(lemma: "pi", description: { headword: "pi", part_of_speech: "文接続詞", content: "～して、～したが、～すると" }) {
+function getHoverableText(maybe_highlighted_lemma: (string | Node)[], description: { headword: "pi", part_of_speech: "文接続詞", content: "～して、～したが、～すると" }) {
     const hover_text = document.createElement("span");
     hover_text.classList.add("hover-text");
     {
         const main_text = document.createElement("span");
         main_text.classList.add("main-text");
-        main_text.textContent = lemma;
+        main_text.append(...maybe_highlighted_lemma);
         hover_text.appendChild(main_text);
     }
     {

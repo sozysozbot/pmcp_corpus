@@ -53,11 +53,11 @@ async function display_result() {
     
         I would like to turn this into
         <div class="searched-item">
-            <div class="corpus-text">icco <strong class="matched-portion">cecnutit</strong> lata pi lata cecnutit icco</div>
+            <div class="corpus-text">icco <span class="matched-portion">cecnutit</span> lata pi lata cecnutit icco</div>
             <div class="translation-ja">国が人を守り、人が国を守る</div>
           </div>
           <div class="searched-item">
-            <div class="corpus-text">icco cecnutit lata pi lata <strong class="matched-portion">cecnutit</strong> icco</div>
+            <div class="corpus-text">icco cecnutit lata pi lata <span class="matched-portion">cecnutit</span> icco</div>
             <div class="translation-ja">国が人を守り、人が国を守る</div>
           </div>
         */

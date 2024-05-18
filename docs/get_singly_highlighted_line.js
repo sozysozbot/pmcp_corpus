@@ -33,32 +33,66 @@ function getSinglyHighlightedLine(o) {
     const tokens = tokenize(o.full_text);
     console.log(tokens);
     const single_line = document.createElement("div");
+    let offset = 0;
     for (const tok of tokens) {
+        const tok_start = offset;
+        const tok_end = offset + tok.content.length;
+        const no_overlap = o.endIndex <= tok_start || tok_end <= o.beginIndex;
+        const maybe_highlighted = (() => {
+            if (no_overlap) {
+                return [tok.content];
+            }
+            else if (o.beginIndex === o.endIndex) {
+                // zero-width match requires special handling
+                // but in a way it is simpler
+                const splitting_index = o.beginIndex - offset;
+                const zeroWidth = document.createElement("span");
+                zeroWidth.classList.add("matched-portion", "zero-width");
+                zeroWidth.textContent = "";
+                return [
+                    tok.content.slice(0, splitting_index),
+                    zeroWidth,
+                    tok.content.slice(splitting_index)
+                ];
+            }
+            else {
+                // non-zero width; we have to consider the case when the token partially contains the highlight
+                // We already know that `tok_start < o.endIndex` and `o.beginIndex < tok_end`
+                const highlight_start = Math.max(tok_start, o.beginIndex);
+                const highlight_end = Math.min(tok_end, o.endIndex);
+                const beforeMatch = tok.content.slice(0, highlight_start - offset);
+                const matchedPortion = document.createElement("span");
+                matchedPortion.classList.add("matched-portion");
+                matchedPortion.textContent = tok.content.slice(highlight_start - offset, highlight_end - offset);
+                const afterMatch = tok.content.slice(highlight_end - offset);
+                return [beforeMatch, matchedPortion, afterMatch];
+            }
+        })();
         switch (tok.kind) {
             case "pmcp-word":
                 {
                     if (tok.content === "pi") {
-                        single_line.append(getHoverableText("pi", {
+                        single_line.append(getHoverableText(maybe_highlighted, {
                             headword: "pi",
                             part_of_speech: "文接続詞",
                             content: "～して、～したが、～すると"
                         }));
                     }
                     else {
-                        single_line.append(document.createTextNode(tok.content));
+                        single_line.append(...maybe_highlighted);
                     }
                 }
                 break;
             case "others":
                 {
-                    single_line.append(document.createTextNode(tok.content));
+                    single_line.append(...maybe_highlighted);
                 }
                 break;
             case "problematic-brace":
                 {
                     const problematic_brace = document.createElement("span");
                     problematic_brace.classList.add('problematic_brace');
-                    problematic_brace.textContent = tok.content;
+                    problematic_brace.append(...maybe_highlighted);
                     single_line.appendChild(problematic_brace);
                 }
                 break;
@@ -67,21 +101,8 @@ function getSinglyHighlightedLine(o) {
                 throw new Error("unreachable");
             }
         }
+        offset += tok.content.length;
     }
-    const beforeMatch = document.createTextNode(o.full_text.slice(0, o.beginIndex));
-    const matchedPortion = document.createElement("strong");
-    matchedPortion.classList.add("matched-portion");
-    if (o.beginIndex === o.endIndex) {
-        matchedPortion.classList.add("zero-width");
-    }
-    matchedPortion.textContent = o.match;
-    const afterMatch = document.createTextNode(o.full_text.slice(o.endIndex));
-    //  single_line.appendChild(beforeMatch);
-    //  single_line.appendChild(matchedPortion);
-    //  single_line.appendChild(afterMatch);
-    // To account for the {} part, I'll brutally edit the resulting innerHTML:
-    // To add text tooltip to `PI`, I'll brutally edit the resulting innerHTML:
-    //  single_line.innerHTML = handle_pi(handle_brace(single_line.innerHTML));
     return single_line;
 }
 function tokenize(full_text) {
