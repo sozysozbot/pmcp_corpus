@@ -52,7 +52,6 @@ function to_kana(str) {
 function kana_words(form) {
     const normalized = form.toLowerCase();
     const spacing = '·';
-    console.log(spacing);
     return normalized
         .split(/[^ABCDEGHIJKLMNOPSTUWXZ]/i)
         .map(to_kana).join(spacing)

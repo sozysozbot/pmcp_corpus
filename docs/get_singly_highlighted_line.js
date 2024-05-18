@@ -49,7 +49,7 @@ function getSinglyHighlightedLine(o) {
                     }
                 }
                 break;
-            case "other-plain-char":
+            case "others":
                 {
                     single_line.append(document.createTextNode(tok.content));
                 }
@@ -86,7 +86,7 @@ function getSinglyHighlightedLine(o) {
 }
 function tokenize(full_text) {
     const ans = [];
-    let state = { kind: "handling-word", current_word: "" };
+    let state = { kind: "handling-word", current: "" };
     for (let i = 0; i < full_text.length; i++) {
         // Since we will be using regex's index, we need the surrogate pair to be separated
         const c = full_text[i];
@@ -94,8 +94,8 @@ function tokenize(full_text) {
             case "handling-word":
                 {
                     if (c === '{') {
-                        if (state.current_word !== "") {
-                            ans.push({ kind: "pmcp-word", content: state.current_word });
+                        if (state.current !== "") {
+                            ans.push({ kind: "pmcp-word", content: state.current });
                         }
                         state = { kind: "inside-brace", depth: 1, content: "{" };
                     }
@@ -103,14 +103,35 @@ function tokenize(full_text) {
                         throw new Error(`Unexpected closing } encountered while handling words. The full text is:\n\n${full_text}`);
                     }
                     else if (/[a-zA-Z]/.exec(c)) { // word character
-                        state.current_word += c;
+                        state.current += c;
                     }
                     else { // other character; word ends
-                        if (state.current_word !== "") {
-                            ans.push({ kind: "pmcp-word", content: state.current_word });
+                        if (state.current !== "") {
+                            ans.push({ kind: "pmcp-word", content: state.current });
                         }
-                        ans.push({ kind: "other-plain-char", content: c });
-                        state = { kind: "handling-word", current_word: "" };
+                        state = { kind: "handling-others", current: c };
+                    }
+                }
+                break;
+            case "handling-others":
+                {
+                    if (c === '{') {
+                        if (state.current !== "") {
+                            ans.push({ kind: "others", content: state.current });
+                        }
+                        state = { kind: "inside-brace", depth: 1, content: "{" };
+                    }
+                    else if (c === '}') {
+                        throw new Error(`Unexpected closing } encountered while handling words. The full text is:\n\n${full_text}`);
+                    }
+                    else if (/[a-zA-Z]/.exec(c)) { // word character; word begins
+                        if (state.current !== "") {
+                            ans.push({ kind: "others", content: state.current });
+                        }
+                        state = { kind: "handling-word", current: c };
+                    }
+                    else { // other character;
+                        state.current += c;
                     }
                 }
                 break;
@@ -122,7 +143,7 @@ function tokenize(full_text) {
                     else if (c === '}') {
                         if (state.depth === 1) {
                             ans.push({ kind: "problematic-brace", content: state.content + "}" });
-                            state = { kind: "handling-word", current_word: "" };
+                            state = { kind: "handling-word", current: "" };
                         }
                         else {
                             state = { kind: "inside-brace", depth: state.depth - 1, content: state.content + "}" };
@@ -139,8 +160,13 @@ function tokenize(full_text) {
         }
     }
     if (state.kind === "handling-word") {
-        if (state.current_word !== "") {
-            ans.push({ kind: "pmcp-word", content: state.current_word });
+        if (state.current !== "") {
+            ans.push({ kind: "pmcp-word", content: state.current });
+        }
+    }
+    else if (state.kind === "handling-others") {
+        if (state.current !== "") {
+            ans.push({ kind: "others", content: state.current });
         }
     }
     else if (state.kind === "inside-brace") {
