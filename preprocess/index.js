@@ -67,3 +67,18 @@ for (let i = 0; i < source_text.length - 2; i++) {
 
 fs.writeFileSync('../ts-src/trigrams.ts', `/* AUTOMATICALLY GENERATED. DO NOT EDIT MANUALLY */
 const TRIGRAMS = ${JSON.stringify(trigrams, null, 2)};`);
+
+// words
+const words = fs.readFileSync('words.tsv', 'utf8').split(/\r\n|\n/).map(line => {
+  const [_0, 語, _2, 品詞, 規範から排除, _5, _6, _7, 意味_日, 意味_理] = line.split('\t');
+  return { 語, 品詞, 規範から排除: 規範から排除 === "TRUE" , 意味_日 };
+});
+
+fs.writeFileSync('../ts-src/words.ts', `/* AUTOMATICALLY GENERATED. DO NOT EDIT MANUALLY */
+type Word = {
+  語: string;
+  品詞: string;
+  規範から排除: boolean;
+  意味_日: string;
+};
+const WORDS: Word[] = ${JSON.stringify(words.slice(1), null, 2)};`);
