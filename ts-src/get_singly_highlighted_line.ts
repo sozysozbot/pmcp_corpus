@@ -31,7 +31,6 @@
  */
 function getSinglyHighlightedLine(o: { full_text: string, beginIndex: number, endIndex: number, match: string }) {
     const tokens = tokenize(o.full_text);
-    console.log(tokens);
     const single_line = document.createElement("div");
 
     let offset = 0;
@@ -79,11 +78,12 @@ function getSinglyHighlightedLine(o: { full_text: string, beginIndex: number, en
 
         switch (tok.kind) {
             case "pmcp-word": {
-                if (tok.content === "pi") {
+                const query_res = queryLemma(tok.content, true);
+                if (query_res) {
                     single_line.append(getHoverableText(maybe_highlighted, {
-                        headword: "pi",
-                        part_of_speech: "文接続詞",
-                        content: "～して、～したが、～すると"
+                        headword: query_res.語.toLowerCase(),
+                        part_of_speech: query_res.品詞,
+                        content: query_res.意味_日
                     }));
                 } else {
                     single_line.append(...maybe_highlighted);

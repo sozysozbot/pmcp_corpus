@@ -10,6 +10,8 @@
   <script src="./linkMap.js"></script>
   <script src="./search.js"></script>
   <script src="./get_hoverable_text.js"></script>
+  <script src="./words.js"></script>
+  <script src="./query_lemma.js"></script>
   <script src="./get_singly_highlighted_line.js"></script>
   <script src="./display_result.js"></script>
   <script src="./keyboard.js"></script>
@@ -37,6 +39,8 @@
 </head>
 
 <body>
+  <template id="tooltip"><span class="main-text">pi</span><span class="tooltip-text bottom-tooltip-text"><span class="tooltip-headword">PI</span><span class="tooltip-pronunciation" lang="ja">［ピ］</span><br><span class="tooltip-word-description" lang="ja"><span class="tooltip-part-of-speech">文接続詞</span><span class="tooltip-translation">～して、～したが、～すると</span></span></span></template>
+
   <header>
     <div style="display: flex; justify-content: center; align-items: flex-start;">
       <a href="search.html" style="display: inline-flex; align-items: center; text-decoration: none; color: inherit;">
@@ -47,7 +51,7 @@
     <div>東島通商語コーパス検索システム「ビシェ」</div>
     <section id="search-section">
       <div class="search-container">
-        <input type="text" id="search-bar" placeholder="正規表現で検索" value="" accesskey="f" autocapitalize="none" autocomplete="off" oninput="display_result()">
+        <input type="text" id="search-bar" placeholder="正規表現で検索　^ で検索すると全ての例文がヒットします" value="" accesskey="f" autocapitalize="none" autocomplete="off" oninput="display_result()">
         <div class="toggle_button">
           <span style="letter-spacing: -2px;">㗊㗊㗊</span>
           <input id="toggle_keyboard_balloon" class="toggle_input" type='checkbox' checked="false" />
