@@ -31,7 +31,6 @@
  */
 function getSinglyHighlightedLine(o) {
     const tokens = tokenize(o.full_text);
-    console.log(tokens);
     const single_line = document.createElement("div");
     let offset = 0;
     for (const tok of tokens) {
