@@ -75,11 +75,12 @@ function getSinglyHighlightedLine(o) {
         switch (tok.kind) {
             case "pmcp-word":
                 {
-                    if (tok.content === "pi") {
+                    const query_res = queryLemma(tok.content, true);
+                    if (query_res) {
                         single_line.append(getHoverableText(maybe_highlighted, {
-                            headword: "pi",
-                            part_of_speech: "文接続詞",
-                            content: "～して、～したが、～すると"
+                            headword: query_res.語.toLowerCase(),
+                            part_of_speech: query_res.品詞,
+                            content: query_res.意味_日
                         }));
                     }
                     else {

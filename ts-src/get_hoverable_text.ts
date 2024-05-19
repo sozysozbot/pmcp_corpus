@@ -19,12 +19,19 @@
     </span>
 </span>
  */
-function getHoverableText(maybe_highlighted_lemma: (string | Node)[], description: { headword: "pi", part_of_speech: "文接続詞", content: "～して、～したが、～すると" }) {
+function getHoverableText(
+    maybe_highlighted_lemma: (string | Node)[],
+    description: {
+        headword: string,
+        part_of_speech: string,
+        content: string
+    }
+) {
     const fragment: DocumentFragment = document.importNode((document.querySelector("#hoverable-text-template")! as HTMLTemplateElement).content, true);
     fragment.querySelector(".main-text")!.textContent = "";
     fragment.querySelector(".main-text")!.append(...maybe_highlighted_lemma);
     fragment.querySelector(".tooltip-headword")!.textContent = description.headword.toUpperCase();
-    fragment.querySelector(".tooltip-pronunciation")!.textContent = `［${to_kana(description.headword)}］`;
+    fragment.querySelector(".tooltip-pronunciation")!.textContent = `［${kana_words(description.headword)}］`;
     fragment.querySelector(".tooltip-part-of-speech")!.textContent = description.part_of_speech;
     fragment.querySelector(".tooltip-translation")!.textContent = description.content;
 
