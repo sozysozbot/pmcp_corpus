@@ -57,19 +57,24 @@ function queryLemma(word: string, allow_strip: boolean): { kind: "ok", word: Wor
         // not unique; not yet handlable
         return { kind: "err", msg: "多" };
     } else {
-        const filtered = words.filter(w => normalize_word(w).split(/[^a-z]/).includes(word));
-        if (filtered.length > 0) {
-            return { kind: "ok", word: filtered[0] };
+        {
+            const filtered = words.filter(w => normalize_word(w).split(/[^a-z]/).includes(word));
+            if (filtered.length > 0) {
+                return { kind: "ok", word: filtered[0] };
+            }
         }
+        {
 
-        const filtered_with_it = words.filter(w => normalize_word(w).split(/[^a-z]/).includes(word + "it"));
-        if (filtered_with_it.length > 0) {
-            return { kind: "ok", word: filtered[0] };
+            const filtered_with_it = words.filter(w => normalize_word(w).split(/[^a-z]/).includes(word + "it"));
+            if (filtered_with_it.length > 0) {
+                return { kind: "ok", word: filtered_with_it[0] };
+            }
         }
-
-        const filtered_with_leti = words.filter(w => normalize_word(w).split(/[^a-z]/).includes(word + "leti"));
-        if (filtered_with_leti.length > 0) {
-            return { kind: "ok", word: filtered[0] };
+        {
+            const filtered_with_leti = words.filter(w => normalize_word(w).split(/[^a-z]/).includes(word + "leti"));
+            if (filtered_with_leti.length > 0) {
+                return { kind: "ok", word: filtered_with_leti[0] };
+            }
         }
     }
     return { kind: "err", msg: "無" };
