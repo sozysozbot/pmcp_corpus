@@ -20,11 +20,17 @@
     </span>
 </span>
  */
-function getHoverableText(maybe_highlighted_lemma, description) {
+function getHoverableText(maybe_highlighted_lemma, descriptions) {
     const container_fragment = document.importNode(document.querySelector("#hoverable-container-template").content, true);
     container_fragment.querySelector(".main-text").textContent = "";
     container_fragment.querySelector(".main-text").append(...maybe_highlighted_lemma);
-    container_fragment.querySelector(".tooltip-text").append(getOneEntryFragment(description));
+    const tooltip_text = container_fragment.querySelector(".tooltip-text");
+    for (let i = 0; i < descriptions.length; i++) {
+        if (i !== 0) {
+            tooltip_text.append(document.createElement("hr"));
+        }
+        tooltip_text.append(getOneEntryFragment(descriptions[i]));
+    }
     const hover_text = document.createElement("span");
     hover_text.classList.add("hover-text");
     hover_text.append(container_fragment);

@@ -21,16 +21,23 @@
  */
 function getHoverableText(
     maybe_highlighted_lemma: (string | Node)[],
-    description: {
+    descriptions: {
         headword: string,
         part_of_speech: string,
         content: string
-    }
+    }[]
 ) {
     const container_fragment: DocumentFragment = document.importNode((document.querySelector("#hoverable-container-template")! as HTMLTemplateElement).content, true);
     container_fragment.querySelector(".main-text")!.textContent = "";
     container_fragment.querySelector(".main-text")!.append(...maybe_highlighted_lemma);
-    container_fragment.querySelector(".tooltip-text")!.append(getOneEntryFragment(description));
+
+    const tooltip_text: Element = container_fragment.querySelector(".tooltip-text")!;
+    for (let i = 0; i < descriptions.length; i++) {
+        if (i !== 0) {
+            tooltip_text.append(document.createElement("hr"));
+        }
+        tooltip_text.append(getOneEntryFragment(descriptions[i]));
+    }
 
     const hover_text = document.createElement("span");
     hover_text.classList.add("hover-text");

@@ -77,11 +77,11 @@ function getSinglyHighlightedLine(o) {
                 {
                     const query_res = queryLemma(tok.content, true);
                     if (query_res.kind === "ok") {
-                        single_line.append(getHoverableText(maybe_highlighted, {
-                            headword: query_res.word.語.toLowerCase(),
-                            part_of_speech: query_res.word.品詞,
-                            content: query_res.word.意味_日
-                        }));
+                        single_line.append(getHoverableText(maybe_highlighted, [{
+                                headword: query_res.word.語.toLowerCase(),
+                                part_of_speech: query_res.word.品詞,
+                                content: query_res.word.意味_日
+                            }]));
                     }
                     else {
                         single_line.append(...maybe_highlighted);
