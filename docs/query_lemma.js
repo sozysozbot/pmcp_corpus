@@ -28,15 +28,23 @@ function queryLemma(word, allow_strip) {
         return { kind: "err", msg: "KA" };
     }
     if (allow_strip) {
-        if (word.endsWith("it")
-            && word.length > 2
-            && queryLemma(word.slice(0, -2), false).kind === "ok") {
-            return queryLemma(word.slice(0, -2), false);
+        if (word.endsWith("it") && word.length > 2) {
+            const without_it = queryLemma(word.slice(0, -2), false);
+            if (without_it.kind === "ok") {
+                return without_it;
+            }
+            else if (without_it.msg === "多") {
+                return { kind: "err", msg: "多" };
+            }
         }
-        else if (word !== "moleti" && word.endsWith("leti")
-            && word.length > 4
-            && queryLemma(word.slice(0, -4), false).kind === "ok") {
-            return queryLemma(word.slice(0, -4), false);
+        else if (word !== "moleti" && word.endsWith("leti") && word.length > 4) {
+            const without_leti = queryLemma(word.slice(0, -4), false);
+            if (without_leti.kind === "ok") {
+                return without_leti;
+            }
+            else if (without_leti.msg === "多") {
+                return { kind: "err", msg: "多" };
+            }
         }
     }
     if (loose_list.indexOf(word) !== loose_list.lastIndexOf(word)) {
