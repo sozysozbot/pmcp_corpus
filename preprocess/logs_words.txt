@@ -1,18 +1,18 @@
---2024-06-01 20:36:40--  https://docs.google.com/spreadsheets/d/1Eo2VcfflWTTtJhMyeFNxQ0pDtkHETSKKM1yuVtVrnQs/export?format=tsv&gid=0
-Resolving docs.google.com (docs.google.com)... 172.217.161.46, 2404:6800:4004:80a::200e
+--2024-06-01 20:51:29--  https://docs.google.com/spreadsheets/d/1Eo2VcfflWTTtJhMyeFNxQ0pDtkHETSKKM1yuVtVrnQs/export?format=tsv&gid=0
+Resolving docs.google.com (docs.google.com)... 172.217.161.46, 2404:6800:4004:80b::200e
 Connecting to docs.google.com (docs.google.com)|172.217.161.46|:443... connected.
 HTTP request sent, awaiting response... 307 Temporary Redirect
-Location: https://doc-00-30-sheets.googleusercontent.com/export/54bogvaave6cua4cdnls17ksc4/27spk0uilmrgo595tt52t2k74c/1717241800000/102200293213874016754/*/1Eo2VcfflWTTtJhMyeFNxQ0pDtkHETSKKM1yuVtVrnQs?format=tsv&gid=0 [following]
+Location: https://doc-00-30-sheets.googleusercontent.com/export/54bogvaave6cua4cdnls17ksc4/9o8s3om16ieqjporaib22nl2k0/1717242690000/102200293213874016754/*/1Eo2VcfflWTTtJhMyeFNxQ0pDtkHETSKKM1yuVtVrnQs?format=tsv&gid=0 [following]
 Warning: wildcards not supported in HTTP.
---2024-06-01 20:36:41--  https://doc-00-30-sheets.googleusercontent.com/export/54bogvaave6cua4cdnls17ksc4/27spk0uilmrgo595tt52t2k74c/1717241800000/102200293213874016754/*/1Eo2VcfflWTTtJhMyeFNxQ0pDtkHETSKKM1yuVtVrnQs?format=tsv&gid=0
+--2024-06-01 20:51:31--  https://doc-00-30-sheets.googleusercontent.com/export/54bogvaave6cua4cdnls17ksc4/9o8s3om16ieqjporaib22nl2k0/1717242690000/102200293213874016754/*/1Eo2VcfflWTTtJhMyeFNxQ0pDtkHETSKKM1yuVtVrnQs?format=tsv&gid=0
 Resolving doc-00-30-sheets.googleusercontent.com (doc-00-30-sheets.googleusercontent.com)... 216.58.220.129, 2404:6800:4004:813::2001
 Connecting to doc-00-30-sheets.googleusercontent.com (doc-00-30-sheets.googleusercontent.com)|216.58.220.129|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: unspecified [text/tab-separated-values]
 Saving to: ‘./preprocess/words.tsv’
 
-     0K .......... .......... .......... .......... ..........  123K
-    50K .......... .......... ...                              35.4K=1.1s
+     0K .......... .......... .......... .......... .......... 8.40K
+    50K .......... .......... ...                              37.3K=6.6s
 
-2024-06-01 20:36:43 (68.6 KB/s) - ‘./preprocess/words.tsv’ saved [75387]
+2024-06-01 20:51:41 (11.2 KB/s) - ‘./preprocess/words.tsv’ saved [75422]
 

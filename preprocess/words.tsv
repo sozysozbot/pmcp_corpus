@@ -502,9 +502,9 @@
 5010	TEK		名詞		我々の遊戯-text	2023/04/30		合計、和	（左に同じ）	terk			
 5020	CEKEL		名詞		我々の遊戯-text	2023/04/30		報酬、配当	cergel, vaxelferl	cergel	お返し、報酬		
 5030	LAP		前置助動詞		我々の遊戯-text	2023/04/30		だけ	（左に同じ）	lap			
-5040	LAIJU		名詞		我々の遊戯-text	2023/04/30		列、行列、順番	（左に同じ）	leiju			
+5040	LAIJU		名詞		我々の遊戯-text	2023/04/30		列、行列、順番、[laiju leti kin]連番	（左に同じ）	leiju			
 5050	E LAIJU		動詞		我々の遊戯-text	2023/04/30		並ぶ	laozia leiju, en leiju'c, es fal leiju	leiju			
-5060	LAIJU LETI KIN		名詞		我々の遊戯-text	2023/04/30		連番	olonasch dieniep	E LAIJU.pmcf + KIN.pmcf			
+5060	LAIJU LETI KIN		複合名詞	TRUE	我々の遊戯-text	2023/04/30		連番	olonasch dieniep	E LAIJU.pmcf + KIN.pmcf			
 5070	CUCITAL		名詞		我々の遊戯-text	2023/04/30		中央	sysit	sysit + -al	中心		「虎」との衝突を避けた
 5080	NUCUCITAL		名詞		我々の遊戯-text	2023/04/30		端	fka, sysit ler lernen polto	NU.pmcf + CUCITAL.pmcf			
 5090	E BILATE		動詞		我々の遊戯-text	2023/04/30		組み合わさる	(flivi'a fitena) veles virlarteo	virlarte	組み合わせる		
