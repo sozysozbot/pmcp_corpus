@@ -49,29 +49,11 @@ function queryLemma(word, allow_strip) {
             }
         }
     }
-    if (loose_list.indexOf(word) !== loose_list.lastIndexOf(word)) {
-        // not unique; not yet handlable
-        return { kind: "err", msg: "多" };
-    }
-    else {
-        {
-            const filtered = words.filter(w => normalize_word(w).split(/[^a-z]/).includes(word));
-            if (filtered.length > 0) {
-                return { kind: "ok", word: filtered[0] };
-            }
-        }
-        {
-            const filtered_with_it = words.filter(w => normalize_word(w).split(/[^a-z]/).includes(word + "it"));
-            if (filtered_with_it.length > 0) {
-                return { kind: "ok", word: filtered_with_it[0] };
-            }
-        }
-        {
-            const filtered_with_leti = words.filter(w => normalize_word(w).split(/[^a-z]/).includes(word + "leti"));
-            if (filtered_with_leti.length > 0) {
-                return { kind: "ok", word: filtered_with_leti[0] };
-            }
-        }
-    }
-    return { kind: "err", msg: "無" };
+    const filtered = words.filter(w => normalize_word(w).split(/[^a-z]/).includes(word));
+    const filtered_with_it = words.filter(w => normalize_word(w).split(/[^a-z]/).includes(word + "it"));
+    const filtered_with_leti = words.filter(w => normalize_word(w).split(/[^a-z]/).includes(word + "leti"));
+    if (filtered.length + filtered_with_it.length + filtered_with_leti.length > 0)
+        return { kind: "ok", words: [...filtered, ...filtered_with_it, ...filtered_with_leti] };
+    else
+        return { kind: "err", msg: "無" };
 }
