@@ -22,14 +22,14 @@ const loose_list = words
 
 loose_list.sort();
 
-function queryLemma(word: string, allow_strip: boolean): Word | null {
+function queryLemma(word: string, allow_strip: boolean): { kind: "ok", word: Word } | { kind: "err", msg: "KA" | "多" | "無" } {
 
     if (word === "kaleti") {
-         /** 
-          * kaleti「2つの」vs. ka「これ」（leti がスペース無しでよい特殊な名詞）の勝負で「2 つの」が勝ってしまって困るので、
-          * とりあえずブロック
-          *  */
-        return null;
+        /** 
+         * kaleti「2つの」vs. ka「これ」（leti がスペース無しでよい特殊な名詞）の勝負で「2 つの」が勝ってしまって困るので、
+         * とりあえずブロック
+         *  */
+        return { kind: "err", msg: "KA" };
     }
 
     if (allow_strip) {
@@ -44,29 +44,13 @@ function queryLemma(word: string, allow_strip: boolean): Word | null {
         loose_list.indexOf(word) !== loose_list.lastIndexOf(word)
     ) {
         // not unique; not yet handlable
-        return null;
+        return { kind: "err", msg: "多" };
     } else {
         const filtered = words.filter(w => normalize_word(w).split(/[^a-z]/).includes(word));
         if (filtered.length > 0) {
-            return filtered[0];
+            return { kind: "ok", word: filtered[0] };
         }
     }
-    return null;
+    return { kind: "err", msg: "無" };
 }
 
-function getHighlightableWords(full_text: string) {
-    const highlightable: string[] = [];
-    const non_highlightable: string[] = [];
-    const tokens = tokenize(full_text);
-    for (const tok of tokens) {
-        if (tok.kind === "pmcp-word") {
-            const query_res = queryLemma(tok.content, true);
-            if (query_res) {
-                highlightable.push(tok.content);
-            } else {
-                non_highlightable.push(tok.content);
-            }
-        }
-    }
-    return { highlightable, non_highlightable };
-}

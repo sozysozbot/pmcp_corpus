@@ -76,11 +76,11 @@ function getSinglyHighlightedLine(o) {
             case "pmcp-word":
                 {
                     const query_res = queryLemma(tok.content, true);
-                    if (query_res) {
+                    if (query_res.kind === "ok") {
                         single_line.append(getHoverableText(maybe_highlighted, {
-                            headword: query_res.語.toLowerCase(),
-                            part_of_speech: query_res.品詞,
-                            content: query_res.意味_日
+                            headword: query_res.word.語.toLowerCase(),
+                            part_of_speech: query_res.word.品詞,
+                            content: query_res.word.意味_日
                         }));
                     }
                     else {
@@ -208,26 +208,35 @@ function tokenize(full_text) {
     return ans;
 }
 function count_highlightable(cutoff = 20) {
-    const HIGHLIGHTABLE = [];
-    const NON_HIGHLIGHTABLE = [];
+    const ok = [];
+    const not_ok = [];
     for (const item of corpus_new_to_old) {
         const { pmcp: pmcp_text } = item;
-        const { highlightable, non_highlightable } = getHighlightableWords(pmcp_text);
-        HIGHLIGHTABLE.push(...highlightable);
-        NON_HIGHLIGHTABLE.push(...non_highlightable);
+        const tokens = tokenize(pmcp_text);
+        for (const tok of tokens) {
+            if (tok.kind === "pmcp-word") {
+                const query_res = queryLemma(tok.content, true);
+                if (query_res.kind === "ok") {
+                    ok.push(tok.content);
+                }
+                else {
+                    not_ok.push(tok.content + "|" + query_res.msg);
+                }
+            }
+        }
     }
-    const HIGHLIGHTABLE_UNIQ = new Set(HIGHLIGHTABLE);
-    const NON_HIGHLIGHTABLE_UNIQ = new Set(NON_HIGHLIGHTABLE);
-    const counted = [...NON_HIGHLIGHTABLE.reduce((count, cur) => (count.set(cur, (count.get(cur) || 0) + 1), count), new Map())];
+    const highlightable_uniq = new Set(ok);
+    const non_highlightable_uniq = new Set(not_ok);
+    const counted = [...not_ok.reduce((count, cur) => (count.set(cur, (count.get(cur) || 0) + 1), count), new Map())];
     counted.sort(([_k1, v1], [_k2, v2]) => v2 - v1);
     return `
-    highlightable (not uniq): ${HIGHLIGHTABLE.length}
-non-highlightable (not uniq): ${NON_HIGHLIGHTABLE.length}
-    percentage    (not uniq): ${(HIGHLIGHTABLE.length / (HIGHLIGHTABLE.length + NON_HIGHLIGHTABLE.length) * 100).toPrecision(4)}%
+    highlightable (not uniq): ${ok.length}
+non-highlightable (not uniq): ${not_ok.length}
+    percentage    (not uniq): ${(ok.length / (ok.length + not_ok.length) * 100).toPrecision(4)}%
 
-    highlightable (uniq): ${HIGHLIGHTABLE_UNIQ.size}
-non-highlightable (uniq): ${NON_HIGHLIGHTABLE_UNIQ.size}
-    percentage    (uniq): ${(HIGHLIGHTABLE_UNIQ.size / (HIGHLIGHTABLE_UNIQ.size + NON_HIGHLIGHTABLE_UNIQ.size) * 100).toPrecision(4)}%
+    highlightable (uniq): ${highlightable_uniq.size}
+non-highlightable (uniq): ${non_highlightable_uniq.size}
+    percentage    (uniq): ${(highlightable_uniq.size / (highlightable_uniq.size + non_highlightable_uniq.size) * 100).toPrecision(4)}%
     
 top-tier non-highlightable: ${JSON.stringify(counted.slice(0, cutoff))}
 `;

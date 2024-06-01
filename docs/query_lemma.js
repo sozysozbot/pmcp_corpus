@@ -25,7 +25,7 @@ function queryLemma(word, allow_strip) {
          * kaleti「2つの」vs. ka「これ」（leti がスペース無しでよい特殊な名詞）の勝負で「2 つの」が勝ってしまって困るので、
          * とりあえずブロック
          *  */
-        return null;
+        return { kind: "err", msg: "KA" };
     }
     if (allow_strip) {
         if (word.endsWith("it") && word.length > 2 && queryLemma(word.slice(0, -2), false)) {
@@ -37,30 +37,13 @@ function queryLemma(word, allow_strip) {
     }
     if (loose_list.indexOf(word) !== loose_list.lastIndexOf(word)) {
         // not unique; not yet handlable
-        return null;
+        return { kind: "err", msg: "多" };
     }
     else {
         const filtered = words.filter(w => normalize_word(w).split(/[^a-z]/).includes(word));
         if (filtered.length > 0) {
-            return filtered[0];
+            return { kind: "ok", word: filtered[0] };
         }
     }
-    return null;
-}
-function getHighlightableWords(full_text) {
-    const highlightable = [];
-    const non_highlightable = [];
-    const tokens = tokenize(full_text);
-    for (const tok of tokens) {
-        if (tok.kind === "pmcp-word") {
-            const query_res = queryLemma(tok.content, true);
-            if (query_res) {
-                highlightable.push(tok.content);
-            }
-            else {
-                non_highlightable.push(tok.content);
-            }
-        }
-    }
-    return { highlightable, non_highlightable };
+    return { kind: "err", msg: "無" };
 }
