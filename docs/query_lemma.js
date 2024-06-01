@@ -28,10 +28,14 @@ function queryLemma(word, allow_strip) {
         return { kind: "err", msg: "KA" };
     }
     if (allow_strip) {
-        if (word.endsWith("it") && word.length > 2 && queryLemma(word.slice(0, -2), false)) {
+        if (word.endsWith("it")
+            && word.length > 2
+            && queryLemma(word.slice(0, -2), false).kind === "ok") {
             return queryLemma(word.slice(0, -2), false);
         }
-        else if (word !== "moleti" && word.endsWith("leti") && word.length > 4 && queryLemma(word.slice(0, -4), false)) {
+        else if (word !== "moleti" && word.endsWith("leti")
+            && word.length > 4
+            && queryLemma(word.slice(0, -4), false).kind === "ok") {
             return queryLemma(word.slice(0, -4), false);
         }
     }
