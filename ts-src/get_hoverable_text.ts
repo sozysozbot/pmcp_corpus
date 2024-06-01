@@ -31,7 +31,14 @@ function getHoverableText(
     fragment.querySelector(".main-text")!.textContent = "";
     fragment.querySelector(".main-text")!.append(...maybe_highlighted_lemma);
     fragment.querySelector(".tooltip-headword")!.textContent = description.headword.toUpperCase();
-    fragment.querySelector(".tooltip-pronunciation")!.textContent = `［${kana_words(description.headword)}］`;
+
+    const split_leti_but_join_it = (str: string) => str.toLowerCase()
+        .replaceAll(/-it\b(?!-)/g, "it")
+        .replaceAll(/(?<!-|mo)leti\b(?!-)/g, "-leti");
+
+    fragment.querySelector(".tooltip-pronunciation")!.textContent = `［${kana_words(
+        split_leti_but_join_it(description.headword)
+    )}］`;
     fragment.querySelector(".tooltip-part-of-speech")!.textContent = description.part_of_speech;
     fragment.querySelector(".tooltip-translation")!.textContent = description.content;
 

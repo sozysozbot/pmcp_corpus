@@ -1,8 +1,10 @@
 "use strict";
 const words = WORDS.filter(w => !w.目録から排除);
-const normalize_word = (w) => w.語.toLowerCase()
-    .replaceAll(/-leti\b(?!-)/g, "leti");
-/* ハイフン + leti の後に語境界があって、そしてハイフンが直後に後続しないなら、前の単語とくっつける */
+function normalize_word(w) {
+    return w.語.toLowerCase()
+        .replaceAll(/-(leti|it)\b(?!-)/g, "$1");
+    /* ハイフン + leti または ハイフン + it の後に語境界があって、そしてハイフンが直後に後続しないなら、前の単語とくっつける */
+}
 // 実際には無い語形も登場する、緩めのリスト
 const loose_list = words
     .map(normalize_word)
