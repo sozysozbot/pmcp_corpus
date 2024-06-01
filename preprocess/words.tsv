@@ -146,7 +146,8 @@
 1450	kie		形容詞					急ぎの	ki'ergen	ki'e			
 1460	kin		名詞					値、数、点数	dieniep	kinfit		値	
 1470	lewip		名詞					辞書	（左に同じ）	levip			
-1480	e kin		動詞					～の数になる、[kinpit] ～を数える	（左に同じ）	kinfit		値	
+1480	e kin		動詞					～の数になる	（左に同じ）	kinfit		値	
+1485	kinpit		動詞					～を数える	（左に同じ）	kinfit			
 1490	nip		間投詞					いいえ	（左に同じ）	niv		無	
 1500	e ancol		動詞					与える、渡す	（左に同じ）	amcol			
 1510	pontaloexo		名詞					フォンタローエショ（長さの単位。約 31.2cm）	（左に同じ）	fontalorexo			
@@ -200,6 +201,7 @@
 1990	e pulan		動詞					白い	（左に同じ）	flan		白	
 2000	e ludec		動詞					赤い	es ludiex	ludiex		赤	
 2010	e dok		動詞					叩く、叩きつける	（左に同じ）	dokt		撃	
+2015	doktit		動詞					叩く、叩きつける	（左に同じ）	dokt		撃	
 2020	tanke		名詞					タンケ【皇処】（セッカイク）	tarfe	tam2 hue.pk		皇処	
 2030	xiju		名詞					投げ棒	ciurl	xy1.pk		裁	
 2040	xepudoc		名詞					柵、垣根	（左に同じ）	ciepudrost			
