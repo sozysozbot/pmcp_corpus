@@ -457,7 +457,7 @@
 4560	melpetal		名詞		我々の遊戯-text	2023/4/5		索引、目次、名簿、目録、リスト、一覧	（左に同じ）	melfertal			
 4570	pekenacit		動詞		我々の遊戯-text	2023/4/5		目指す、目標とする	（左に同じ）	fergen'artz			= XELIT ~ LETI CUL
 4580	amol-it		動詞		我々の遊戯-text	2023/4/5		置く	（左に同じ）	amol			
-4590	anpe		名詞		我々の遊戯-text	2023/4/5		力	（左に同じ）	anfi'e			
+4590	anpe		名詞	TRUE	我々の遊戯-text	2023/4/5		力	（左に同じ）	anfi'e			
 4600	nocti		名詞		我々の遊戯-text	2023/4/5		特徴	（左に同じ）	snosti			
 4610	enja		名詞		我々の遊戯-text	2023/4/5		仕事、役職	（左に同じ）	en'iar			
 4620	paujun		名詞		我々の遊戯-text	2023/4/5		基準	（左に同じ）	faiium, foiium			
@@ -807,4 +807,5 @@
 8060	e nenul		動詞					[e nenul tude]（車や乗り物に）乗る、[e nenul kije]（車や乗り物から）降りる	nienul [tude], nienulins [kije]	nienul			
 	e pac		動詞					始まる	（左に同じ）	fas			
 	pac		名詞					始まり	fasso	fas			
-	cawakit		動詞										
+	cawakit		動詞					（どんぐりなどを）渋抜きする、（文章を）読みやすく整える		banersavakh			
+	nincetkaik		名詞					紙机戦		nin1 cet2 kaik.pk			
