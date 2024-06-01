@@ -2,7 +2,7 @@
 const words = WORDS.filter(w => !w.目録から排除);
 // 実際には無い語形も登場する、緩めのリスト
 const loose_list = words
-    .map(w => w.語.toLowerCase())
+    .map(w => w.語.toLowerCase().replaceAll(/-leti\b/g, "leti"))
     .flatMap(phrase => phrase.split(/[^a-z]/))
     .flatMap(word => {
     if (word.endsWith("it") && word.length > 2) {
