@@ -37,3 +37,20 @@ function queryLemma(word, allow_strip) {
     }
     return null;
 }
+function getHighlightableWords(full_text) {
+    const highlightable = [];
+    const non_highlightable = [];
+    const tokens = tokenize(full_text);
+    for (const tok of tokens) {
+        if (tok.kind === "pmcp-word") {
+            const query_res = queryLemma(tok.content, true);
+            if (query_res) {
+                highlightable.push(tok.content);
+            }
+            else {
+                non_highlightable.push(tok.content);
+            }
+        }
+    }
+    return { highlightable, non_highlightable };
+}
