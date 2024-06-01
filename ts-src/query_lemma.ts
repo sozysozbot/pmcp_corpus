@@ -51,6 +51,11 @@ function queryLemma(word: string, allow_strip: boolean): { kind: "ok", words: Wo
         }
     }
 
+    if (word === "e") {
+        // 全ての動詞 (e tata とか)を表示するわけにはいかない
+        return { kind: "ok", words: words.filter(w => w.語 === "e") };
+    }
+
     const filtered = words.filter(w => normalize_word(w).split(/[^a-z]/).includes(word));
     const filtered_with_it = words.filter(w => normalize_word(w).split(/[^a-z]/).includes(word + "it"));
     const filtered_with_leti = words.filter(w => normalize_word(w).split(/[^a-z]/).includes(word + "leti"));
