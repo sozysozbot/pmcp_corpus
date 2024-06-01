@@ -197,7 +197,7 @@ function tokenize(full_text: string): Token[] {
     return ans;
 }
 
-function count_highlightable() {
+function count_highlightable(cutoff: number = 20) {
 
     const HIGHLIGHTABLE = [];
     const NON_HIGHLIGHTABLE = [];
@@ -228,6 +228,6 @@ non-highlightable (not uniq): ${NON_HIGHLIGHTABLE.length}
 non-highlightable (uniq): ${NON_HIGHLIGHTABLE_UNIQ.size}
     percentage    (uniq): ${(HIGHLIGHTABLE_UNIQ.size / (HIGHLIGHTABLE_UNIQ.size + NON_HIGHLIGHTABLE_UNIQ.size) * 100).toPrecision(4)}%
     
-top-tier non-highlightable: ${JSON.stringify(counted.slice(0, 20))}
+top-tier non-highlightable: ${JSON.stringify(counted.slice(0, cutoff))}
 `;
 }

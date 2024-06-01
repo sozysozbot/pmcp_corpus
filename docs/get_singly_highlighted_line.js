@@ -207,7 +207,7 @@ function tokenize(full_text) {
     ans.push({ kind: "eof", content: "" });
     return ans;
 }
-function count_highlightable() {
+function count_highlightable(cutoff = 20) {
     const HIGHLIGHTABLE = [];
     const NON_HIGHLIGHTABLE = [];
     for (const item of corpus_new_to_old) {
@@ -229,6 +229,6 @@ non-highlightable (not uniq): ${NON_HIGHLIGHTABLE.length}
 non-highlightable (uniq): ${NON_HIGHLIGHTABLE_UNIQ.size}
     percentage    (uniq): ${(HIGHLIGHTABLE_UNIQ.size / (HIGHLIGHTABLE_UNIQ.size + NON_HIGHLIGHTABLE_UNIQ.size) * 100).toPrecision(4)}%
     
-top-tier non-highlightable: ${JSON.stringify(counted.slice(0, 20))}
+top-tier non-highlightable: ${JSON.stringify(counted.slice(0, cutoff))}
 `;
 }
