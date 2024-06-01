@@ -1,4 +1,4 @@
-時系列っぽいindex	語	*	品詞	規範から排除	語ソース	推定執筆日	議論ソース	意味（日）	意味（理）	語源（理）	［意味≠語源の時］語源の和訳	燐字	備考や案件
+時系列っぽいindex	語	*	品詞	目録から排除	語ソース	推定執筆日	議論ソース	意味（日）	意味（理）	語源（理）	［意味≠語源の時］語源の和訳	燐字	備考や案件
 10	mi		名詞					私	（左に同じ）	mi		我	
 20	co		名詞					あなた	（左に同じ）	co		汝	
 30	ka		名詞					これ	ka1	fqa, ka.tk, ka1.pk		此	
@@ -223,8 +223,8 @@
 2220	e waxec		動詞					異なる、違う	（左に同じ）	waxes		別	
 2230	waxec-it		動詞					変える、変更する、変化させる	waxes, furnkie	waxes		別	
 2240	e cece		動詞					跳ねる	（左に同じ）	siesej		躍躍	
-2250	pijuc		名詞					目	（左に同じ）	fiurs			
-2260	pijuc leti kapa		名詞					視線、方向	fyrstla, lal	fyrstla + [kád.bt]		目之光	
+2250	pijuc		名詞					目、[pijuc leti kapa]視線・方向	（左に同じ）	fiurs			
+2260	pijuc leti kapa		名詞	TRUE				視線、方向	fyrstla, lal	fyrstla + [kád.bt]		目之光	
 2270	atalan		名詞					タカン、アタラン（島名）	alefise'd menis, 皇 hartlirfa'd fonticco				
 2280	nul		名詞		リパライン語 benallata 語源欄			魂	（左に同じ）	nult			
 2290	benal		名詞		リパライン語 benallata 語源欄			田舎、僻地	（左に同じ）	venal			
