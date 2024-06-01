@@ -1,10 +1,11 @@
 "use strict";
 const words = WORDS.filter(w => !w.目録から排除);
+const normalize_word = (w) => w.語.toLowerCase()
+    .replaceAll(/-leti\b(?!-)/g, "leti");
+/* ハイフン + leti の後に語境界があって、そしてハイフンが直後に後続しないなら、前の単語とくっつける */
 // 実際には無い語形も登場する、緩めのリスト
 const loose_list = words
-    .map(w => w.語
-    .toLowerCase()
-    .replaceAll(/-leti\b(?!-)/g, "leti") /* ハイフン + leti の後に語境界があって、そしてハイフンが直後に後続しないなら、前の単語とくっつける */)
+    .map(normalize_word)
     .flatMap(phrase => phrase.split(/[^a-z]/))
     .flatMap(word => {
     if (word.endsWith("it") && word.length > 2) {
@@ -32,7 +33,7 @@ function queryLemma(word, allow_strip) {
         return null;
     }
     else {
-        const filtered = words.filter(w => w.語.toLowerCase().split(/[^a-z]/).includes(word));
+        const filtered = words.filter(w => normalize_word(w).split(/[^a-z]/).includes(word));
         if (filtered.length > 0) {
             return filtered[0];
         }
