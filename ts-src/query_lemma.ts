@@ -39,3 +39,20 @@ function queryLemma(word: string, allow_strip: boolean): Word | null {
     }
     return null;
 }
+
+function getHighlightableWords(full_text: string) {
+    const highlightable: string[] = [];
+    const non_highlightable: string[] = [];
+    const tokens = tokenize(full_text);
+    for (const tok of tokens) {
+        if (tok.kind === "pmcp-word") {
+            const query_res = queryLemma(tok.content, true);
+            if (query_res) {
+                highlightable.push(tok.content);
+            } else {
+                non_highlightable.push(tok.content);
+            }
+        }
+    }
+    return { highlightable, non_highlightable };
+}

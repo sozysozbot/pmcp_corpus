@@ -207,3 +207,29 @@ function tokenize(full_text) {
     ans.push({ kind: "eof", content: "" });
     return ans;
 }
+function count_highlightable_and_console_log() {
+    const HIGHLIGHTABLE = [];
+    const NON_HIGHLIGHTABLE = [];
+    for (const item of corpus_new_to_old) {
+        const { pmcp: pmcp_text } = item;
+        const { highlightable, non_highlightable } = getHighlightableWords(pmcp_text);
+        HIGHLIGHTABLE.push(...highlightable);
+        NON_HIGHLIGHTABLE.push(...non_highlightable);
+    }
+    const HIGHLIGHTABLE_UNIQ = new Set(HIGHLIGHTABLE);
+    const NON_HIGHLIGHTABLE_UNIQ = new Set(NON_HIGHLIGHTABLE);
+    const counted = [...NON_HIGHLIGHTABLE.reduce((count, cur) => (count.set(cur, (count.get(cur) || 0) + 1), count), new Map())];
+    counted.sort(([_k1, v1], [_k2, v2]) => v2 - v1);
+    console.log(`
+    highlightable (not uniq): ${HIGHLIGHTABLE.length}
+non-highlightable (not uniq): ${NON_HIGHLIGHTABLE.length}
+    percentage    (not uniq): ${(HIGHLIGHTABLE.length / (HIGHLIGHTABLE.length + NON_HIGHLIGHTABLE.length) * 100).toPrecision(4)}%
+
+    highlightable (uniq): ${HIGHLIGHTABLE_UNIQ.size}
+non-highlightable (uniq): ${NON_HIGHLIGHTABLE_UNIQ.size}
+    percentage    (uniq): ${(HIGHLIGHTABLE_UNIQ.size / (HIGHLIGHTABLE_UNIQ.size + NON_HIGHLIGHTABLE_UNIQ.size) * 100).toPrecision(4)}%
+    
+top-tier non-highlightable: ${JSON.stringify(counted.slice(0, 20))}
+`);
+}
+count_highlightable_and_console_log();
