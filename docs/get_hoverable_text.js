@@ -23,15 +23,15 @@
 function getHoverableText(maybe_highlighted_lemma, description) {
     const one_entry_fragment = document.importNode(document.querySelector("#one-entry-template").content, true);
     one_entry_fragment.querySelector(".tooltip-headword").textContent = description.headword.toUpperCase();
-    const container_fragment = document.importNode(document.querySelector("#hoverable-container-template").content, true);
-    container_fragment.querySelector(".main-text").textContent = "";
-    container_fragment.querySelector(".main-text").append(...maybe_highlighted_lemma);
+    one_entry_fragment.querySelector(".tooltip-part-of-speech").textContent = description.part_of_speech;
+    one_entry_fragment.querySelector(".tooltip-translation").textContent = description.content;
     const split_leti_but_join_it = (str) => str.toLowerCase()
         .replaceAll(/-it\b(?!-)/g, "it")
         .replaceAll(/(?<!-|mo)leti\b(?!-)/g, "-leti");
     one_entry_fragment.querySelector(".tooltip-pronunciation").textContent = `［${kana_words(split_leti_but_join_it(description.headword))}］`;
-    one_entry_fragment.querySelector(".tooltip-part-of-speech").textContent = description.part_of_speech;
-    one_entry_fragment.querySelector(".tooltip-translation").textContent = description.content;
+    const container_fragment = document.importNode(document.querySelector("#hoverable-container-template").content, true);
+    container_fragment.querySelector(".main-text").textContent = "";
+    container_fragment.querySelector(".main-text").append(...maybe_highlighted_lemma);
     container_fragment.querySelector(".tooltip-text").append(one_entry_fragment);
     const hover_text = document.createElement("span");
     hover_text.classList.add("hover-text");
