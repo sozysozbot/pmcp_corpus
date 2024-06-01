@@ -80,11 +80,12 @@ function getSinglyHighlightedLine(o: { full_text: string, beginIndex: number, en
             case "pmcp-word": {
                 const query_res = queryLemma(tok.content, true);
                 if (query_res.kind === "ok") {
-                    single_line.append(getHoverableText(maybe_highlighted, {
-                        headword: query_res.word.語.toLowerCase(),
-                        part_of_speech: query_res.word.品詞,
-                        content: query_res.word.意味_日
+                    const descriptions = query_res.words.map(w => ({
+                        headword: w.語.toLowerCase(),
+                        part_of_speech: w.品詞,
+                        content: w.意味_日
                     }));
+                    single_line.append(getHoverableText(maybe_highlighted, descriptions));
                 } else {
                     single_line.append(...maybe_highlighted);
                 }
@@ -211,7 +212,7 @@ function count_highlightable(cutoff: number = 20) {
                 if (query_res.kind === "ok") {
                     ok.push(tok.content);
                 } else {
-                    not_ok.push(tok.content + "|" + query_res.msg);
+                    not_ok.push(tok.content);
                 }
             }
         }

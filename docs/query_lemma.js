@@ -22,21 +22,11 @@ const loose_list = words
 });
 loose_list.sort();
 function queryLemma(word, allow_strip) {
-    if (word === "kaleti") {
-        /**
-         * kaleti「2つの」vs. ka「これ」（leti がスペース無しでよい特殊な名詞）の勝負で「2 つの」が勝ってしまって困るので、
-         * とりあえずブロック
-         *  */
-        return { kind: "err", msg: "KA" };
-    }
     if (allow_strip) {
         if (word.endsWith("it") && word.length > 2) {
             const without_it = queryLemma(word.slice(0, -2), false);
             if (without_it.kind === "ok") {
                 return without_it;
-            }
-            else if (without_it.msg === "多") {
-                return { kind: "err", msg: "多" };
             }
         }
         else if (word !== "moleti" && word.endsWith("leti") && word.length > 4) {
@@ -44,34 +34,17 @@ function queryLemma(word, allow_strip) {
             if (without_leti.kind === "ok") {
                 return without_leti;
             }
-            else if (without_leti.msg === "多") {
-                return { kind: "err", msg: "多" };
-            }
         }
     }
-    if (loose_list.indexOf(word) !== loose_list.lastIndexOf(word)) {
-        // not unique; not yet handlable
-        return { kind: "err", msg: "多" };
+    if (word === "e") {
+        // 全ての動詞 (e tata とか)を表示するわけにはいかない
+        return { kind: "ok", words: words.filter(w => w.語 === "e") };
     }
-    else {
-        {
-            const filtered = words.filter(w => normalize_word(w).split(/[^a-z]/).includes(word));
-            if (filtered.length > 0) {
-                return { kind: "ok", word: filtered[0] };
-            }
-        }
-        {
-            const filtered_with_it = words.filter(w => normalize_word(w).split(/[^a-z]/).includes(word + "it"));
-            if (filtered_with_it.length > 0) {
-                return { kind: "ok", word: filtered_with_it[0] };
-            }
-        }
-        {
-            const filtered_with_leti = words.filter(w => normalize_word(w).split(/[^a-z]/).includes(word + "leti"));
-            if (filtered_with_leti.length > 0) {
-                return { kind: "ok", word: filtered_with_leti[0] };
-            }
-        }
-    }
-    return { kind: "err", msg: "無" };
+    const filtered = words.filter(w => normalize_word(w).split(/[^a-z]/).includes(word));
+    const filtered_with_it = words.filter(w => normalize_word(w).split(/[^a-z]/).includes(word + "it"));
+    const filtered_with_leti = words.filter(w => normalize_word(w).split(/[^a-z]/).includes(word + "leti"));
+    if (filtered.length + filtered_with_it.length + filtered_with_leti.length > 0)
+        return { kind: "ok", words: [...filtered, ...filtered_with_it, ...filtered_with_leti] };
+    else
+        return { kind: "err" };
 }
