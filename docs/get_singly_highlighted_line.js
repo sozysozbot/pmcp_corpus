@@ -221,7 +221,7 @@ function count_highlightable(cutoff = 20) {
                     ok.push(tok.content);
                 }
                 else {
-                    not_ok.push(tok.content + "|" + query_res.msg);
+                    not_ok.push(tok.content);
                 }
             }
         }

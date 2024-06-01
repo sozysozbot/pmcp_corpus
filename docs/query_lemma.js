@@ -28,17 +28,11 @@ function queryLemma(word, allow_strip) {
             if (without_it.kind === "ok") {
                 return without_it;
             }
-            else if (without_it.msg === "多") {
-                return { kind: "err", msg: "多" };
-            }
         }
         else if (word !== "moleti" && word.endsWith("leti") && word.length > 4) {
             const without_leti = queryLemma(word.slice(0, -4), false);
             if (without_leti.kind === "ok") {
                 return without_leti;
-            }
-            else if (without_leti.msg === "多") {
-                return { kind: "err", msg: "多" };
             }
         }
     }
@@ -52,5 +46,5 @@ function queryLemma(word, allow_strip) {
     if (filtered.length + filtered_with_it.length + filtered_with_leti.length > 0)
         return { kind: "ok", words: [...filtered, ...filtered_with_it, ...filtered_with_leti] };
     else
-        return { kind: "err", msg: "無" };
+        return { kind: "err" };
 }

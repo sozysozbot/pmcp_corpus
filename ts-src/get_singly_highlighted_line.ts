@@ -212,7 +212,7 @@ function count_highlightable(cutoff: number = 20) {
                 if (query_res.kind === "ok") {
                     ok.push(tok.content);
                 } else {
-                    not_ok.push(tok.content + "|" + query_res.msg);
+                    not_ok.push(tok.content);
                 }
             }
         }

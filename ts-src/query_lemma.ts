@@ -23,21 +23,17 @@ const loose_list = words
 
 loose_list.sort();
 
-function queryLemma(word: string, allow_strip: boolean): { kind: "ok", words: Word[] } | { kind: "err", msg: "KA" | "多" | "無" } {
+function queryLemma(word: string, allow_strip: boolean): { kind: "ok", words: Word[] } | { kind: "err" } {
     if (allow_strip) {
         if (word.endsWith("it") && word.length > 2) {
             const without_it = queryLemma(word.slice(0, -2), false);
             if (without_it.kind === "ok") {
                 return without_it;
-            } else if (without_it.msg === "多") {
-                return { kind: "err", msg: "多" };
             }
         } else if (word !== "moleti" && word.endsWith("leti") && word.length > 4) {
             const without_leti = queryLemma(word.slice(0, -4), false);
             if (without_leti.kind === "ok") {
                 return without_leti;
-            } else if (without_leti.msg === "多") {
-                return { kind: "err", msg: "多" };
             }
         }
     }
@@ -54,6 +50,6 @@ function queryLemma(word: string, allow_strip: boolean): { kind: "ok", words: Wo
     if (filtered.length + filtered_with_it.length + filtered_with_leti.length > 0)
         return { kind: "ok", words: [...filtered, ...filtered_with_it, ...filtered_with_leti] };
     else
-        return { kind: "err", msg: "無" };
+        return { kind: "err" };
 }
 
