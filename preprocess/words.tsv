@@ -418,7 +418,7 @@
 4170	e kanti		動詞		リパライン語初級「第十回」	2022/7/6		[e kanti kije] 勉強する, 自習する	lersse	kanti + kile.pmcf			リパライン語 kanti そのものは e liju tude なので、*e liju tude kije を避けたものか。
 4180	jujoj-it		動詞	TRUE	リパライン語初級「第十回」	2022/7/6		料理する	jujojes	jujoj			-JI- ってどうなるの？
 4190	zik		名詞		日本机戦連盟サイトPMCF訳	2022/9/25	日本机戦連盟サイトPMCF訳	敵	（左に同じ）	zirk			
-4200	nubepok		複合名詞		日本机戦連盟サイトPMCF訳	2022/9/25	日本机戦連盟サイトPMCF訳	[nubepok leti dat] 同色でない役	voklisol z'es niv la dejixece	ny + bap pok.pmcf + leti.pmcf + dat.pmcf			
+4200	nubepok		名詞		日本机戦連盟サイトPMCF訳	2022/9/25	日本机戦連盟サイトPMCF訳	[nubepok leti dat] 同色でない役	voklisol z'es niv la dejixece	ny + bap pok.pmcf + leti.pmcf + dat.pmcf			
 4210	tan leti dec		複合名詞	TRUE	日本机戦連盟サイトPMCF訳	2022/9/26	日本机戦連盟サイトPMCF訳	タムカラー	tamdejix	tam + letix + dejix			
 4220	piji		名詞		悠F Discord	2022/10/6	悠F Discord	春	（左に同じ）	fir			
 4230	nalau		名詞		悠F Discord	2022/10/6	悠F Discord	夏	（左に同じ）	naleru			
@@ -809,3 +809,5 @@
 	pac		名詞					始まり	fasso	fas			
 	cawakit		動詞					（どんぐりなどを）渋抜きする、（文章を）読みやすく整える		banersavakh			
 	nincetkaik		名詞					紙机戦		nin1 cet2 kaik.pk			
+	dije		名詞		我々の遊戯-text			手番					
+	bepok		名詞					同色、同色役	la dejixece	bap pok.pmcf 			
