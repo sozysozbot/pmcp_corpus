@@ -126,7 +126,7 @@
 1250	cacija		名詞					姉	（左に同じ）	carxa, sasia.ar			
 1260	mele		名詞					近く	（左に同じ）	mele		近	
 1270	tulijo		名詞					土手	（左に同じ）	tuli'o, tulijo.tk			
-1280	e xel		動詞					見る	（左に同じ）	xel		目	
+1280	e xel		動詞					見る、[xelit tude]調べる	（左に同じ）	xel		目	
 1290	pecta		間投詞					じゃあ	（左に同じ）	pesta			
 1300	pac		前置助動詞					～し始める	fas, liaxi	fas		始	
 1310	e kojowi		動詞					疲れる	（左に同じ）	kojoi			
@@ -558,7 +558,7 @@
 5570	CENOCIT		動詞		筆兵無傾AdC広報処コメント	2023/11/11		聞く	（左に同じ）	senost			
 5580	PULEC		名詞		筆兵無傾AdC広報処コメント	2023/11/11		依頼	kylus, situsno	plais.vef, plax	依頼・要求, お願いします・頼むよ		
 5590	PULECIT		動詞		筆兵無傾AdC広報処コメント	2023/11/11		求める, 望む	karx, plaxes	plais.vef, plaxes	依頼・要求, お願いする		
-5600	XELIT TUDE		動詞		筆兵無傾AdC広報処コメント	2023/11/11		調べる	dzarn, fonti'a	xel.pmcf + tude.pmcf			
+5600	XELIT TUDE		動詞	TRUE	筆兵無傾AdC広報処コメント	2023/11/11		調べる	dzarn, fonti'a	xel.pmcf + tude.pmcf			
 5610	INIWI		名詞		筆兵無傾AdC広報処コメント	2023/11/11		日常	la sietiv, starsk	èinye.vef	日常		
 5620	TUWACAIT		動詞		筆兵無傾AdC広報処コメント	2023/11/11		祝う	（左に同じ）	tvarsna			
 5630	ECTENE		名詞		筆兵無傾AdC広報処コメント	2023/11/11		聖人	（左に同じ）	estener			
