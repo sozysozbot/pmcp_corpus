@@ -363,22 +363,22 @@
 3600	nekuwai		名詞					（セッカイクの）連将	varxlekung	niek1 uai1.pk			
 3610	pente		前置詞					～に反対して	nacisan	fente-			
 3620	xibacke		名詞					後半	xiback	xibacken			
-3630	wekupolto		名詞					向こう側	naciselstal	wequu.ar + polto			
-3640	e nucunet		動詞					弱い	es virben, es felvis	ny + sneiet			
+3630	wekupolto		名詞		机戦戦術研究テキストPMCF訳			向こう側	naciselstal	wequu.ar + polto			
+3640	e nucunet		動詞		机戦戦術研究テキストPMCF訳			弱い	es virben, es felvis	ny + sneiet			
 3650	tude		後置助動詞					主語から離れる動作の方向を示す	kantet lerno lerj sftle	tydiest		行	
 3660	kije		後置助動詞					主語へ向かう動作の方向を示す	kantet zirlo sftle'l e'c	klie		来	
 3670	mol		後置助動詞					～している	liaxu	mol			
-3680	cik		後置助動詞					～やすい、簡単に	（左に同じ）	-syk			
-3690	elmetude		名詞					侵攻	cexeno	elme + tydiest			
-3700	lalac		名詞					特徴、性質	snosti	la + -nasch			
-3710	e batin		動詞					発展する	（左に同じ）	vatin			
+3680	cik		後置助動詞		机戦戦術研究テキストPMCF訳			～やすい、簡単に	（左に同じ）	-syk			
+3690	elmetude		名詞		机戦戦術研究テキストPMCF訳			侵攻	cexeno	elme + tydiest			
+3700	lalac		名詞		机戦戦術研究テキストPMCF訳			特徴、性質	snosti	la + -nasch			
+3710	e batin		動詞		机戦戦術研究テキストPMCF訳			発展する	（左に同じ）	vatin			
 3720	etec		前置助動詞					早く	jeteson	jetes			
-3730	pate		前置助動詞					予め、先に、前もって	（左に同じ）	farte			
-3740	e noctu		動詞					遅れる	（左に同じ）	nostuj			
-3750	e malup		動詞					危ない	es malef, es malf	malef, malf			
-3760	xel		名詞					視線、（駒の）効き	fyrstla	xel			
-3770	e etec		動詞					速い	es jetes	jetes			
-3780	papel		間投詞					普通は	fal narvunsarlasykol	farfel			
+3730	pate		前置助動詞		机戦戦術研究テキストPMCF訳			予め、先に、前もって	（左に同じ）	farte			
+3740	e noctu		動詞		机戦戦術研究テキストPMCF訳			遅れる	（左に同じ）	nostuj			
+3750	e malup		動詞		机戦戦術研究テキストPMCF訳			危ない	es malef, es malf	malef, malf			
+3760	xel		名詞		机戦戦術研究テキストPMCF訳			視線、（駒の）効き	fyrstla	xel			
+3770	e etec		動詞		机戦戦術研究テキストPMCF訳			速い	es jetes	jetes			
+3780	papel		間投詞		机戦戦術研究テキストPMCF訳			普通は	fal narvunsarlasykol	farfel			
 3790	e cuctot		動詞					妨害する、妨げる、邪魔をする	（左に同じ）	systod			
 3800	dat		名詞					（ゲームの）役	voklisol (cerke)	dat2.pk		集	
 3810	elme		名詞					軍人、兵士	（左に同じ）	elmer		兵	
@@ -834,3 +834,7 @@
 	junakila		名詞		虎新聞			港	（左に同じ）	junalika			
 	cai		名詞		PMCF ポスター			（ゲームの）ラウンド		cei2.pk			
 	tancuk		名詞		アイル統一机戦書			タムツイの宗教従事者、（セッカイクの）巫	terlsk	tam2 cuk2.pk			
+	atelet		名詞		机戦戦術研究テキストPMCF訳			資本、[jo 或 leti atelet]～の利益のために		artelet			
+	xipontelata		名詞		机戦戦術研究テキストPMCF訳			（ゲームの）先手					
+	xibackelata		名詞		机戦戦術研究テキストPMCF訳			（ゲームの）後手					
+	acnac		名詞		机戦戦術研究テキストPMCF訳			効果、機能、はたらき	（左に同じ）	asnast			
