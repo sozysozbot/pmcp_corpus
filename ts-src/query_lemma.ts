@@ -23,6 +23,15 @@ const loose_list = words
 loose_list.sort();
 
 function queryLemma(word: string, allow_strip: boolean): Word | null {
+
+    if (word === "kaleti") {
+         /** 
+          * kaleti「2つの」vs. ka「これ」（leti がスペース無しでよい特殊な名詞）の勝負で「2 つの」が勝ってしまって困るので、
+          * とりあえずブロック
+          *  */
+        return null;
+    }
+
     if (allow_strip) {
         if (word.endsWith("it") && word.length > 2 && queryLemma(word.slice(0, -2), false)) {
             return queryLemma(word.slice(0, -2), false);
