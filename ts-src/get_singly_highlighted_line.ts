@@ -197,7 +197,7 @@ function tokenize(full_text: string): Token[] {
     return ans;
 }
 
-function count_highlightable_and_console_log() {
+function count_highlightable() {
 
     const HIGHLIGHTABLE = [];
     const NON_HIGHLIGHTABLE = [];
@@ -219,7 +219,7 @@ function count_highlightable_and_console_log() {
 
     counted.sort(([_k1, v1], [_k2, v2]) => v2 - v1);
 
-    console.log(`
+    return `
     highlightable (not uniq): ${HIGHLIGHTABLE.length}
 non-highlightable (not uniq): ${NON_HIGHLIGHTABLE.length}
     percentage    (not uniq): ${(HIGHLIGHTABLE.length / (HIGHLIGHTABLE.length + NON_HIGHLIGHTABLE.length) * 100).toPrecision(4)}%
@@ -229,7 +229,5 @@ non-highlightable (uniq): ${NON_HIGHLIGHTABLE_UNIQ.size}
     percentage    (uniq): ${(HIGHLIGHTABLE_UNIQ.size / (HIGHLIGHTABLE_UNIQ.size + NON_HIGHLIGHTABLE_UNIQ.size) * 100).toPrecision(4)}%
     
 top-tier non-highlightable: ${JSON.stringify(counted.slice(0, 20))}
-`);
+`;
 }
-
-count_highlightable_and_console_log();
