@@ -1,21 +1,21 @@
---2024-06-01 20:50:45--  https://docs.google.com/spreadsheets/d/1XjlK42tfTCrBegQUiv974qlC1XqrnNUbp43UJx1Qv8w/export?format=tsv&gid=0
-Resolving docs.google.com (docs.google.com)... 172.217.161.46, 2404:6800:4004:80b::200e
-Connecting to docs.google.com (docs.google.com)|172.217.161.46|:443... connected.
+--2024-06-01 21:31:19--  https://docs.google.com/spreadsheets/d/1XjlK42tfTCrBegQUiv974qlC1XqrnNUbp43UJx1Qv8w/export?format=tsv&gid=0
+Resolving docs.google.com (docs.google.com)... 172.217.161.78, 2404:6800:4004:80a::200e
+Connecting to docs.google.com (docs.google.com)|172.217.161.78|:443... connected.
 HTTP request sent, awaiting response... 307 Temporary Redirect
-Location: https://doc-00-5o-sheets.googleusercontent.com/export/54bogvaave6cua4cdnls17ksc4/5ans38j26hb6e407s6e3hvopgg/1717242645000/114487518295010761624/*/1XjlK42tfTCrBegQUiv974qlC1XqrnNUbp43UJx1Qv8w?format=tsv&gid=0 [following]
+Location: https://doc-00-5o-sheets.googleusercontent.com/export/54bogvaave6cua4cdnls17ksc4/aeb0ud61b4dkc0i0ofga7g5ets/1717245075000/114487518295010761624/*/1XjlK42tfTCrBegQUiv974qlC1XqrnNUbp43UJx1Qv8w?format=tsv&gid=0 [following]
 Warning: wildcards not supported in HTTP.
---2024-06-01 20:50:46--  https://doc-00-5o-sheets.googleusercontent.com/export/54bogvaave6cua4cdnls17ksc4/5ans38j26hb6e407s6e3hvopgg/1717242645000/114487518295010761624/*/1XjlK42tfTCrBegQUiv974qlC1XqrnNUbp43UJx1Qv8w?format=tsv&gid=0
+--2024-06-01 21:31:19--  https://doc-00-5o-sheets.googleusercontent.com/export/54bogvaave6cua4cdnls17ksc4/aeb0ud61b4dkc0i0ofga7g5ets/1717245075000/114487518295010761624/*/1XjlK42tfTCrBegQUiv974qlC1XqrnNUbp43UJx1Qv8w?format=tsv&gid=0
 Resolving doc-00-5o-sheets.googleusercontent.com (doc-00-5o-sheets.googleusercontent.com)... 216.58.220.129, 2404:6800:4004:813::2001
 Connecting to doc-00-5o-sheets.googleusercontent.com (doc-00-5o-sheets.googleusercontent.com)|216.58.220.129|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: unspecified [text/tab-separated-values]
 Saving to: ‘./preprocess/corpus.tsv’
 
-     0K .......... .......... .......... .......... ..........  233K
-    50K .......... .......... .......... .......... ..........  697K
-   100K .......... .......... .......... .......... ..........  520K
-   150K .......... .......... .......... .......... ..........  580K
-   200K .......... .......... ......                            734K=0.5s
+     0K .......... .......... .......... .......... ..........  395K
+    50K .......... .......... .......... .......... ..........  606K
+   100K .......... .......... .......... .......... ..........  640K
+   150K .......... .......... .......... .......... ..........  978K
+   200K .......... .......... ......                            581K=0.4s
 
-2024-06-01 20:50:47 (448 KB/s) - ‘./preprocess/corpus.tsv’ saved [231649]
+2024-06-01 21:31:21 (590 KB/s) - ‘./preprocess/corpus.tsv’ saved [231649]
 
